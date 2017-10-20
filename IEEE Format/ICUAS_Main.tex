@@ -9,26 +9,30 @@
 \usepackage{longtable,tabularx}
 \usepackage{listings}
 \usepackage{float}
-\usepackage{subcaption}
+%\usepackage{subcaption}
 \usepackage{multicol}
 \usepackage{dblfloatfix}
 \usepackage{color}
+\usepackage{subfigure}% subcaptions for subfigures
+\usepackage{subfigmat}% matrices of similar subfigures, aka small
 %\hyphenation{op-tical net-works semi-conduc-tor}
+\usepackage{multirow}
+\usepackage[table,xcdraw]{xcolor}
 
 \begin{document}
 
-\title{First Draft: Circumnavigation and obstacle avoidance guidance for UAV monitoring a ground target using Vector Fields}
+\title{TITLE}
 
-\author{\IEEEauthorblockN{Jay P. Wilhelm, Gregory J. Wambold and Garrett S. Clem}
+\author{\IEEEauthorblockN{Garrett S. Clem, Jay P. Wilhelm}
 \IEEEauthorblockA{Department of Mechanical Engineering\\
 Ohio University\\
 Athens, Ohio 45701\\
-Email: wilhelj@ohio.edu, gw419111@ohio.edu, gc117711@ohio.edu}
+Email: gc117711@ohio.edu, wilhelj@ohio.edu}
 \and
-\IEEEauthorblockN{AFRL Guy Name}
-\IEEEauthorblockA{AFRL Department\\
+\IEEEauthorblockN{David Casbeer, David Grymin, Isaac Weintraub}
+\IEEEauthorblockA{AFRL RQQA\\
 AFRL\\
-Dayton, Ohio ZIP\\
+Beavercreek, Ohio ZIP\\
 Email: }
 }
 
@@ -36,13 +40,378 @@ Email: }
 
 
 \begin{abstract}
-
+	Combatant Unmanned Aerial Vehicles (UAVs) can easily enter restricted airspace and current countermeasures may be expensive, have limited range, and might not be safely operated in all environments. Intercepting and following combatant UAVs in restricted airspace could be achieved with multi-rotor UAVs. A pseudotarget based proportional navigation (PN) guidance algorithm that guides a UAV to intercept and follow a combatant UAV using highly uncertain sensor position information was developed. Simulations were performed to validate the model and develop a ratio of following distance to initial range. Near zero following distance was achieved for a finite range of initial line-of-sight angles.
 \end{abstract}
 
 \begin{IEEEkeywords}
-blah, blah, blah
+
 \end{IEEEkeywords}
 
+\section{Introduction}
+%==========Motivation ============
+% Increased use of UAVs used for malicious purposes
+% FAA response create restrictions on when and where to fly
+% In event that restrictions are ignored jamming or projectile countermeasures deployed
+
+% Need to insert problem statement into the first few sentences
+Increased popularity of UAVs by the civilian community has led to the use of UAVs for malicious purposes. Airspace restrictions on when and where UAVs are given clearance to fly have been imposed by the FAA \cite{federal_aviation_administration_2017}. When restricted airspace is violated, jamming and projectile countermeasures can be deployed. Jamming systems rely on autopilot fail-safes to land the UAV when GPS or RF signals are compromised. Effective distance for jamming systems range from 400 meters \cite{Battelle} to 10 kilometers \cite{Blighter}. Projectile systems that launch a net and parachute at a target UAV have a shorter range of 100 meters \cite{SkyWall}. A counter UAV system that supplements or replaces current costly and limited range countermeasures is in need. Intercepting and following target UAV can be achieved with a multi-rotor UAV guided by proportional navigation (PN) guidance.
+
+\subsection{Literature}
+% ======= Literature =========
+% Guidance algorithms that guide a missile to a target has been studied and implemented since the 1950s.
+
+%Continued investigation into cooperative defense strategies (isaac)
+
+% The goal of missile guidance algorithms is to minimize the distance between the missile and the interceptor. 
+
+% One of the most widely studied missile guidance algorithm PN operates on the geometric rule of nulling the los rate
+
+%  Variants of the PN algorithm allow for commanding terminal angle constraint by changing the guidance gain throughout flight
+
+% Limits missile maneuverability up until the last stage of flight
+
+% Algorithm was not developed for impact constraint, optimal and suboptimal guidance approaches are considered (Oza, kumar, park)
+
+%For the model developed of intercepting and following a highly uncertain target, the optimal and suboptimal methods are avoided by introducing a pseudotarget based PN guidance.
+
+PN guidance has been in use since the 1950's \cite{zarchan} and is used primarily to guide missiles to a target by nulling the line-of-sight (LOS) rate \cite{shneydor1998missile,yanushevsky2007modern}. PN guidance has had continued interest and may have new uses such as cooperative defense strategies \cite{isaac}. The traditional PN guidance law is adequate for commanding a UAV to intercept a target but it would be useful to command the angle in which the UAV would approach the target to prevent unwanted collisions. Ratnoo and Ghose modified the PN guidance gain throughout flight to satisfy a terminal angle constraint \cite{ratnoo2009satisfying}. Scheduling the guidance gain throughout flight does not allow the interceptor to maneuver at its maximum potential throughout flight, limiting the interceptors ability to intercept a dynamic target. Oza and Padhi discuss how time varying guidance gains result in singularities near the end of the flight and provide an impact-angle-constrained suboptimal model predictive static programming guidance \cite{oza2012impact}. Optimal impact-angle-constrained guidance algorithms have been developed for 2D \cite{park2013optimal} and 3D \cite{kumar2014three} engagements. The impact-angle constrained guidance in literature have additional levels of complexity in comparison to traditional PN guidance and may be more complicated to implement. Achieving a terminal angle constraint can be accomplished without modifying the PN guidance gain or implementing an entirely new guidance model by introducing a pseudotarget into the engagement scenario.
+
+\subsection{Methods}
+A guidance model for intercepting and following a target UAV whose position is uncertain was developed. Interceptor and target kinematics are first presented, followed by the traditional PN guidance law. Next an on-board sensor that measures the target's position, which has some uncertainty, is modeled. A state machine pseudotarget is introduced that prevents the intercepting UAV from entering the uncertain area while accomplishing the main goal of intercepting and following the target. Simulations were performed to validate the model and to show that the following distance can be predicted from the initial LOS angle, range, and sensor characteristic.
+
+\section{Model}
+
+
+% Consider a two agent engagement scenario shown in Figure \ref{fig:Egagement} consisting of a target \textit{T} and an interceptor \textit{I}. The interceptor is tasked with intercepting and following the target without perfect knowledge of the target's position. The target's position $(x_T,y_T)_t$ at any time $t$ is determined from the previous position $(x_T,y_T)_{t-1}$, the velocity of the target $V_T$ and the heading $\beta$ shown in Equation \ref{eq:targetkin}. Similarly, the position of the interceptor $(x_I,y_I)_t$ is updated by Equation \ref{eq:intkin} and is a function of previous position $(x_I,y_I)_{t-1}$, velocity $V_I$, and heading $\gamma$. Headings for both the target and interceptor are measured with respect to the horizontal $x$ axis. $dt$ is the discrete change in time from one update to the next.
+
+
+
+\subsection{Intercept Model}
+Prior to adding uncertainty and a state machine pseudotarget, the traditional PN guidance algorithm is presented using Zarchan's notation \cite{zarchan}. Consider a two agent engagement scenario shown in Figure \ref{fig:Egagement} consisting of a target \textit{T} and an interceptor \textit{I}. The interceptor is tasked with intercepting the target whose position at any time step $k$ is $\overrightarrow{X}_T(k)$ which is determined from the previous position $\overrightarrow{X}_T(k-1)$, velocity $v_T$, and heading $\beta$ shown in Equation \ref{eq:targetkintwo}. Similarly, the position of the interceptor $\overrightarrow{X}_I(k)$ is updated by Equation \ref{eq:intkintwo} and is a function of previous position $\overrightarrow{X}_I(k-1)$, velocity $V_I$, and heading $\gamma$. Headings for the target and interceptor are measured with respect to the horizontal $x$ axis. $dt$ represents the discrete change in time from one update to the next.
+
+% \begin{align}
+% \label{eq:targetkin}
+% \begin{split}
+% (x_T)_t &= (x_T)_{t-1}+V_T\cos(\beta)dt 
+% \\
+% (y_T)_t &= (y_T)_{t-1}+V_T\sin(\beta)dt
+% \\
+% \end{split}
+% \end{align}
+
+
+\begin{equation}\label{eq:targetkin}
+\overrightarrow{V}_{T}(k) =  V_{T} \begin{bmatrix} cos(\beta(k)) \\ sin(\beta(k)) \end{bmatrix}
+\end{equation}
+\begin{equation}\label{eq:targetkintwo}
+\overrightarrow{X}_T(k) =  \overrightarrow{V_T}dt + \overrightarrow{X}_T(k-1) 
+\end{equation}
+
+\begin{equation}\label{eq:intkin}
+\overrightarrow{V}_{I}(k) =  V_{I} \begin{bmatrix} cos(\gamma(k)) \\ sin(\gamma(k)) \end{bmatrix}
+\end{equation}
+\begin{equation}\label{eq:intkintwo}
+\overrightarrow{X}_I(k) =  \overrightarrow{V_I}dt + \overrightarrow{X}_I(k-1) 
+\end{equation}
+
+
+
+
+% \begin{align}
+% \label{eq:intkin}
+% \begin{split}
+% (x_I)_t &= (x_I)_{t-1}+V_I\cos(\gamma)dt 
+% \\
+% (y_I)_t &= (y_I)_{t-1}+V_I\sin(\gamma)dt
+% \\
+% \end{split}
+% \end{align}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=6 cm]{Engagement_Model.PNG}
+	\caption{Engagement Scenario}
+	\label{fig:Egagement}
+\end{figure}
+
+The interceptor is guided to the target's position by updating the interceptors heading at each time step $k$. Heading changes are determined by the PN guidance algorithm operating on the principle of nulling the LOS rate $\dot{\lambda}$ by issuing heading change commands proportional to the LOS rate. For a non zero LOS rate, a heading rate command $\dot{\gamma}$ is issued by multiplying the LOS rate by the fixed guidance gain $N$.
+
+\begin{equation} \label{eq:PNlaw}
+\dot{\gamma} = N\dot{\lambda}
+\end{equation}
+
+Guidance gains of $N < 3$ are generally referred to as conservative while $N > 5$ are referred to as more aggressive. Conservative gains lead to larger turn radii and make for a less maneuverable interceptor. Higher gains result in a more maneuverable vehicle as long as the commanded heading changes are not beyond the vehicles physical capabilities. Multi-rotor UAVs are agile and can make abrupt heading changes therefore a guidance gain $N = 5$ was chosen. The LOS rate is provided by Equation \ref{eq:losrate}, which requires the relative position and velocity components $R_{TIx}$,$R_{TIy}$, and $V_{TIx}$, $V_{TIy}$ shown in Equations \ref{eq:pos} and \ref{eq:vel} respectively. 
+
+\begin{equation} \label{eq:losrate}
+\dot{\lambda} = \frac{R_{TIx}V_{TIy}-R_{TIy}V_{TIx}}{R_{TI}^2}
+\end{equation}
+
+\begin{equation} \label{eq:pos}
+\begin{split}
+R_{TIx} = x_T-x_I\\
+R_{TIy} = y_T-y_I
+\end{split}
+\end{equation}
+
+\begin{align}
+\label{eq:vel}
+\begin{split}
+V_{TIx} &= V_{Tx}-V_{Ix}
+\\
+V_{TIy} &= V_{Ty}-V_{Iy}
+\\
+\end{split}
+\end{align}
+
+Range is the Euclidean distance between the target and the interceptor, shown in Equation \ref{eq:range}. The LOS angle $\lambda$ is calculated in Equation \ref{eq:LOS}. 
+
+\begin{equation} \label{eq:range}
+R_{TI} =\sqrt[]{R_{TIx}^2+R_{TIy}^2}
+\end{equation}
+
+\begin{equation} \label{eq:LOS}
+\lambda = \tan^{-1} \left(\frac{R_{TIy}}{R_{TIx}}\right)
+\end{equation}
+
+The PN guidance law provides a heading rate whereas the model requires a heading. To determine the heading from the heading rate, the second order Runge-Kutta integration technique is used. 
+
+\begin{equation} \label{gamma}
+\frac{d\gamma}{dt} = \dot{\gamma}
+\end{equation}
+
+% Now consider the same engagement scenario where an interceptor is tasked with intercepting a target except now the exact position of the target is unknown. The intercepting UAV uses on-board sensors to take measurements of the targets position, where each measurement has some uncertainty associated with it. The measurement can be represented as a point centered in a circle of radius $r$. \hl{The radius $r$ represents the domain where the interceptor can be certain that the target exists given the measurement within $n$ standard deviations.} The goal of the interceptor is not to only intercept the target, but to follow it to gather more information. In order to follow the target, it is important to insure that there is not an in-air collision prior to the appropriate time. To prevent an unintended collision, a modified version of the PN guidance is presented. 
+
+% Figure \ref{fig:pseudotarget} depicts a modified engagement strategy involving a target and an interceptor. The exact position of the intercepting UAV is unknown, however the position of the target with some uncertainty $r$ is estimated. The intercepting UAV is tasked with intercepting and following the target, but is given the restriction that it cannot enter the airspace where the target may actually be. To safely intercept and follow the target, the intercepting UAV will follow the process depicted in Figure \ref{fig:pseudotarget}. \\
+
+% The interceptor is tasked with following a pseudo-target that is placed strategically to promote target interception and following while preventing an in air collision of the vehicles. The pseudo-target is first placed at $(0,0)$ and remains in place until the minimum point on the uncertainty bubble is above the horizon. Once the minimum point of the uncertainty bubble is above the horizon, the pseudo-target is placed at $(0, r_{ymin})$ as shown in \ref{fig:pseudotarget}a. The interceptor follows the pseudo-target placed at the minimum point of the uncertainty bubble present at $x = 0$ in \ref{fig:pseudotarget}b and \ref{fig:pseudotarget}c. Once the uncertainty bubble has passed the $y$ plane, the pseudo-target is placed on top of the targets estimated position, forcing the interceptor to enter a follow pattern shown in \ref{fig:pseudotarget}d. 
+
+
+PN guidance is effective at reducing the range between the interceptor and the target, however at or near the point of interception a singularity in the LOS rate may be present for head-on interception. The cause of the singularity is due to the near zero range and the change of sign in relative velocities. Solutions around the singularity can be obtained for a linearized proportional navigation \cite{singularitySolution} but are not of a major concern for traditional missile systems because the mission is complete when the range is near zero. For an intercepting UAV with the intention of following the target, the singularity could call for control efforts beyond the saturation point. Additionally, after the singularity occurs there remains a possibility for the nulled LOS condition to be met even if the interceptor and target are heading away from each other. For an inbound target with a 1:1 speed ratio constraint, the singularity is not present during a tail-chase intercept as shown in Figure \ref{fig:comp}. The tail-chase scenario has the added benefit of placing the interceptor behind the target, allowing for an easy transition into a follow. The elimination of the singularity and easy transition into a follow make a case for waiting on the target before intercepting it directly, which is the primary motivation for introducing a pseudotarget into the PN guidance model.
+
+
+
+
+% Demonstrating the effectiveness of the PN guidance algorithm at reducing the range between a target and an interceptor, 
+% The PN guidance reduces the range between the interceptor and target as shown in Figure \ref{fig:comp}. 
+
+\begin{figure}[H]
+	\begin{subfigmatrix}{2}% number of columns
+		\centering
+		\subfigure []{\includegraphics[width=7cm] {x50}}
+		\subfigure []{\includegraphics[width=7cm] {x15}}
+		\subfigure []{\includegraphics [width=7cm]{x50_range_LOSrate}}
+		\subfigure []{\includegraphics [width=7cm]{x15_range_LOSrate}}
+		\hspace*{0mm}
+	\end{subfigmatrix}
+	\caption{Simulation Scenarios}
+	\label{fig:comp}
+\end{figure}
+
+
+\subsection{Intercept and Follow Model}
+Measuring the LOS rate and range would be done by on-board sensors which would have some uncertainty $r$. Uncertainties in $x$ and $y$ are assumed to be equal so the actual position of the target is in the space $(x\pm r,y \pm r)$. Figure \ref{fig:uncertrad} shows a representation of the measurement as a point centered in a circle of radius $r$. The region inside the circle is the space where the target may actually exist. The interceptor should avoid the inside of the circular region to prevent an unintended collision with the target. The uncertainty decreases linearly as a function of range as shown in Equations \ref{eq:uncert} and \ref{beq}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=4cm]{45deguncert.PNG}
+	\caption{Initial Uncertainty Radius}
+	\label{fig:uncertrad}
+\end{figure}
+
+\begin{equation} \label{eq:uncert}
+r(k) = drR_{TI}(k)+b
+\end{equation}
+
+\begin{equation} \label{beq}
+b = r_0-drR_{TI0}
+\end{equation}
+
+The radius of position uncertainty $r$ is a function of the range $R_{TI}$, rate of change $dr$, and the minimum uncertainty radius $b$. A pseudotarget was introduced into the engagement scenario which prevents the interceptor from entering the region of uncertainty while maintaining the requirements of intercepting and following the target. The modified guidance was developed to satisfy a small range of scenarios where the target travels at constant heading, altitude, and speed equal to that of the interceptor shown in Figure \ref{fig:pseudotarget}. The interceptor avoids the region of uncertainty while following and intercepting the target by pursuing a pseudotarget. 
+
+The pseudotarget acts as a state machine consisting of $wait$, $intercept$, and $follow$ states. When the minimum altitude of the uncertainty is below the horizon $y_I-r<0$ the pseudotarget state is set to $wat$ and waits at it's current position. Uncertainty decreases as the target approaches the interceptor eventually satisfying the condition $y_I-r >0$ triggering a change in state from $wiat$ to $intercept$. When the $intercept$ state is active the pseudotarget is placed at the minimum uncertainty $y=y_T-r$ with no movement in the $x$ axis $x=0$. Placing the pseudotarget at the minimum uncertainty altitude prevents the possibility of an unintended collision with the target. Once $x_T<x_I$ the risk of collision is non existent and the pseudotarget is set to the $follow$ state where the pseudotarget is placed on top of the targets estimated position. The engagement described is shown in \ref{fig:pseudotarget}.
+
+% is placed at $x = 0$ and $y = y_T-r$. 
+
+% Placing the pseudotarget at the edge of the uncertainty region prevents the possibility of an unintended collision. 
+
+
+% a the pseudotarget $waits$ while the minimum uncertainty is below the horizon.
+
+% When in $intercept$ state, the pseudotarget guides the intercepting UAV to the target, closing the distance between the two. During the $follow$ state, the pseudotarget guides the interceptor to follow the target.
+
+% When in $intercept$ state, the pseudotarget is placed at the minimum altitude of the uncertainty region that is to the right of the interceptor. During $follow$, the pseudotarget is placed directly on top of the target's estimated position.
+
+\begin{figure}[H]
+	\begin{subfigmatrix}{3}% number of columns
+		\centering
+		\subfigure []{\includegraphics[width=5cm] {step1}}
+		\subfigure []{\includegraphics[width=5cm] {step2}}
+		\subfigure []{\includegraphics [width=5cm]{step3}}
+	\end{subfigmatrix}
+	\caption{Simulation Scenarios}
+	\label{fig:pseudotarget}
+\end{figure}
+
+%Change figures to better represent algorithm.
+% In Figure \ref{fig:pseudotarget}a the pseudotarget $waits$ while the minimum uncertainty is below the horizon. As the target approaches, the uncertainty is reduced so that the uncertainty circle is above the horizon shown in Figure \ref{fig:pseudotarget}b. With the minimum of the uncertainty above the horizon, the pseudotarget is placed in the $intercept$ state and is placed at $x = 0$ and $y = y_T-r$. Placing the pseudotarget at the edge of the uncertainty region prevents the possibility of an unintended collision. Once $x_T<x_I$ the risk of collision is non existent and the pseudotarget is placed in $follow$ state. The $follow$ state shown in Figure \ref{fig:pseudotarget}c places the pseudotarget on top of the target estimate, guiding the interceptor to follow the target. 
+
+With the target moving at constant altitude and both vehicles sharing the same velocity, it is expected that the following distance will be near zero if the intercept is active when $x_T \geq y_T$. If the intercept occurs when $x_T<y_T$, the interceptor is at a disadvantage and will fail to close the distance. The sensor was modeled so that the uncertainty circle is above the horizon once the target has crossed the $x=y$ line by calculating an appropriate initial uncertainty $r_0$. Referring back to Figure \ref{fig:uncertrad} a target is detected at a LOS of $45^{\circ}$, has an altitude of $R_{TIy}$, and an initial uncertainty radius $r_0$. Determining the initial radius was done geometrically in Equations \ref{minr} and \ref{rtiforminr} and was set to $0.7$ times the initial range.
+
+\begin{equation} \label{minr}
+\sin(45) = \frac{R_{TIy}}{R_{TI}}
+\end{equation}
+
+\begin{equation} \label{rtiforminr}
+R_{TI}\frac{\sqrt[]{2}}{2} = R_{TIy}
+\end{equation}
+
+\begin{equation} \label{initialr}
+r_0 = 0.7R_{TI}
+\end{equation}
+
+The impact of $r_0$ on following distance can be seen in Figure \ref{fig:RinitSelection}, where three $r_0$ ratios were evaluated. Each subfigure show the results of three target initial conditions along the $x=y$ line. Figure \ref{fig:RinitSelection}a shows a near zero following distance for a $r_0$ ratio of $0.6R_{TI}$. Figure \ref{fig:RinitSelection}b shows a near zero following distance for a $r_0$ ratio of $0.7R_{TI}$. As the $r_0$ ratio passes $0.7R_{TI}$ the following distance becomes less predictable and is not constant along the target initial conditions on the $x=y$ line.
+
+
+\begin{figure}[H]
+	\begin{subfigmatrix}{2}% number of columns
+		\centering
+		\subfigure []{\includegraphics {rinit07.png}}
+		\subfigure []{\includegraphics {rinit08.png}}
+		\hspace*{0mm}
+	\end{subfigmatrix}
+	\caption{Initial Uncertainty Radius Ratio}
+	\label{fig:RinitSelection}
+\end{figure}
+
+The modified pseudotarget PN guidance was given the same initial conditions as shown in Figure \ref{fig:comp} and the performance compared. Traditional PN guidance performed well during the tail-chase but failed to follow the target and experienced a LOS singularity for a head-on intercept. The PN guidance with a psuedotarget successfully intercepts and follows the target with non-singularity LOS rates, shown in Figure \ref{fig:compwithpt}. Traditional PN out performed the pseudotarget PN guidance for target initial condition $x_{T} = 15$ which demonstrates that a single guidance algorithm may not be suitable for all cases and a decision on which algorithm to use for a given set of initial conditions should be made. Table \ref{my-label} summarizes the performance of the algorithms for the two initial conditions.
+
+\begin{figure}[H]
+	\begin{subfigmatrix}{2}% number of columns
+		\centering
+		\subfigure []{\includegraphics[width=4cm] {ptx50}}
+		\subfigure []{\includegraphics[width=4cm] {ptx15}}
+		\subfigure []{\includegraphics [width=4cm]{ptx50_range_LOSrate}}
+		\subfigure []{\includegraphics [width=4cm]{ptx15_range_LOSrate}}
+		\hspace*{0mm}
+	\end{subfigmatrix}
+	\caption{Simulation Scenarios}
+	\label{fig:compwithpt}
+\end{figure}
+
+\begin{table}[H]
+	\centering
+	\caption{Traditional PN and Pseudotarget PN Following Distance and LOS rate}
+	\label{my-label}
+	\begin{tabular}{c|c|c|}
+		\cline{2-3}
+		\multicolumn{1}{l|}{}                                        & \multicolumn{1}{l|}{Following Distance} & \multicolumn{1}{l|}{Max LOS Rate (rad/s)} \\ \hline
+		\multicolumn{1}{|c|}{}                                       & 0.51                                    & 0.02                                      \\ \cline{2-3} 
+		\multicolumn{1}{|c|}{\multirow{-2}{*}{Traditional PN}}       & \cellcolor[HTML]{C0C0C0}                & 46.07                                     \\ \hline
+		\multicolumn{1}{|c|}{}                                       & 6.51                                    & 0.06                                      \\ \cline{2-3} 
+		\multicolumn{1}{|c|}{\multirow{-2}{*}{PN with Pseudotarget}} & 0.88                                    & 0.04                                      \\ \hline
+	\end{tabular}
+\end{table}
+
+\section{Simulations}
+The model was validated through MATLAB simulations and a ratio for predicting following distance as a function of initial LOS, range, and sensor characteristic is presented for a non maneuvering target. Initial target conditions of $x = [-100,100]$ $y = [10,100]$ in $1$ unit increments were evaluated with a constant heading of $\beta = 180^{\circ}$. Initial uncertainty radius of the target estimate for each scenario was $0.7$ times the initial range with rate of change $dr = 1$. Interceptor initial conditions remained constant where the initial position and heading were $(0,0)$ and $90^{\circ}$ respectively. Each UAV was given the same velocity so that the speed ratio of the two vehicles was 1:1. When the interceptor's heading $\gamma = 180^{\circ}$ the simulation was terminated and the range to the target was recorded as the following distance. Dividing the following distance by the initial range to the target produces a following distance initial range ratio (FDIR), shown in Equation \ref{eq:FDIR} which can be used to describe the performance of the model.
+
+
+
+%Model validated and relationship between initial los angle, range, and sensor characteristic shown
+
+%Non maneuvering target
+% Constant heading
+%Initial uncertainty radius
+%dr = 1
+%Interceptor guided to follow and intercept the target with highly uncertain sensor information 
+%Interceptor initial conditions
+%Speed ratios
+%Simulation space
+%Simulation end criterion
+%Following distance ratio equation
+
+% The two agent engagement model was subjected to two sets of simulations with the goal of determining a relationship between initial range and following distance. The non-maneuvering target was given a constant heading $\beta = 180^{\circ}$. The initial uncertainty radius of the target estimate for each scenario was $0.7$ times the initial range with rate of change $dr = 1$. The interceptor was tasked with intercepting and following the target based on uncertain target position estimation without entering the uncertain domain. The interceptor's initial position and heading for each simulation were $(0,0)$ and $90^{\circ}$ respectively. In the worst case scenario, the target would have equal maximum velocity as the interceptor. To evaluate the worst case, the interceptor and target were given a speed ratio of 1:1. The first set of simulations were performed for initial target position in the space $x = [-100,100]$ $y = [10,100]$ in $1$ unit increments. Once the interceptor reached a heading of $\gamma = 180^{\circ}$ the simulation was ended and the distance was recorded as following distance. For the simulation space, the ratio of following distance to initial range was calculated by Equation \ref{eq:FDIR} and the results are shown in Figure \ref{fig:Rays}.
+
+\begin{equation} 
+\label{eq:FDIR}
+\frac{Following Distance}{Initial Range} = FDIR
+\end{equation}
+
+The unit-less FDIR ratio in the simulation space is shown in the contour plot Figure \ref{fig:Rays}. Each target initial condition corresponds to a FDIR ratio on the plot, ranging from $0$ to $1.65$. FDIR is constant along each initial LOS which allows for the prediction of following distance based on initial LOS, range, and sensor $dr$. Initial LOS angles less than $45^{\circ}$ yield a FDIR ratio of near zero indicating that the following distance was near zero. Increasing LOS angles greater than $45^{\circ}$ result in progressively higher FDIR ratios indicating an increasing following distance.
+
+% for initial LOS angles less than $45^{\circ}$ 
+
+
+% The contour plot shown in Figure \ref{fig:Rays} shows 18,000 simulation results for various target initial conditions. Each target initial condition has a corresponding FDIR ratio. As expected, the following distance is near zero for initial LOS angles less than $45^{\circ}$. For initial LOS angles greater than $45^{\circ}$, the following distance increases, which is a result of the 1:1 speed ratio. The FDIR ratio is constant along each initial LOS which allows an estimate for following distance based only on initial LOS and initial range to the target. The simulations that produced Figure \ref{fig:Rays}, were for a fixed sensor rate $dr = 1$. To show how the modified PN guidance algorithm performs for a range of sensors, a second set of simulations was performed.
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=8cm]{FDIR_Rays.png}
+	\caption{FDIR Ratio}
+	\label{fig:Rays}
+\end{figure}
+
+A more useful representation of the models performance for a range of sensor $dr$'s is shown in Figure \ref{fig:Polar}. Simulations were performed for initial LOS angles ranging from $0^{\circ}$ to $180^{\circ}$ and sensors with $dr$ ranging from $0.5$ to $1$ in $0.5^{\circ}$ and $0.01$ unit increments respectively. Sensors with $dr < 0.5$ would not allow the interceptor to reduce the following distance much farther than the initial range for nearly all LOS angles. Sensors with $dr \geq 1$ the following distance can be reduced to nearly zero for initial LOS angles between $0$ and $45^{\circ}$. The contour polar plot was created with the help of PolarPlot3D \cite{Polar3d}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=8cm]{correctpolar.png}
+	\caption{FD/IR Rays}
+	\label{fig:Polar}
+\end{figure}
+
+\section{Conclusion}
+
+%What was done
+% Counter UAS
+% Simplified 2 agent engagement model
+% interceptor estimates target position with highly uncertain sensor
+% Intercepts and follow the target where vehicles have 1:1 speed ratio
+% Even in worst case scenario a interceptor may reduce the following distance near zero for a limited range of initial LOS
+
+% Future work could be a more active interceptor that attempts to close the range by flying directly towards the estimate and entering a follow in a way to minimize the following distance. 
+%Implementing multi-rotor dynamics in replacement to kinematics should be done to more accurately model the engagement
+
+% We have shown that a simplified multi-rotor UAV model equipped with on-board target sensing capabilities and guided with a pseudo-target based PN guidance system is a viable counter UAV system for a limited initial heading range. The simplified engagement model consisting of a interceptor that estimates a targets position with a highly uncertain sensor where vehicles exhibit a 1:1 speed ratio presents a worst case interception scenario. Even in worse case scenario, an interceptor may reduce the following distance near zero for a limited range of initial LOS. Future work could be a more active interceptor that attempts to close the range by flying direclty towards the estimate and entering a follow such a way to minimize the following distance for a larger range of initial LOS angles. Implementing multi-rotor dynamics in replacement to kinematics should be done to more accurately model the engagement. 
+
+
+A pseudotarget based proportional navigation (PN) guidance algorithm that guides a UAV to intercept and follow a target UAV using highly uncertain sensor position information was developed. Simulations were performed to validate the model for a finite space and a ratio for predicting following distance as a function of initial LOS, range, and sensor characteristic was presented. Near zero following distance is achievable for a finite range of initial headings and sensor $dr$'s. The state machine pseudotarget PN guidance algorithm was specifically designed to intercept and follow an inbound non-maneuvering target for the edge case $1:1$ speed ratio. Initial results suggest that the proposed guidance is superior to traditional PN for head-on intercepts but slightly underproform in the tail-chase scenario 
+
+Applying the guidance model presented could be applicable to the loyal wingman flight formation problem due to the models ability to approach the objective closely under high position uncertainty. 
+
+% Future work could involve an active interceptor that attempts to close the range by flying directly towards the estimate and entering a follow in such a way as to minimize the following distance for a larger range of initial LOS angles. Implementing multi-rotor dynamics in replacement to kinematics should be done to more accurately model the engagement. 
+
+% It was shown that a pseudotarget based PN guidance algorithm with $wait$, $intercept$, and $follow$ states is capable of guiding a simplified multi-rotor UAV model to intercept and follow an uncertain target for a finite range of initial headings. An additional speed $1:1$ speed ratio constraint was evaluated 
+
+% a target UAV whose position is highly uncertain for a finite range of initial headings. 
+
+% It was shown that a multi-rotor UAV equipped with on-board target sensing capabilities and guided by a pseudotarget based PN guidance system is a viable 
+%1:1 speed constraint
+
+% It was shown that a simplified multi-rotor UAV model equipped with on-board target sensing capabilities and guided with a pseudo-target based PN guidance system is a viable counter UAV system for a limited initial heading range.
+
+%State machine based pseudotarget (wait, intercept, and follow from behind) without entering the uncertainty region
+
+%A pseudotarget based PN guidance algorithm for intercepting and following a target with a highly uncertain position estimate was presented.
+
+% %Future work
+% We have shown that a simplified multi-rotor UAV model equipped with on-board target sensing capabilities and guided with a pseudo-target based PN guidance system is a viable counter UAV system for a limited initial heading range. A pseudotarget based PN guidance algorithm for intercepting and following a target with a highly uncertain position estimate was presented. The pseudotarget PN algorithm operates on the principle of nulling the LOS rate between the interceptor and pseudotarget.
+
+% The position of the pseudotarget with respect to the target estimate is determined by a state machine in three distinct states consisting of $wait$, $follow$, and $intercept$. 
+
+% The algorithm prevents the interceptor from entering the space in which the target may exist, preventing an unintended collision, while maintaining the mission objective of intercepting and following the target. 
+
+% A range of initial target conditions were evaluated to determine a relationship between initial target position and following distance, which lead to the realization that following distance can be expressed as a function of initial LOS and range. 
+
+% A second set of simulations were performed to relate initial LOS angle, sensor characteristic $dr$, and range with following distance. For initial LOS angles less than $45^{\circ}$, the following distance is near zero for a range of sensor $dr$s. For initial LOS angles greater than $45^{\circ}$, the following distance increases due to the 1:1 speed ratio constraint. 
+
+% The increase in following distance is a result of the interceptors inability to close the distance to the target. 
+
+% Future work could involve a more active interceptor that attempts to close the range by flying directly towards the estimate and entering a follow in such a way as to minimize the following distance for a larger range of initial LOS angles. Implementing multi-rotor dynamics in replacement to kinematics should be done to more accurately model the engagement. 
+
+\section{Acknowledgements}
+The research presented was funded by Wright-Patterson Air Force Research Laboratory. Special thanks to the sponsor of the fellowship Dr. David Grymin and Dr. David Casbeer, Dr. Eloy Garcia, and Isaac Weintraub for their recommendations during the course of this research. 
 
 
 % if have a single appendix:
@@ -98,7 +467,8 @@ blah, blah, blah
 % (used to reserve space for the reference number labels box)
 
 \bibliographystyle{IEEEtran}
-%\bibliography{VF}
+\bibliography{bib.bib}
+
 \end{document}
 
 

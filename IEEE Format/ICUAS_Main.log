@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.9.26)  20 OCT 2017 16:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.9.26)  20 OCT 2017 17:15
 entering extended mode
 **./ICUAS_Main.tex
 (ICUAS_Main.tex
@@ -1004,68 +1004,25 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks28
 \@floatcapt=\box59
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\caption\subcaption.sty"
-Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption.sty"
-Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption3.sty"
-Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 67.
-\captionmargin=\dimen189
-\captionmargin@=\dimen190
-\captionwidth=\dimen191
-\caption@tempdima=\dimen192
-\caption@indent=\dimen193
-\caption@parindent=\dimen194
-\caption@hangindent=\dimen195
-Package caption Info: Unknown document class (or package),
-(caption)             standard defaults will be used.
-)
-
-Package caption Warning: Unsupported document class (or package) detected,
-(caption)                usage of the caption package is not recommended.
-See the caption package documentation for explanation.
-
-Package caption Info: \@makecaption = \long macro:#1#2->\ifx \@captype \@IEEEta
-blestring \footnotesize {\centering \normalfont \footnotesize #1.\qquad \scshap
-e #2\par }\@IEEEtablecaptionsepspace \else \@IEEEfigurecaptionsepspace \setbox 
-\@tempboxa \hbox {\normalfont \footnotesize {#1.}~~ #2}\ifdim \wd \@tempboxa >\
-hsize \setbox \@tempboxa \hbox {\normalfont \footnotesize {#1.}~~ }\parbox [t]{
-\hsize }{\normalfont \footnotesize \noindent \unhbox \@tempboxa #2}\else \ifCLA
-SSOPTIONconference \hbox to\hsize {\normalfont \footnotesize \box \@tempboxa \h
-fil }\else \hbox to\hsize {\normalfont \footnotesize \box \@tempboxa \hfil }\fi
- \fi \fi .
-\c@ContinuedFloat=\count297
-Package caption Info: float package is loaded.
-Package caption Info: listings package is loaded.
-Package caption Info: longtable package is loaded.
-("C:\Program Files\MiKTeX 2.9\tex\latex\caption\ltcaption.sty"
-Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
-))
-\c@subfigure=\count298
-\c@subtable=\count299
-)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\multicol.sty"
 Package: multicol 2017/04/11 v1.8q multicolumn formatting (FMi)
-\c@tracingmulticols=\count300
+\c@tracingmulticols=\count297
 \mult@box=\box60
-\multicol@leftmargin=\dimen196
-\c@unbalance=\count301
-\c@collectmore=\count302
-\doublecol@number=\count303
-\multicoltolerance=\count304
-\multicolpretolerance=\count305
-\full@width=\dimen197
-\page@free=\dimen198
-\premulticols=\dimen199
-\postmulticols=\dimen256
+\multicol@leftmargin=\dimen189
+\c@unbalance=\count298
+\c@collectmore=\count299
+\doublecol@number=\count300
+\multicoltolerance=\count301
+\multicolpretolerance=\count302
+\full@width=\dimen190
+\page@free=\dimen191
+\premulticols=\dimen192
+\postmulticols=\dimen193
 \multicolsep=\skip76
 \multicolbaselineskip=\skip77
 \partial@page=\box61
 \last@line=\box62
-\maxbalancingoverflow=\dimen257
+\maxbalancingoverflow=\dimen194
 \mult@rightbox=\box63
 \mult@grightbox=\box64
 \mult@gfirstbox=\box65
@@ -1087,14 +1044,14 @@ Package: multicol 2017/04/11 v1.8q multicolumn formatting (FMi)
 \@tempa=\box81
 \@tempa=\box82
 \@tempa=\box83
-\c@columnbadness=\count306
-\c@finalcolumnbadness=\count307
-\last@try=\dimen258
-\multicolovershoot=\dimen259
-\multicolundershoot=\dimen260
+\c@columnbadness=\count303
+\c@finalcolumnbadness=\count304
+\last@try=\dimen195
+\multicolovershoot=\dimen196
+\multicolundershoot=\dimen197
 \mult@nat@firstbox=\box84
 \colbreak@box=\box85
-\mc@col@check@num=\count308
+\mc@col@check@num=\count305
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\dblfloatfix\dblfloatfix.sty"
 Package: dblfloatfix 2012/12/31 v1.0a (JAW)
@@ -1110,8 +1067,8 @@ Package fixltx2e Warning: fixltx2e is not required with releases after 2015
 
 Already applied: [0000/00/00] Old fixltx2e package on input line 53.
 )
-\@dblbotnum=\count309
-\c@dblbotnumber=\count310
+\@dblbotnum=\count306
+\c@dblbotnumber=\count307
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\color.sty"
 Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
 
@@ -1120,34 +1077,92 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
 )
+("C:\Program Files\MiKTeX 2.9\tex\latex\subfigure\subfigure.sty"
+Package: subfigure 2002/07/30 v2.1.4 subfigure package
+\subfigtopskip=\skip78
+\subfigcapskip=\skip79
+\subfigcaptopadj=\dimen198
+\subfigbottomskip=\skip80
+\subfigcapmargin=\dimen199
+\subfiglabelskip=\skip81
+\c@subfigure=\count308
+\c@lofdepth=\count309
+\c@subtable=\count310
+\c@lotdepth=\count311
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+("C:\Program Files\MiKTeX 2.9\tex\latex\subfigure\subfigure.cfg")
+\subfig@top=\skip82
+\subfig@bottom=\skip83
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\subfigmat\subfigmat.sty"
+Package: subfigmat 1999/02/27 v1.0 Subfigure Matrix Package
+\sfm@width=\skip84
+\sfmcolsep=\skip85
+\c@sfm@count=\count312
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
+Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
+\multirow@colwidth=\skip86
+\multirow@cntb=\count313
+\multirow@dima=\skip87
+\bigstrutjot=\dimen256
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\colortbl\colortbl.sty"
+Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
+\everycr=\toks29
+\minrowclearance=\skip88
+)
+LaTeX Info: Redefining \color on input line 709.
+\rownum=\count314
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
 (ICUAS_Main.aux)
 \openout1 = `ICUAS_Main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
  ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count311
-\scratchdimen=\dimen261
+\scratchcounter=\count315
+\scratchdimen=\dimen257
 \scratchbox=\box86
-\nofMPsegments=\count312
-\nofMParguments=\count313
-\everyMPshowfont=\toks29
-\MPscratchCnt=\count314
-\MPscratchDim=\dimen262
-\MPnumerator=\count315
-\makeMPintoPDFobject=\count316
-\everyMPtoPDFconversion=\toks30
+\nofMPsegments=\count316
+\nofMParguments=\count317
+\everyMPshowfont=\toks30
+\MPscratchCnt=\count318
+\MPscratchDim=\dimen258
+\MPnumerator=\count319
+\makeMPintoPDFobject=\count320
+\everyMPtoPDFconversion=\toks31
 ) ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
 Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -1196,7 +1211,7 @@ G,.JBIG2,.JB2,.eps]
 .................................................
 . chemgreek info: "mapping-activated"
 . 
-. Activating mapping `default' on line 18.
+. Activating mapping `default' on line 22.
 .................................................
 Now handling font encoding TS1 ...
 ... processing UTF-8 mapping file for font encoding TS1
@@ -1280,22 +1295,210 @@ Dictionary: translator-basic-dictionary, Language: English
 ("C:\Program Files\MiKTeX 2.9\tex\latex\siunitx\siunitx-abbreviations.cfg"
 File: siunitx-abbreviations.cfg 2017/03/23 v2.7f siunitx: Abbreviated units
 )
-\c@lstlisting=\count317
-Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: End \AtBeginDocument code.
-\c__siunitx_mathsf_int=\count318
-LaTeX Font Info:    Try loading font information for U+msa on input line 18.
+\c@lstlisting=\count321
 
+Redefining \end@dblfloat\ for use with subfigure
+\c__siunitx_mathsf_int=\count322
+LaTeX Font Info:    Try loading font information for U+msa on input line 22.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 18.
+LaTeX Font Info:    Try loading font information for U+msb on input line 22.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-\c__siunitx_mathtt_int=\count319
+\c__siunitx_mathtt_int=\count323
 
+
+LaTeX Warning: Citation `federal_aviation_administration_2017' on page 1 undefi
+ned on input line 57.
+
+
+LaTeX Warning: Citation `Battelle' on page 1 undefined on input line 57.
+
+
+LaTeX Warning: Citation `Blighter' on page 1 undefined on input line 57.
+
+
+LaTeX Warning: Citation `SkyWall' on page 1 undefined on input line 57.
+
+
+LaTeX Warning: Citation `zarchan' on page 1 undefined on input line 77.
+
+
+LaTeX Warning: Citation `shneydor1998missile' on page 1 undefined on input line
+ 77.
+
+
+LaTeX Warning: Citation `yanushevsky2007modern' on page 1 undefined on input li
+ne 77.
+
+
+LaTeX Warning: Citation `isaac' on page 1 undefined on input line 77.
+
+
+LaTeX Warning: Citation `ratnoo2009satisfying' on page 1 undefined on input lin
+e 77.
+
+
+LaTeX Warning: Citation `oza2012impact' on page 1 undefined on input line 77.
+
+
+LaTeX Warning: Citation `park2013optimal' on page 1 undefined on input line 77.
+
+
+
+LaTeX Warning: Citation `kumar2014three' on page 1 undefined on input line 77.
+
+
+LaTeX Warning: Citation `zarchan' on page 1 undefined on input line 90.
+
+[1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
+
+
+]
+<Engagement_Model.PNG, id=14, 609.02531pt x 593.21625pt>
+File: Engagement_Model.PNG Graphic file (type png)
+
+<use Engagement_Model.PNG>
+Package pdftex.def Info: Engagement_Model.PNG used on input line 132.
+(pdftex.def)             Requested size: 170.71652pt x 166.28044pt.
+
+
+LaTeX Warning: Citation `singularitySolution' on page 2 undefined on input line
+ 189.
+
+<x50.png, id=16, 421.575pt x 316.18124pt>
+File: x50.png Graphic file (type png)
+ <use x50.png>
+Package pdftex.def Info: x50.png used on input line 200.
+(pdftex.def)             Requested size: 199.16928pt x 149.37712pt.
+
+<x15.png, id=17, 421.575pt x 316.18124pt>
+File: x15.png Graphic file (type png)
+ <use x15.png>
+Package pdftex.def Info: x15.png used on input line 201.
+(pdftex.def)             Requested size: 199.16928pt x 149.37712pt.
+
+<x50_range_LOSrate.png, id=18, 421.575pt x 316.18124pt>
+File: x50_range_LOSrate.png Graphic file (type png)
+
+<use x50_range_LOSrate.png>
+Package pdftex.def Info: x50_range_LOSrate.png used on input line 202.
+(pdftex.def)             Requested size: 199.16928pt x 149.37712pt.
+
+<x15_range_LOSrate.png, id=19, 421.575pt x 316.18124pt>
+File: x15_range_LOSrate.png Graphic file (type png)
+
+<use x15_range_LOSrate.png>
+Package pdftex.def Info: x15_range_LOSrate.png used on input line 203.
+(pdftex.def)             Requested size: 199.16928pt x 149.37712pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2 <./Engagement_Model.PNG>]
+Overfull \vbox (9.52594pt too high) has occurred while \output is active []
+
+
+<45deguncert.PNG, id=26, 392.21532pt x 411.03563pt>
+File: 45deguncert.PNG Graphic file (type png)
+ <use 45deguncert.PNG>
+Package pdftex.def Info: 45deguncert.PNG used on input line 216.
+(pdftex.def)             Requested size: 113.81102pt x 119.27254pt.
+
+<step1.png, id=27, 421.575pt x 316.18124pt>
+File: step1.png Graphic file (type png)
+ <use step1.png>
+Package pdftex.def Info: step1.png used on input line 247.
+(pdftex.def)             Requested size: 142.26378pt x 106.69933pt.
+
+<step2.png, id=28, 421.575pt x 316.18124pt>
+File: step2.png Graphic file (type png)
+ <use step2.png>
+Package pdftex.def Info: step2.png used on input line 248.
+(pdftex.def)             Requested size: 142.26378pt x 106.69933pt.
+
+<step3.png, id=29, 421.575pt x 316.18124pt>
+File: step3.png Graphic file (type png)
+ <use step3.png>
+Package pdftex.def Info: step3.png used on input line 249.
+(pdftex.def)             Requested size: 142.26378pt x 106.69933pt.
+ [3 <./x50.png (PNG copy)> <./x15.png (PNG copy)> <./x50_range_LOSrate.png (PNG
+ copy)> <./x15_range_LOSrate.png (PNG copy)> <./45deguncert.PNG>]
+<rinit07.png, id=34, 602.25pt x 602.25pt>
+File: rinit07.png Graphic file (type png)
+ <use rinit07.png>
+Package pdftex.def Info: rinit07.png used on input line 278.
+(pdftex.def)             Requested size: 120.52493pt x 120.52138pt.
+
+<rinit08.png, id=35, 602.25pt x 602.25pt>
+File: rinit08.png Graphic file (type png)
+ <use rinit08.png>
+Package pdftex.def Info: rinit08.png used on input line 279.
+(pdftex.def)             Requested size: 120.52493pt x 120.52138pt.
+
+<ptx50.png, id=36, 421.575pt x 316.18124pt>
+File: ptx50.png Graphic file (type png)
+ <use ptx50.png>
+Package pdftex.def Info: ptx50.png used on input line 291.
+(pdftex.def)             Requested size: 113.81102pt x 85.35559pt.
+
+<ptx15.png, id=37, 421.575pt x 316.18124pt>
+File: ptx15.png Graphic file (type png)
+ <use ptx15.png>
+Package pdftex.def Info: ptx15.png used on input line 292.
+(pdftex.def)             Requested size: 113.81102pt x 85.35559pt.
+
+<ptx50_range_LOSrate.png, id=38, 421.575pt x 316.18124pt>
+File: ptx50_range_LOSrate.png Graphic file (type png)
+
+<use ptx50_range_LOSrate.png>
+Package pdftex.def Info: ptx50_range_LOSrate.png used on input line 293.
+(pdftex.def)             Requested size: 113.81102pt x 85.35559pt.
+
+<ptx15_range_LOSrate.png, id=39, 421.575pt x 316.18124pt>
+File: ptx15_range_LOSrate.png Graphic file (type png)
+
+<use ptx15_range_LOSrate.png>
+Package pdftex.def Info: ptx15_range_LOSrate.png used on input line 294.
+(pdftex.def)             Requested size: 113.81102pt x 85.35559pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4 <./step1.png (PNG copy)> <./step2.png (PNG copy)> <./step3.png (PNG copy)> 
+<./rinit07.png (PNG copy)> <./rinit08.png (PNG copy)> <./ptx50.png (PNG copy)> 
+<./ptx15.png (PNG copy)> <./ptx50_range_LOSrate.png (PNG copy)> <./ptx15_range_
+LOSrate.png (PNG copy)>] <FDIR_Rays.png, id=43, 421.575pt x 316.18124pt>
+File: FDIR_Rays.png Graphic file (type png)
+
+<use FDIR_Rays.png>
+Package pdftex.def Info: FDIR_Rays.png used on input line 350.
+(pdftex.def)             Requested size: 227.62204pt x 170.72084pt.
+
+
+LaTeX Warning: Citation `Polar3d' on page 5 undefined on input line 355.
+
+<correctpolar.png, id=44, 624.08156pt x 393.72093pt>
+File: correctpolar.png Graphic file (type png)
+ <use correctpolar.png>
+Package pdftex.def Info: correctpolar.png used on input line 359.
+(pdftex.def)             Requested size: 227.62204pt x 143.6018pt.
+
+(ICUAS_Main.bbl
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 \end{thebibliography}
+                          
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+)
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -1307,26 +1510,33 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
+[5 <./FDIR_Rays.png (PNG copy)> <./correctpolar.png>] (ICUAS_Main.aux)
 
+LaTeX Warning: There were undefined references.
 
-
-] (ICUAS_Main.aux) ) 
+ ) 
 Here is how much of TeX's memory you used:
- 17412 strings out of 493320
- 343119 string characters out of 3138948
- 388675 words of memory out of 3000000
- 20791 multiletter control sequences out of 15000+200000
- 559887 words of font info for 81 fonts, out of 3000000 for 9000
+ 17140 strings out of 493320
+ 333741 string characters out of 3138948
+ 393847 words of memory out of 3000000
+ 20479 multiletter control sequences out of 15000+200000
+ 566656 words of font info for 88 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,7n,40p,10374b,354s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C
+ 41i,15n,38p,10374b,490s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
+10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C
 :/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/M
 iKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/urw/times/utmr8a.pfb>
-Output written on ICUAS_Main.pdf (1 page, 29315 bytes).
+type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/u
+tmri8a.pfb>
+Output written on ICUAS_Main.pdf (5 pages, 489843 bytes).
 PDF statistics:
- 19 PDF objects out of 1000 (max. 8388607)
+ 83 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 86 words of extra memory for PDF output out of 10000 (max. 10000000)
 

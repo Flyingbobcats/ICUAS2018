@@ -1,0 +1,23 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: main.aux
+I couldn't open database file Bibliography.bib.bib
+---line 71 of file main.aux
+ : \bibdata{Bibliography.bib
+ :                          }
+I'm skipping whatever remains of this command
+The style file: aiaa.bst
+I found no database files---while reading file main.aux
+Warning--I didn't find a database entry for "federal_aviation_administration_2017"
+Warning--I didn't find a database entry for "Battelle"
+Warning--I didn't find a database entry for "Blighter"
+Warning--I didn't find a database entry for "SkyWall"
+Warning--I didn't find a database entry for "zarchan"
+Warning--I didn't find a database entry for "shneydor1998missile"
+Warning--I didn't find a database entry for "yanushevsky2007modern"
+Warning--I didn't find a database entry for "isaac"
+Warning--I didn't find a database entry for "ratnoo2009satisfying"
+Warning--I didn't find a database entry for "oza2012impact"
+Warning--I didn't find a database entry for "park2013optimal"
+Warning--I didn't find a database entry for "kumar2014three"
+Warning--I didn't find a database entry for "singularitySolution"
+Warning--I didn't find a database entry for "Polar3d"
+(There were 2 error messages)
