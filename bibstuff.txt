@@ -1,0 +1,45 @@
+@book{yanushevsky2007modern,
+  title={Modern missile guidance},
+  author={Yanushevsky, Rafael},
+  year={2007},
+  publisher={CRC Press}
+}
+
+
+@book{shneydor1998missile,
+  title={Missile guidance and pursuit: kinematics, dynamics and control},
+  author={Shneydor, Neryahu A},
+  year={1998},
+  publisher={Elsevier}
+}
+
+
+
+@ONLINE{Blighter,
+title = {AUDS:Fully Integrated Counter-UAS System},
+year = {Accessed:2017 },
+url = {http://www.blighter.com/images/pdfs/brochures/auds-brochure.pdf}
+
+@ONLINE{Battelle,
+title = {Battelle DroneDefneder},
+year = {Accessed:2017 },
+url = {https://www.battelle.org/government-offerings/national-security/aerospace-systems/counter-UAS-technologies/dronedefender}
+
+@ONLINE{SkyWall,
+title = {WkyWall,
+year = {Accessed:2017 },
+url = {https://openworksengineering.com/skywall}
+
+@ONLINE{SkyWallBrochure,
+title = {WkyWall,
+year = {Accessed:2017 },
+url = {https://openworksengineering.com/images/skywall/SkyWall%20Brochure.pdf}
+
+
+@online{Polar3d,
+  author = {Freitas},
+  title = {3d Polar Plot},
+  year = 2006,
+  url = {https://www.mathworks.com/matlabcentral/fileexchange/7656-3d-polar-plot},
+  urldate = {2017-07-20}
+}
