@@ -1,23 +1,11 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: ICUAS_Main.aux
 The style file: IEEEtran.bst
-I found no \bibdata command---while reading file ICUAS_Main.aux
-Warning--I didn't find a database entry for "federal_aviation_administration_2017"
-Warning--I didn't find a database entry for "Battelle"
-Warning--I didn't find a database entry for "Blighter"
-Warning--I didn't find a database entry for "SkyWall"
-Warning--I didn't find a database entry for "zarchan"
-Warning--I didn't find a database entry for "shneydor1998missile"
-Warning--I didn't find a database entry for "yanushevsky2007modern"
-Warning--I didn't find a database entry for "isaac"
-Warning--I didn't find a database entry for "ratnoo2009satisfying"
-Warning--I didn't find a database entry for "oza2012impact"
-Warning--I didn't find a database entry for "park2013optimal"
-Warning--I didn't find a database entry for "kumar2014three"
-Warning--I didn't find a database entry for "singularitySolution"
-Warning--I didn't find a database entry for "Polar3d"
+Database file #1: bib.bib
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--empty booktitle in isaac
+Warning--empty year in isaac
 
 Done.
-(There was 1 error message)
+(There were 2 warnings)

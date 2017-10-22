@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.9.26)  20 OCT 2017 17:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.10.13)  20 OCT 2017 23:29
 entering extended mode
 **./ICUAS_Main.tex
 (ICUAS_Main.tex
@@ -1309,52 +1309,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 22.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 \c__siunitx_mathtt_int=\count323
-
-
-LaTeX Warning: Citation `federal_aviation_administration_2017' on page 1 undefi
-ned on input line 57.
-
-
-LaTeX Warning: Citation `Battelle' on page 1 undefined on input line 57.
-
-
-LaTeX Warning: Citation `Blighter' on page 1 undefined on input line 57.
-
-
-LaTeX Warning: Citation `SkyWall' on page 1 undefined on input line 57.
-
-
-LaTeX Warning: Citation `zarchan' on page 1 undefined on input line 77.
-
-
-LaTeX Warning: Citation `shneydor1998missile' on page 1 undefined on input line
- 77.
-
-
-LaTeX Warning: Citation `yanushevsky2007modern' on page 1 undefined on input li
-ne 77.
-
-
-LaTeX Warning: Citation `isaac' on page 1 undefined on input line 77.
-
-
-LaTeX Warning: Citation `ratnoo2009satisfying' on page 1 undefined on input lin
-e 77.
-
-
-LaTeX Warning: Citation `oza2012impact' on page 1 undefined on input line 77.
-
-
-LaTeX Warning: Citation `park2013optimal' on page 1 undefined on input line 77.
-
-
-
-LaTeX Warning: Citation `kumar2014three' on page 1 undefined on input line 77.
-
-
-LaTeX Warning: Citation `zarchan' on page 1 undefined on input line 90.
-
-[1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
+ [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
 ]
@@ -1364,18 +1319,13 @@ File: Engagement_Model.PNG Graphic file (type png)
 <use Engagement_Model.PNG>
 Package pdftex.def Info: Engagement_Model.PNG used on input line 132.
 (pdftex.def)             Requested size: 170.71652pt x 166.28044pt.
-
-
-LaTeX Warning: Citation `singularitySolution' on page 2 undefined on input line
- 189.
-
-<x50.png, id=16, 421.575pt x 316.18124pt>
+ <x50.png, id=16, 421.575pt x 316.18124pt>
 File: x50.png Graphic file (type png)
- <use x50.png>
+
+<use x50.png>
 Package pdftex.def Info: x50.png used on input line 200.
 (pdftex.def)             Requested size: 199.16928pt x 149.37712pt.
-
-<x15.png, id=17, 421.575pt x 316.18124pt>
+ <x15.png, id=17, 421.575pt x 316.18124pt>
 File: x15.png Graphic file (type png)
  <use x15.png>
 Package pdftex.def Info: x15.png used on input line 201.
@@ -1475,28 +1425,16 @@ File: FDIR_Rays.png Graphic file (type png)
 <use FDIR_Rays.png>
 Package pdftex.def Info: FDIR_Rays.png used on input line 350.
 (pdftex.def)             Requested size: 227.62204pt x 170.72084pt.
-
-
-LaTeX Warning: Citation `Polar3d' on page 5 undefined on input line 355.
-
-<correctpolar.png, id=44, 624.08156pt x 393.72093pt>
+ <correctpolar.png, id=44, 624.08156pt x 393.72093pt>
 File: correctpolar.png Graphic file (type png)
- <use correctpolar.png>
+
+<use correctpolar.png>
 Package pdftex.def Info: correctpolar.png used on input line 359.
 (pdftex.def)             Requested size: 227.62204pt x 143.6018pt.
-
-(ICUAS_Main.bbl
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.26 \end{thebibliography}
-                          
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+ (ICUAS_Main.bbl [5 <./FDIR_Rays.png (PNG copy)> <./correctpolar.png>]
+Underfull \hbox (badness 2057) in paragraph at lines 69--72
+[]\OT1/ptm/m/n/8 Freitas, ``3d po-lar plot,'' 2006. [On-line]. Avail-
+ []
 
 )
 
@@ -1510,33 +1448,31 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[5 <./FDIR_Rays.png (PNG copy)> <./correctpolar.png>] (ICUAS_Main.aux)
+[6
 
-LaTeX Warning: There were undefined references.
-
- ) 
+] (ICUAS_Main.aux) ) 
 Here is how much of TeX's memory you used:
- 17140 strings out of 493320
- 333741 string characters out of 3138948
- 393847 words of memory out of 3000000
- 20479 multiletter control sequences out of 15000+200000
- 566656 words of font info for 88 fonts, out of 3000000 for 9000
+ 17136 strings out of 493320
+ 333675 string characters out of 3138956
+ 393878 words of memory out of 3000000
+ 20475 multiletter control sequences out of 15000+200000
+ 566685 words of font info for 88 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,15n,38p,10374b,490s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
-10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C
-:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/M
-iKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/u
-tmri8a.pfb>
-Output written on ICUAS_Main.pdf (5 pages, 489843 bytes).
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C
+:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files
+/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/urw/times/utmri8a.pfb>
+Output written on ICUAS_Main.pdf (6 pages, 495985 bytes).
 PDF statistics:
- 83 PDF objects out of 1000 (max. 8388607)
+ 86 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  86 words of extra memory for PDF output out of 10000 (max. 10000000)
 
