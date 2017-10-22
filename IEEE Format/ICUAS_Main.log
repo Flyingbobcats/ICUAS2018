@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.10.13)  20 OCT 2017 23:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.9.26)  22 OCT 2017 17:21
 entering extended mode
 **./ICUAS_Main.tex
 (ICUAS_Main.tex
@@ -1313,40 +1313,37 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 ]
-<Engagement_Model.PNG, id=14, 609.02531pt x 593.21625pt>
+<Engagement_Model.PNG, id=9, 609.02531pt x 593.21625pt>
 File: Engagement_Model.PNG Graphic file (type png)
 
 <use Engagement_Model.PNG>
-Package pdftex.def Info: Engagement_Model.PNG used on input line 132.
+Package pdftex.def Info: Engagement_Model.PNG used on input line 136.
 (pdftex.def)             Requested size: 170.71652pt x 166.28044pt.
- <x50.png, id=16, 421.575pt x 316.18124pt>
+ <x50.png, id=11, 421.575pt x 316.18124pt>
 File: x50.png Graphic file (type png)
 
 <use x50.png>
-Package pdftex.def Info: x50.png used on input line 200.
+Package pdftex.def Info: x50.png used on input line 204.
 (pdftex.def)             Requested size: 199.16928pt x 149.37712pt.
- <x15.png, id=17, 421.575pt x 316.18124pt>
+ <x15.png, id=12, 421.575pt x 316.18124pt>
 File: x15.png Graphic file (type png)
  <use x15.png>
-Package pdftex.def Info: x15.png used on input line 201.
+Package pdftex.def Info: x15.png used on input line 205.
 (pdftex.def)             Requested size: 199.16928pt x 149.37712pt.
 
-<x50_range_LOSrate.png, id=18, 421.575pt x 316.18124pt>
+<x50_range_LOSrate.png, id=13, 421.575pt x 316.18124pt>
 File: x50_range_LOSrate.png Graphic file (type png)
 
 <use x50_range_LOSrate.png>
-Package pdftex.def Info: x50_range_LOSrate.png used on input line 202.
+Package pdftex.def Info: x50_range_LOSrate.png used on input line 206.
 (pdftex.def)             Requested size: 199.16928pt x 149.37712pt.
 
-<x15_range_LOSrate.png, id=19, 421.575pt x 316.18124pt>
+<x15_range_LOSrate.png, id=14, 421.575pt x 316.18124pt>
 File: x15_range_LOSrate.png Graphic file (type png)
 
 <use x15_range_LOSrate.png>
-Package pdftex.def Info: x15_range_LOSrate.png used on input line 203.
+Package pdftex.def Info: x15_range_LOSrate.png used on input line 207.
 (pdftex.def)             Requested size: 199.16928pt x 149.37712pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
  [2 <./Engagement_Model.PNG>]
 Overfull \vbox (9.52594pt too high) has occurred while \output is active []
 
@@ -1354,64 +1351,64 @@ Overfull \vbox (9.52594pt too high) has occurred while \output is active []
 <45deguncert.PNG, id=26, 392.21532pt x 411.03563pt>
 File: 45deguncert.PNG Graphic file (type png)
  <use 45deguncert.PNG>
-Package pdftex.def Info: 45deguncert.PNG used on input line 216.
+Package pdftex.def Info: 45deguncert.PNG used on input line 220.
 (pdftex.def)             Requested size: 113.81102pt x 119.27254pt.
 
 <step1.png, id=27, 421.575pt x 316.18124pt>
 File: step1.png Graphic file (type png)
  <use step1.png>
-Package pdftex.def Info: step1.png used on input line 247.
+Package pdftex.def Info: step1.png used on input line 251.
 (pdftex.def)             Requested size: 142.26378pt x 106.69933pt.
 
 <step2.png, id=28, 421.575pt x 316.18124pt>
 File: step2.png Graphic file (type png)
  <use step2.png>
-Package pdftex.def Info: step2.png used on input line 248.
+Package pdftex.def Info: step2.png used on input line 252.
 (pdftex.def)             Requested size: 142.26378pt x 106.69933pt.
 
 <step3.png, id=29, 421.575pt x 316.18124pt>
 File: step3.png Graphic file (type png)
  <use step3.png>
-Package pdftex.def Info: step3.png used on input line 249.
+Package pdftex.def Info: step3.png used on input line 253.
 (pdftex.def)             Requested size: 142.26378pt x 106.69933pt.
  [3 <./x50.png (PNG copy)> <./x15.png (PNG copy)> <./x50_range_LOSrate.png (PNG
  copy)> <./x15_range_LOSrate.png (PNG copy)> <./45deguncert.PNG>]
 <rinit07.png, id=34, 602.25pt x 602.25pt>
 File: rinit07.png Graphic file (type png)
  <use rinit07.png>
-Package pdftex.def Info: rinit07.png used on input line 278.
+Package pdftex.def Info: rinit07.png used on input line 282.
 (pdftex.def)             Requested size: 120.52493pt x 120.52138pt.
 
 <rinit08.png, id=35, 602.25pt x 602.25pt>
 File: rinit08.png Graphic file (type png)
  <use rinit08.png>
-Package pdftex.def Info: rinit08.png used on input line 279.
+Package pdftex.def Info: rinit08.png used on input line 283.
 (pdftex.def)             Requested size: 120.52493pt x 120.52138pt.
 
 <ptx50.png, id=36, 421.575pt x 316.18124pt>
 File: ptx50.png Graphic file (type png)
  <use ptx50.png>
-Package pdftex.def Info: ptx50.png used on input line 291.
+Package pdftex.def Info: ptx50.png used on input line 295.
 (pdftex.def)             Requested size: 113.81102pt x 85.35559pt.
 
 <ptx15.png, id=37, 421.575pt x 316.18124pt>
 File: ptx15.png Graphic file (type png)
  <use ptx15.png>
-Package pdftex.def Info: ptx15.png used on input line 292.
+Package pdftex.def Info: ptx15.png used on input line 296.
 (pdftex.def)             Requested size: 113.81102pt x 85.35559pt.
 
 <ptx50_range_LOSrate.png, id=38, 421.575pt x 316.18124pt>
 File: ptx50_range_LOSrate.png Graphic file (type png)
 
 <use ptx50_range_LOSrate.png>
-Package pdftex.def Info: ptx50_range_LOSrate.png used on input line 293.
+Package pdftex.def Info: ptx50_range_LOSrate.png used on input line 297.
 (pdftex.def)             Requested size: 113.81102pt x 85.35559pt.
 
 <ptx15_range_LOSrate.png, id=39, 421.575pt x 316.18124pt>
 File: ptx15_range_LOSrate.png Graphic file (type png)
 
 <use ptx15_range_LOSrate.png>
-Package pdftex.def Info: ptx15_range_LOSrate.png used on input line 294.
+Package pdftex.def Info: ptx15_range_LOSrate.png used on input line 298.
 (pdftex.def)             Requested size: 113.81102pt x 85.35559pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1423,16 +1420,16 @@ LOSrate.png (PNG copy)>] <FDIR_Rays.png, id=43, 421.575pt x 316.18124pt>
 File: FDIR_Rays.png Graphic file (type png)
 
 <use FDIR_Rays.png>
-Package pdftex.def Info: FDIR_Rays.png used on input line 350.
+Package pdftex.def Info: FDIR_Rays.png used on input line 354.
 (pdftex.def)             Requested size: 227.62204pt x 170.72084pt.
  <correctpolar.png, id=44, 624.08156pt x 393.72093pt>
 File: correctpolar.png Graphic file (type png)
 
 <use correctpolar.png>
-Package pdftex.def Info: correctpolar.png used on input line 359.
+Package pdftex.def Info: correctpolar.png used on input line 363.
 (pdftex.def)             Requested size: 227.62204pt x 143.6018pt.
  (ICUAS_Main.bbl [5 <./FDIR_Rays.png (PNG copy)> <./correctpolar.png>]
-Underfull \hbox (badness 2057) in paragraph at lines 69--72
+Underfull \hbox (badness 2057) in paragraph at lines 103--106
 []\OT1/ptm/m/n/8 Freitas, ``3d po-lar plot,'' 2006. [On-line]. Avail-
  []
 
@@ -1452,10 +1449,10 @@ Before submitting the final camera ready copy, remember to:
 
 ] (ICUAS_Main.aux) ) 
 Here is how much of TeX's memory you used:
- 17136 strings out of 493320
- 333675 string characters out of 3138956
- 393878 words of memory out of 3000000
- 20475 multiletter control sequences out of 15000+200000
+ 17141 strings out of 493320
+ 333784 string characters out of 3138948
+ 393898 words of memory out of 3000000
+ 20480 multiletter control sequences out of 15000+200000
  566685 words of font info for 88 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,15n,38p,10374b,490s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1470,7 +1467,7 @@ ts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><
 C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files
 /MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts
 /type1/urw/times/utmri8a.pfb>
-Output written on ICUAS_Main.pdf (6 pages, 495985 bytes).
+Output written on ICUAS_Main.pdf (6 pages, 498849 bytes).
 PDF statistics:
  86 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

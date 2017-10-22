@@ -21,6 +21,40 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{teuliere_chasing_2011}
+C.~Teuliere, L.~Eck, and E.~Marchand, ``Chasing a moving target from a flying
+  {UAV},'' in \emph{Intelligent {Robots} and {Systems} ({IROS}), 2011
+  {IEEE}/{RSJ} {International} {Conference} on}.\hskip 1em plus 0.5em minus
+  0.4em\relax IEEE, 2011, pp. 4929--4934.
+
+\bibitem{oliveira_moving_2016}
+\BIBentryALTinterwordspacing
+T.~Oliveira, A.~P. Aguiar, and P.~Encarnacao, ``Moving {Path} {Following} for
+  {Unmanned} {Aerial} {Vehicles} {With} {Applications} to {Single} and
+  {Multiple} {Target} {Tracking} {Problems},'' \emph{IEEE Transactions on
+  Robotics}, vol.~32, no.~5, pp. 1062--1078, Oct. 2016. [Online]. Available:
+  \url{http://ieeexplore.ieee.org/document/7553466/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{ariyur_autonomous_2008}
+K.~B. Ariyur and K.~O. Fregene, ``Autonomous tracking of a ground vehicle by a
+  {UAV},'' in \emph{American {Control} {Conference}, 2008}.\hskip 1em plus
+  0.5em minus 0.4em\relax IEEE, 2008, pp. 669--671.
+
+\bibitem{lee_strategies_2003}
+J.~Lee, R.~Huang, A.~Vaughn, X.~Xiao, J.~K. Hedrick, M.~Zennaro, and
+  R.~Sengupta, ``Strategies of path-planning for a {UAV} to track a ground
+  vehicle,'' in \emph{{AINS} {Conference}}, vol. 2003, 2003.
+
+\bibitem{baek_optimal_2013}
+\BIBentryALTinterwordspacing
+S.~S. Baek, {Hyukseong Kwon}, J.~A. Yoder, and D.~Pack, ``Optimal path planning
+  of a target-following fixed-wing {UAV} using sequential decision
+  processes.''\hskip 1em plus 0.5em minus 0.4em\relax IEEE, Nov. 2013, pp.
+  2955--2962. [Online]. Available:
+  \url{http://ieeexplore.ieee.org/document/6696775/}
+\BIBentrySTDinterwordspacing
+
 \bibitem{zarchan}
 P.~Zarchan and A.~Seebass, \emph{Fundamentals of Tactical Missile
   Guidance}.\hskip 1em plus 0.5em minus 0.4em\relax AIAA Reston, VA, 1994, vol.
