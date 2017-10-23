@@ -364,14 +364,14 @@ The impact of $r_0$ on following distance can be seen in Figure \ref{fig:RinitSe
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=7cm]{rinit08.png}
-	\caption{}
+	\caption{Initial uncertainty ratio $<0.7R_{TI}$ results in increasing following distance as initial range increases}
 	\label{}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=7cm]{rinit07.png}
-	\caption{}
+	\caption{Initial uncertainty ratio $0.7R_{TI}$ results in consistent following distance}
 	\label{}
 \end{figure}
 
@@ -391,12 +391,18 @@ The impact of $r_0$ on following distance can be seen in Figure \ref{fig:RinitSe
 The modified pseudotarget PN guidance was given the same initial conditions as shown in Figure \ref{fig:comp} and the performance compared. Traditional PN guidance performed well during the tail-chase but failed to follow the target and experienced a LOS singularity for a head-on intercept. The PN guidance with a psuedotarget successfully intercepts and follows the target with non-singularity LOS rates, shown in Figure \ref{fig:compwithpt}. Traditional PN out performed the pseudotarget PN guidance for target initial condition $x_{T} = 15$ which demonstrates that a single guidance algorithm may not be suitable for all cases and a decision on which algorithm to use for a given set of initial conditions should be made. Table \ref{my-label} summarizes the performance of the algorithms for the two initial conditions.
 
 
-
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=7cm] {x50}
-	\caption{Failed follow for head on intercept}
-	\label{fig:failedIntercept}
+	\includegraphics[width=7cm] {ptx15}
+	\caption{Initial target position $x_T=15$ ending in tail chase}
+	\label{}
+	\hspace*{0mm}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=7cm] {ptx15_range_LOSrate}
+	\caption{Tail chase with no singularities, and steady state range $R_{TI}=7$}
+	\label{}
 	\hspace*{0mm}
 \end{figure}
 
@@ -404,46 +410,31 @@ The modified pseudotarget PN guidance was given the same initial conditions as s
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=7cm] {ptx50}
-	\caption{}
+	\caption{Initial target position $x_T=50$ ending in tail chase}
 	\label{}
 	\hspace*{0mm}
 \end{figure}
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=7cm] {ptx50_range_LOSrate}
-	\caption{}
-	\label{}
-	\hspace*{0mm}
-\end{figure}
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=7cm] {ptx15}
-	\caption{}
-	\label{}
-	\hspace*{0mm}
-\end{figure}
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=7cm] {ptx15_range_LOSrate}
-	\caption{}
+	\caption{Tail chase with no singularities, and steady state range $R_{TI}\approx0$}
 	\label{}
 	\hspace*{0mm}
 \end{figure}
 
 
-
-\begin{figure}[H]
-	\begin{subfigmatrix}{2}% number of columns
-		\centering
-		\subfigure []{\includegraphics[width=4cm] {ptx50}}
-		\subfigure []{\includegraphics[width=4cm] {ptx15}}
-		\subfigure []{\includegraphics [width=4cm]{ptx50_range_LOSrate}}
-		\subfigure []{\includegraphics [width=4cm]{ptx15_range_LOSrate}}
-		\hspace*{0mm}
-	\end{subfigmatrix}
-	\caption{Simulation Scenarios}
-	\label{fig:compwithpt}
-\end{figure}
+%\begin{figure}[H]
+%	\begin{subfigmatrix}{2}% number of columns
+%		\centering
+%		\subfigure []{\includegraphics[width=4cm] {ptx50}}
+%		\subfigure []{\includegraphics[width=4cm] {ptx15}}
+%		\subfigure []{\includegraphics [width=4cm]{ptx50_range_LOSrate}}
+%		\subfigure []{\includegraphics [width=4cm]{ptx15_range_LOSrate}}
+%		\hspace*{0mm}
+%	\end{subfigmatrix}
+%	\caption{Simulation Scenarios}
+%	\label{fig:compwithpt}
+%\end{figure}
 
 \begin{table}[H]
 	\centering
@@ -495,7 +486,7 @@ The unit-less FDIR ratio in the simulation space is shown in the contour plot Fi
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=8cm]{FDIR_Rays.png}
-	\caption{FDIR Ratio}
+	\caption{Following distance to initial range ratio constant along each initial LOS}
 	\label{fig:Rays}
 \end{figure}
 
@@ -504,7 +495,7 @@ A more useful representation of the models performance for a range of sensor $dr
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=8cm]{correctpolar.png}
-	\caption{FD/IR Rays}
+	\caption{Following distance to initial range ratio for multiple sensor $dr$ confirm predicted near zero following distance for initial LOS $\leq45^\circ$}
 	\label{fig:Polar}
 \end{figure}
 
