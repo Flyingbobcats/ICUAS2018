@@ -18,6 +18,7 @@
 %\hyphenation{op-tical net-works semi-conduc-tor}
 \usepackage{multirow}
 \usepackage[table,xcdraw]{xcolor}
+\usepackage{soul}
 
 \begin{document}
 
@@ -77,12 +78,13 @@ Increased popularity of UAVs by the civilian community has led to the use of UAV
 Tracking a target has been achieved by implementing closed-loop feedback systems, path following guidance, and LOS guidance algorithms. Closed-loop position and velocity control of a multirotor for following a ground target with intermittent and noisy vision data was achieved in \cite{teuliere_chasing_2011}. Following time varying paths and intercepting multiple ground targets was demonstrated in simulation and experimentation in \cite{oliveira_moving_2016}. Path following for target following without modification of a UAVs control system has been seen in \cite{baek_optimal_2013}\cite{ariyur_autonomous_2008},\cite{lee_strategies_2003}. Tracking a moving ground target while maintaining FOV constraints by navigating waypoints with a fixed wing UAV resulted in exaggerated trajectories \cite{ariyur_autonomous_2008}. Multirotors performed better than the fixed wing for the same scenario due to the lack of a forward velocity constraint. Switching between a loiter and sinusoidal mode resulted in less exaggerated trajectories for a maneuvering target for a UAV with a forward velocity constraint \cite{lee_strategies_2003} An optimal path planning strategy consisting of a Markov Decision Process and cost based state reduction showed less tracking error in comparison to lookup tables and heuristic methods, but took considerably longer to provide a solution \cite{baek_optimal_2013}. 
 A modified pure pursuit line of sight (LOS) guidance chased a target with better performance than traditional pure pursuit guidance\cite{yamasaki_advanced_2009}.  
 
-PN guidance has been in use since the 1950's \cite{zarchan} and is used primarily to guide missiles to a target by nulling the line-of-sight (LOS) rate \cite{shneydor1998missile,yanushevsky2007modern}. PN guidance has had continued interest and may have new uses such as cooperative defense strategies \cite{isaac}. The traditional PN guidance law is adequate for commanding a UAV to intercept a target but it would be useful to command the angle in which the UAV would approach the target to prevent unwanted collisions. Ratnoo and Ghose modified the PN guidance gain throughout flight to satisfy a terminal angle constraint \cite{ratnoo2009satisfying}. Scheduling the guidance gain throughout flight does not allow the interceptor to maneuver at its maximum potential throughout flight, limiting the interceptors ability to intercept a dynamic target. Oza and Padhi discuss how time varying guidance gains result in singularities near the end of the flight and provide an impact-angle-constrained suboptimal model predictive static programming guidance \cite{oza2012impact}. Optimal impact-angle-constrained guidance algorithms have been developed for 2D \cite{park2013optimal} and 3D \cite{kumar2014three} engagements. The impact-angle constrained guidance in literature have additional levels of complexity in comparison to traditional PN guidance and may be more complicated to implement. Achieving a terminal angle constraint can be accomplished without modifying the PN guidance gain or implementing an entirely new guidance model by introducing a pseudotarget into the engagement scenario.
+PN guidance has been in use since the 1950's \cite{zarchan} and is used primarily to guide missiles to a target by nulling the line-of-sight (LOS) rate \cite{shneydor1998missile,yanushevsky2007modern}. PN guidance has had continued interest and may have new uses such as cooperative defense strategies \cite{isaac}. The traditional PN guidance law is adequate for commanding a UAV to intercept a target but it would be useful to command the angle in which the UAV would approach the target to prevent unwanted collisions. Ratnoo and Ghose modified the PN guidance gain throughout flight to satisfy a terminal angle constraint \cite{ratnoo2009satisfying}. Scheduling the guidance gain throughout flight does not allow the interceptor to maneuver at its maximum potential throughout flight, limiting the interceptors ability to intercept a dynamic target. Oza and Padhi discuss how time varying guidance gains result in singularities near the end of the flight and provide an impact-angle-constrained suboptimal model predictive static programming guidance \cite{oza2012impact}. Optimal impact-angle-constrained guidance algorithms have been developed for 2D \cite{park2013optimal} and 3D \cite{kumar2014three} engagements. The impact-angle constrained guidance in literature have additional levels of complexity in comparison to traditional PN guidance and may be more complicated to implement. Achieving a terminal angle constraint can be accomplished without modifying the PN guidance gain or implementing an entirely new guidance model by introducing a pseudotarget into the engagement scenario.\hl{ PN guidance was used to reduce the distance between a target and interceptor, referred to as intercept, and to tail chase the target, referred to as follow.}
 
 
 
 \subsection{Methods}
-A guidance model for intercepting and following a target UAV whose position is uncertain was developed. Interceptor and target kinematics are first presented, followed by the traditional PN guidance law. Next an on-board sensor that measures the target's position, which has some uncertainty, is modeled. A state machine pseudotarget is introduced that prevents the intercepting UAV from entering the uncertain area while accomplishing the main goal of intercepting and following the target. Simulations were performed to validate the model and to show that the following distance can be predicted from the initial LOS angle, range, and sensor characteristic.
+A guidance model for intercepting and following a target UAV whose position is uncertain was developed. 
+Interceptor and target kinematics are first presented, followed by the traditional PN guidance law. Next an on-board sensor that measures the target's position, which has some uncertainty, is modeled. A state machine pseudotarget is introduced that prevents the intercepting UAV from entering the uncertain area while accomplishing the main goal of intercepting and following the target. Simulations were performed to validate the model and to show that the following distance can be predicted from the initial LOS angle, range, and sensor characteristic.
 
 \section{Model}
 
@@ -92,7 +94,7 @@ A guidance model for intercepting and following a target UAV whose position is u
 
 
 \subsection{Intercept Model}
-Prior to adding uncertainty and a state machine pseudotarget, the traditional PN guidance algorithm is presented using Zarchan's notation \cite{zarchan}. Consider a two agent engagement scenario shown in Figure \ref{fig:Egagement} consisting of a target \textit{T} and an interceptor \textit{I}. The interceptor is tasked with intercepting the target whose position at any time step $k$ is $\overrightarrow{X}_T(k)$ which is determined from the previous position $\overrightarrow{X}_T(k-1)$, velocity $v_T$, and heading $\beta$ shown in Equation \ref{eq:targetkintwo}. Similarly, the position of the interceptor $\overrightarrow{X}_I(k)$ is updated by Equation \ref{eq:intkintwo} and is a function of previous position $\overrightarrow{X}_I(k-1)$, velocity $V_I$, and heading $\gamma$. Headings for the target and interceptor are measured with respect to the horizontal $x$ axis. $dt$ represents the discrete change in time from one update to the next.
+Prior to adding uncertainty and a state machine pseudotarget, the traditional PN guidance algorithm is presented using Zarchan's notation \cite{zarchan}. Consider a two agent engagement scenario shown in Figure \ref{fig:Egagement} consisting of a target \textit{T} and an interceptor \textit{I}. \hl{East is the positive $X$ axis and up, or altitude, is the positive $Y$ axis.} The interceptor is tasked with intercepting the target whose position at any time step $k$ is $\overrightarrow{X}_T(k)$ which is determined from the previous position $\overrightarrow{X}_T(k-1)$, velocity $v_T$, and heading $\beta$ shown in Equation \ref{eq:targetkintwo}. Similarly, the position of the interceptor $\overrightarrow{X}_I(k)$ is updated by Equation \ref{eq:intkintwo} and is a function of previous position $\overrightarrow{X}_I(k-1)$, velocity $V_I$, and heading $\gamma$. Headings for the target and interceptor are measured with respect to the horizontal $x$ axis. $dt$ represents the discrete change in time from one update to the next.
 
 % \begin{align}
 % \label{eq:targetkin}
@@ -106,14 +108,14 @@ Prior to adding uncertainty and a state machine pseudotarget, the traditional PN
 
 
 \begin{equation}\label{eq:targetkin}
-\overrightarrow{V}_{T}(k) =  V_{T} \begin{bmatrix} cos(\beta(k)) \\ sin(\beta(k)) \end{bmatrix}
+\overrightarrow{V}_{T} =  V_{T} \begin{bmatrix} cos(\beta) \\ sin(\beta) \end{bmatrix}
 \end{equation}
 \begin{equation}\label{eq:targetkintwo}
 \overrightarrow{X}_T(k) =  \overrightarrow{V_T}dt + \overrightarrow{X}_T(k-1) 
 \end{equation}
 
 \begin{equation}\label{eq:intkin}
-\overrightarrow{V}_{I}(k) =  V_{I} \begin{bmatrix} cos(\gamma(k)) \\ sin(\gamma(k)) \end{bmatrix}
+\overrightarrow{V}_{I} =  V_{I} \begin{bmatrix} cos(\gamma) \\ sin(\gamma) \end{bmatrix}
 \end{equation}
 \begin{equation}\label{eq:intkintwo}
 \overrightarrow{X}_I(k) =  \overrightarrow{V_I}dt + \overrightarrow{X}_I(k-1) 
@@ -135,7 +137,7 @@ Prior to adding uncertainty and a state machine pseudotarget, the traditional PN
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=6 cm]{Engagement_Model.PNG}
-	\caption{Engagement Scenario}
+	\caption{\hl{Interceptor and Target Engagement Scenario (x-East, y-Up)}}
 	\label{fig:Egagement}
 \end{figure}
 
