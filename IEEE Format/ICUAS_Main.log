@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.9.26)  23 OCT 2017 14:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.9.26)  23 OCT 2017 16:29
 entering extended mode
 **./ICUAS_Main.tex
 (ICUAS_Main.tex
@@ -1146,32 +1146,7 @@ Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@ttwidth=\dimen257
 \SOUL@uldp=\dimen258
 \SOUL@ulht=\dimen259
-) (ICUAS_Main.aux
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-)
+) (ICUAS_Main.aux)
 \openout1 = `ICUAS_Main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
@@ -1186,7 +1161,8 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
 LaTeX Font Info:    ... okay on input line 25.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
 LaTeX Font Info:    ... okay on input line 25.
- ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+
+("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count315
 \scratchdimen=\dimen260
@@ -1353,149 +1329,110 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: Engagement_Model.PNG Graphic file (type png)
 
 <use Engagement_Model.PNG>
-Package pdftex.def Info: Engagement_Model.PNG used on input line 143.
+Package pdftex.def Info: Engagement_Model.PNG used on input line 149.
 (pdftex.def)             Requested size: 170.71652pt x 166.28044pt.
- <x50.png, id=11, 421.575pt x 316.18124pt>
-File: x50.png Graphic file (type png)
 
-<use x50.png>
-Package pdftex.def Info: x50.png used on input line 210.
+Underfull \vbox (badness 2617) has occurred while \output is active []
+
+ [2 <./Engagement_Model.PNG>] <x50.png, id=22, 421.575pt x 316.18124pt>
+File: x50.png Graphic file (type png)
+ <use x50.png>
+Package pdftex.def Info: x50.png used on input line 216.
 (pdftex.def)             Requested size: 199.16928pt x 149.37712pt.
- [2 <./Engagement_Model.PNG>]
+
 <x50_range_LOSrate.png, id=23, 421.575pt x 316.18124pt>
 File: x50_range_LOSrate.png Graphic file (type png)
 
 <use x50_range_LOSrate.png>
-Package pdftex.def Info: x50_range_LOSrate.png used on input line 219.
+Package pdftex.def Info: x50_range_LOSrate.png used on input line 225.
 (pdftex.def)             Requested size: 199.16928pt x 149.37712pt.
  <x15.png, id=24, 421.575pt x 316.18124pt>
 File: x15.png Graphic file (type png)
 
 <use x15.png>
-Package pdftex.def Info: x15.png used on input line 230.
+Package pdftex.def Info: x15.png used on input line 236.
 (pdftex.def)             Requested size: 199.16928pt x 149.37712pt.
  <x15_range_LOSrate.png, id=25, 421.575pt x 316.18124pt>
 File: x15_range_LOSrate.png Graphic file (type png)
 
 <use x15_range_LOSrate.png>
-Package pdftex.def Info: x15_range_LOSrate.png used on input line 238.
+Package pdftex.def Info: x15_range_LOSrate.png used on input line 244.
 (pdftex.def)             Requested size: 199.16928pt x 149.37712pt.
 
 <45deguncert.PNG, id=26, 392.21532pt x 411.03563pt>
 File: 45deguncert.PNG Graphic file (type png)
  <use 45deguncert.PNG>
-Package pdftex.def Info: 45deguncert.PNG used on input line 280.
+Package pdftex.def Info: 45deguncert.PNG used on input line 286.
 (pdftex.def)             Requested size: 113.81102pt x 119.27254pt.
 
+Underfull \vbox (badness 4872) has occurred while \output is active []
 
-LaTeX Warning: Reference `fig:pseudotarget' on page 3 undefined on input line 2
-94.
-
-
-LaTeX Warning: Reference `fig:pseudotarget' on page 3 undefined on input line 2
-98.
-
-[3 <./x50.png (PNG copy)> <./x50_range_LOSrate.png (PNG copy)> <./x15.png (PNG 
-copy)> <./x15_range_LOSrate.png (PNG copy)> <./45deguncert.PNG>]
-<step1.png, id=31, 421.575pt x 316.18124pt>
+ [3 <./x50.png (PNG copy)> <./x50_range_LOSrate.png (PNG copy)> <./x15.png (PNG
+ copy)> <./x15_range_LOSrate.png (PNG copy)>] <step1.png, id=30, 421.575pt x 31
+6.18124pt>
 File: step1.png Graphic file (type png)
- <use step1.png>
-Package pdftex.def Info: step1.png used on input line 315.
+
+<use step1.png>
+Package pdftex.def Info: step1.png used on input line 321.
 (pdftex.def)             Requested size: 199.16928pt x 149.37712pt.
 
-<step2.png, id=32, 421.575pt x 316.18124pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+<step2.png, id=31, 421.575pt x 316.18124pt>
 File: step2.png Graphic file (type png)
  <use step2.png>
-Package pdftex.def Info: step2.png used on input line 322.
+Package pdftex.def Info: step2.png used on input line 328.
 (pdftex.def)             Requested size: 199.16928pt x 149.37712pt.
 
-<step3.png, id=33, 421.575pt x 316.18124pt>
+<step3.png, id=32, 421.575pt x 316.18124pt>
 File: step3.png Graphic file (type png)
  <use step3.png>
-Package pdftex.def Info: step3.png used on input line 329.
+Package pdftex.def Info: step3.png used on input line 335.
 (pdftex.def)             Requested size: 199.16928pt x 149.37712pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-LaTeX Warning: Reference `fig:RinitSelection' on page 4 undefined on input line
- 362.
-
-
-LaTeX Warning: Reference `fig:RinitSelection' on page 4 undefined on input line
- 362.
-
-
-LaTeX Warning: Reference `fig:RinitSelection' on page 4 undefined on input line
- 362.
-
-<rinit08.png, id=34, 602.25pt x 602.25pt>
-File: rinit08.png Graphic file (type png)
- <use rinit08.png>
-Package pdftex.def Info: rinit08.png used on input line 366.
-(pdftex.def)             Requested size: 199.16928pt x 199.16583pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [4 <./step1.png (PNG copy)> <./step2.png (PNG copy)> <./step3.png (PNG copy)>]
-
-<rinit07.png, id=41, 602.25pt x 602.25pt>
+ [4 <./45deguncert.PNG> <./step1.png (PNG copy)> <./step2.png (PNG copy)> <./st
+ep3.png (PNG copy)>] <rinit07.png, id=40, 602.25pt x 602.25pt>
 File: rinit07.png Graphic file (type png)
  <use rinit07.png>
-Package pdftex.def Info: rinit07.png used on input line 373.
+Package pdftex.def Info: rinit07.png used on input line 375.
 (pdftex.def)             Requested size: 199.16928pt x 199.16583pt.
 
-
-LaTeX Warning: Reference `fig:comp' on page 5 undefined on input line 391.
-
-
-LaTeX Warning: Reference `fig:compwithpt' on page 5 undefined on input line 391
-.
-
-<ptx15.png, id=42, 421.575pt x 316.18124pt>
-File: ptx15.png Graphic file (type png)
- <use ptx15.png>
-Package pdftex.def Info: ptx15.png used on input line 396.
-(pdftex.def)             Requested size: 199.16928pt x 149.37712pt.
-
-<ptx15_range_LOSrate.png, id=43, 421.575pt x 316.18124pt>
-File: ptx15_range_LOSrate.png Graphic file (type png)
-
-<use ptx15_range_LOSrate.png>
-Package pdftex.def Info: ptx15_range_LOSrate.png used on input line 403.
-(pdftex.def)             Requested size: 199.16928pt x 149.37712pt.
+<rinit08.png, id=41, 602.25pt x 602.25pt>
+File: rinit08.png Graphic file (type png)
+ <use rinit08.png>
+Package pdftex.def Info: rinit08.png used on input line 382.
+(pdftex.def)             Requested size: 199.16928pt x 199.16583pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-<ptx50.png, id=44, 421.575pt x 316.18124pt>
+<ptx50.png, id=42, 421.575pt x 316.18124pt>
 File: ptx50.png Graphic file (type png)
  <use ptx50.png>
-Package pdftex.def Info: ptx50.png used on input line 412.
+Package pdftex.def Info: ptx50.png used on input line 406.
 (pdftex.def)             Requested size: 199.16928pt x 149.37712pt.
 
-<ptx50_range_LOSrate.png, id=45, 421.575pt x 316.18124pt>
+<ptx50_range_LOSrate.png, id=43, 421.575pt x 316.18124pt>
 File: ptx50_range_LOSrate.png Graphic file (type png)
 
 <use ptx50_range_LOSrate.png>
-Package pdftex.def Info: ptx50_range_LOSrate.png used on input line 419.
+Package pdftex.def Info: ptx50_range_LOSrate.png used on input line 413.
 (pdftex.def)             Requested size: 199.16928pt x 149.37712pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [5 <./rinit08.png (PNG copy)> <./rinit07.png (PNG copy)> <./ptx15.png (PNG cop
-y)> <./ptx15_range_LOSrate.png (PNG copy)> <./ptx50.png (PNG copy)>]
-<FDIR_Rays.png, id=49, 421.575pt x 316.18124pt>
+ [5 <./rinit07.png (PNG copy)> <./rinit08.png (PNG copy)> <./ptx50.png (PNG cop
+y)>]
+<FDIR_Rays.png, id=47, 421.575pt x 316.18124pt>
 File: FDIR_Rays.png Graphic file (type png)
  <use FDIR_Rays.png>
-Package pdftex.def Info: FDIR_Rays.png used on input line 488.
+Package pdftex.def Info: FDIR_Rays.png used on input line 482.
 (pdftex.def)             Requested size: 227.62204pt x 170.72084pt.
 
-<correctpolar.png, id=50, 624.08156pt x 393.72093pt>
+<correctpolar.png, id=48, 624.08156pt x 393.72093pt>
 File: correctpolar.png Graphic file (type png)
  <use correctpolar.png>
-Package pdftex.def Info: correctpolar.png used on input line 497.
+Package pdftex.def Info: correctpolar.png used on input line 491.
 (pdftex.def)             Requested size: 227.62204pt x 143.6018pt.
 
 [6 <./ptx50_range_LOSrate.png (PNG copy)> <./FDIR_Rays.png (PNG copy)> <./corre
@@ -1518,40 +1455,33 @@ Before submitting the final camera ready copy, remember to:
 
 [7
 
-] (ICUAS_Main.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+] (ICUAS_Main.aux) ) 
 Here is how much of TeX's memory you used:
- 17338 strings out of 493320
- 336234 string characters out of 3138948
- 402429 words of memory out of 3000000
- 20664 multiletter control sequences out of 15000+200000
- 572141 words of font info for 106 fonts, out of 3000000 for 9000
+ 17329 strings out of 493320
+ 336072 string characters out of 3138948
+ 406441 words of memory out of 3000000
+ 20658 multiletter control sequences out of 15000+200000
+ 571034 words of font info for 105 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,15n,38p,10374b,490s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
-10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:
-/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/tim
-es/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C
-:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/M
-iKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ICUAS_Main.pdf (7 pages, 547354 bytes).
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C
+:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8
+.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/ti
+mes/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on ICUAS_Main.pdf (7 pages, 519837 bytes).
 PDF statistics:
- 111 PDF objects out of 1000 (max. 8388607)
+ 109 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 86 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 76 words of extra memory for PDF output out of 10000 (max. 10000000)
 
