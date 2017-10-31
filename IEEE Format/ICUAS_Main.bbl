@@ -104,10 +104,5 @@ P.~T. Kabamba and A.~R. Girard, \emph{Fundamentals of Aerospace navigation and
   guidance}.\hskip 1em plus 0.5em minus 0.4em\relax Cambridge University Press,
   2014.
 
-\bibitem{Polar3d}
-\BIBentryALTinterwordspacing
-Freitas, ``3d polar plot,'' 2006. [Online]. Available:
-  \url{https://www.mathworks.com/matlabcentral/fileexchange/7656-3d-polar-plot}
-\BIBentrySTDinterwordspacing
 
 \end{thebibliography}
