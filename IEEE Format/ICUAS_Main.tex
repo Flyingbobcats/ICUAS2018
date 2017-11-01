@@ -159,42 +159,48 @@ Prior to adding uncertainty and a state machine pseudotarget, the traditional PN
 
 Guidance gains of $N < 3$ are generally referred to as conservative while $N > 5$ are referred to as more aggressive. Conservative gains lead to larger turn radii and make for a less maneuverable interceptor. Higher gains result in a more maneuverable vehicle as long as the commanded heading changes are not beyond the vehicles physical capabilities. \hl{Multi-rotors are capable of making abrupt heading changes in comparison to fixed wing UAVs and it was assumed a guidance gain of $N = 5$ is not beyond a multi-rotors capabilities. The resulting guidance is expected to return sharp turns and straight line optimal paths when used with the Dubins kinematic model.} The LOS rate is provided by Equation \ref{eq:losrate}, which requires the relative position and velocity components $R_{TIx}$,$R_{TIy}$, and $V_{TIx}$, $V_{TIy}$ shown in Equations \ref{eq:pos} and \ref{eq:vel} respectively. 
 
+%\begin{equation} \label{eq:losrate}
+%\dot{\lambda} = \frac{R_{TIx}V_{TIy}-R_{TIy}V_{TIx}}{R_{TI}^2}
+%\end{equation}
+
 \begin{equation} \label{eq:losrate}
-\dot{\lambda} = \frac{R_{TIx}V_{TIy}-R_{TIy}V_{TIx}}{R_{TI}^2}
+\dot{\lambda} = \frac{(x_T - x_I)(V_{Ty}-V_{Iy}) - (y_T - y_I)(V_{Tx}-V_{Ix})}{(x_T - x_I)^2+(y_T - y_I)^2}
 \end{equation}
 
-\begin{equation} \label{eq:pos}
-\begin{split}
-R_{TIx} = x_T-x_I\\
-R_{TIy} = y_T-y_I
-\end{split}
-\end{equation}
 
-\begin{align}
-\label{eq:vel}
-\begin{split}
-V_{TIx} &= V_{Tx}-V_{Ix}
-\\
-V_{TIy} &= V_{Ty}-V_{Iy}
-\\
-\end{split}
-\end{align}
+
+%\begin{equation} \label{eq:pos}
+%\begin{split}
+%R_{TIx} = x_T-x_I\\
+%R_{TIy} = y_T-y_I
+%\end{split}
+%\end{equation}
+%
+%\begin{align}
+%\label{eq:vel}
+%\begin{split}
+%V_{TIx} &= V_{Tx}-V_{Ix}
+%\\
+%V_{TIy} &= V_{Ty}-V_{Iy}
+%\\
+%\end{split}
+%\end{align}
 
 Range is the Euclidean distance between the target and the interceptor, shown in Equation \ref{eq:range}. The LOS angle $\lambda$ is calculated in Equation \ref{eq:LOS}. 
 
 \begin{equation} \label{eq:range}
-R_{TI} =\sqrt[]{R_{TIx}^2+R_{TIy}^2}
+R_{TI} =\sqrt[]{(x_T - x_I)^2+((y_T - y_I)^2}
 \end{equation}
 
 \begin{equation} \label{eq:LOS}
-\lambda = \tan^{-1} \left(\frac{R_{TIy}}{R_{TIx}}\right)
+\lambda = \tan^{-1} \left(\frac{y_T - y_I}{x_T - x_I}\right)
 \end{equation}
 
 The PN guidance law provides a heading rate whereas the model requires a heading. To determine the heading from the heading rate, the second order Runge-Kutta integration technique is used. 
 
-\begin{equation} \label{gamma}
-\frac{d\gamma}{dt} = \dot{\gamma}
-\end{equation}
+%\begin{equation} \label{gamma}
+%\frac{d\gamma}{dt} = \dot{\gamma}
+%\end{equation}
 
 % Now consider the same engagement scenario where an interceptor is tasked with intercepting a target except now the exact position of the target is unknown. The intercepting UAV uses on-board sensors to take measurements of the targets position, where each measurement has some uncertainty associated with it. The measurement can be represented as a point centered in a circle of radius $r$. \hl{The radius $r$ represents the domain where the interceptor can be certain that the target exists given the measurement within $n$ standard deviations.} The goal of the interceptor is not to only intercept the target, but to follow it to gather more information. In order to follow the target, it is important to insure that there is not an in-air collision prior to the appropriate time. To prevent an unintended collision, a modified version of the PN guidance is presented. 
 
@@ -213,7 +219,7 @@ PN guidance is effective at reducing the range between the interceptor and the t
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=7cm] {x50}
+	\includegraphics[width=7cm] {failedHeadOn}
 	\caption{Failed follow for head on intercept}
 	\label{fig:failedIntercept}
 	\hspace*{0mm}
@@ -233,7 +239,7 @@ For a tail-chase scenario the interceptor does not fail to intercept and follow 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=7cm] {x15}
+	\includegraphics[width=7cm] {tailChaseWithLedgend}
 	\caption{Successful follow for tail chase intercept}
 	\label{fig:successfulFollow}
 	\hspace*{0mm}
@@ -289,12 +295,21 @@ Measuring the LOS rate and range would be done by on-board sensors which would h
 \end{figure}
 
 
+%\begin{equation} \label{eq:uncert}
+%r(k) = drR_{TI}+b
+%\end{equation}
+
 \begin{equation} \label{eq:uncert}
-r(k) = drR_{TI}+b
+r = dr \,\sqrt[]{(x_T - x_I)^2+(y_T - y_I)^2}+b
 \end{equation}
 
+%\begin{equation} \label{beq}
+%b = r_0-drR_{TI0}
+%\end{equation}
+
+
 \begin{equation} \label{beq}
-b = r_0-drR_{TI0}
+b = r_0-dr \,\sqrt[]{(x_{T0} - x_{I0})^2+(y_{T0} - y_{I0})^2}
 \end{equation}
 
 The radius of position uncertainty $r$ is a function of the range $R_{TI}$, rate of change $dr$, and the minimum uncertainty radius $b$. A pseudotarget was introduced into the engagement scenario which prevents the interceptor from entering the region of uncertainty while maintaining the requirements of intercepting and following the target. The modified guidance was developed to satisfy a small range of scenarios where the target travels at constant heading, altitude, and speed equal to that of the interceptor. The interceptor avoids the region of uncertainty while following and intercepting the target by pursuing a pseudotarget. 
@@ -318,21 +333,21 @@ The pseudotarget acts as a state machine consisting of $wait$, $intercept$, and 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=7cm]{step1}
+	\includegraphics[width=7cm]{wait}
 	\caption{Uncertainty below the horizon sets pseudotarget state to wait}
 	\label{fig:wait}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=7cm]{step2}
+	\includegraphics[width=7cm]{intercept}
 	\caption{Uncertainty above the horizon sets pseudotarget state to intercept}
 	\label{fig:intercept}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=7cm]{step3}
+	\includegraphics[width=7cm]{follow}
 	\caption{Target estimate $x_T < 0$ sets pseudotarget state to follow}
 	\label{fig:follow}
 \end{figure}
@@ -353,13 +368,27 @@ The pseudotarget acts as a state machine consisting of $wait$, $intercept$, and 
 
 With the target moving at constant altitude and both vehicles sharing the same velocity, it is expected that the following distance will be near zero if the intercept is active when $x_T \geq y_T$. If the intercept occurs when $x_T<y_T$, the interceptor is at a disadvantage and will fail to close the distance. The sensor was modeled so that the uncertainty circle is above the horizon once the target has crossed the $x=y$ line by calculating an appropriate initial uncertainty $r_0$. Referring back to Figure \ref{fig:uncertrad} a target at a LOS of $45^{\circ}$, has an altitude of $R_{TIy}$, and an initial uncertainty radius $r_0$. Determining the initial radius was done geometrically in Equations \ref{minr} and \ref{rtiforminr} and was set to $0.7$ times the initial range.
 
+
+%\sqrt[]{(x_T - x_I)^2+(y_T - y_I)^2}
+
+
+%\begin{equation} \label{minr}
+%\sin(45^\circ) = \frac{R_{TIy}}{R_{TI}}
+%\end{equation}
+
 \begin{equation} \label{minr}
-\sin(45^\circ) = \frac{R_{TIy}}{R_{TI}}
+\sin(45^\circ) = \frac{y_T - y_I}{\sqrt[]{(x_T - x_I)^2+(y_T - y_I)^2}}
 \end{equation}
 
+
+
 \begin{equation} \label{rtiforminr}
-R_{TI}\frac{\sqrt[]{2}}{2} = R_{TIy}
+ (y_T - y_I) = \sqrt[]{(x_T - x_I)^2+(y_T - y_I)^2}\sin(45^\circ)
 \end{equation}
+
+%\begin{equation} \label{rtiforminr}
+%R_{TI}\frac{\sqrt[]{2}}{2} = R_{TIy}
+%\end{equation}
 
 \begin{equation} \label{initialr}
 r_0 = 0.7R_{TI}
@@ -372,14 +401,14 @@ The impact of $r_0$ on following distance can be seen in Figures \ref{fig:rti07}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=7cm]{rinit07.png}
+	\includegraphics[width=7cm]{Rinit07new.png}
 	\caption{Initial uncertainty ratio $0.7R_{TI}$ results in consistent following distance}
 	\label{fig:rti07}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=7cm]{rinit08.png}
+	\includegraphics[width=7cm]{rinit08new.png}
 	\caption{Initial uncertainty ratio $>0.7R_{TI}$ results in increasing following distance as initial range increases}
 	\label{fig:rti08}
 \end{figure}
@@ -403,7 +432,7 @@ The modified pseudotarget PN guidance was given the same initial conditions as s
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=7cm] {ptx50}
+	\includegraphics[width=7cm] {fixedSingularityWithLedgend}
 	\caption{Initial target position $x_T=50$ ending in tail chase}
 	\label{fig:modifiedPNsuccess}
 	\hspace*{0mm}
