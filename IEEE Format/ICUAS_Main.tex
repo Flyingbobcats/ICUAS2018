@@ -9,6 +9,7 @@
 \usepackage{longtable,tabularx}
 \usepackage{listings}
 \usepackage{float}
+
 %\usepackage{subcaption}
 \usepackage{multicol}
 \usepackage{dblfloatfix}
@@ -20,6 +21,10 @@
 \usepackage[table,xcdraw]{xcolor}
 \usepackage{soul}
 
+\floatstyle{boxed}
+\restylefloat{figure}
+
+
 
 
 \begin{document}
@@ -30,13 +35,13 @@
 \IEEEauthorblockA{Department of Mechanical Engineering\\
 Ohio University\\
 Athens, Ohio 45701\\
-Email: gc117711@ohio.edu, wilhelj@ohio.edu}
+Email: gc117711@ohio.edu, jwilhel@ohio.edu}
 \and
 \IEEEauthorblockN{David Casbeer, David Grymin, Isaac Weintraub}
 \IEEEauthorblockA{AFRL RQQA\\
 AFRL\\
-Beavercreek, Ohio ZIP\\
-Email: }
+Wright-Patterson Air Force Base, Ohio 45433\\
+Email: david.casbeer@us.af.mil, grymin, isaacweintraub.1@us.af.mil}
 }
 
 \maketitle
@@ -173,11 +178,18 @@ Prior to investigating position uncertainty and a state machine pseudotarget, th
 \dot{\gamma} = N\dot{\lambda}
 \end{equation}
 
-Guidance gains of $N < 3$ are generally referred to as conservative while $N > 5$ are referred to as more aggressive \cite{zarchan}. Conservative gains lead to larger turn radii and make for a less maneuverable interceptor. Higher gains result in a more maneuverable vehicle as long as the commanded heading changes are not beyond the vehicles physical capabilities. \hl{Multi-rotors are capable of making abrupt heading changes in comparison to fixed wing UAVs and it was assumed a guidance gain of $N = 5$ is not beyond multi-rotor capability. The resulting guidance is expected to return sharp turns and straight line optimal paths when used with the Dubins kinematic model.} The LOS rate is provided by Equation \ref{eq:losrate}, which requires the relative position and velocity components $R_{TIx}$,$R_{TIy}$, and $V_{TIx}$, $V_{TIy}$ shown in Equations \ref{eq:pos} and \ref{eq:vel} respectively. 
+Guidance gains of $N < 3$ are generally referred to as conservative while $N > 5$ are referred to as more aggressive \cite{zarchan}. Conservative gains lead to larger turn radii and make for a less maneuverable interceptor. Higher gains result in a more maneuverable vehicle as long as the commanded heading changes are not beyond the vehicles physical capabilities. \hl{Multi-rotors are capable of making abrupt heading changes in comparison to fixed wing UAVs and it was assumed a guidance gain of $N = 5$ is not beyond multi-rotor capability. The resulting guidance is expected to return sharp turns and straight line optimal paths when used with the Dubins kinematic model.} The LOS angle and rate are calculated in Equations \ref{eq:LOS} and \ref{eq:losrate} respectively. 
+
+
 
 %\begin{equation} \label{eq:losrate}
 %\dot{\lambda} = \frac{R_{TIx}V_{TIy}-R_{TIy}V_{TIx}}{R_{TI}^2}
 %\end{equation}
+
+
+\begin{equation} \label{eq:LOS}
+\lambda = \tan^{-1} \left(\frac{y_T - y_I}{x_T - x_I}\right)
+\end{equation} 
 
 \begin{equation} \label{eq:losrate}
 \dot{\lambda} = \frac{(x_T - x_I)(V_{Ty}-V_{Iy}) - (y_T - y_I)(V_{Tx}-V_{Ix})}{(x_T - x_I)^2+(y_T - y_I)^2}
@@ -202,15 +214,13 @@ Guidance gains of $N < 3$ are generally referred to as conservative while $N > 5
 %\end{split}
 %\end{align}
 
-Range is the Euclidean distance between the target and the interceptor, shown in Equation \ref{eq:range}. The LOS angle $\lambda$ is calculated in Equation \ref{eq:LOS}. 
+Range is the Euclidean distance between the target and the interceptor, shown in Equation \ref{eq:range}. 
 
 \begin{equation} \label{eq:range}
 R_{TI} =\sqrt[]{(x_T - x_I)^2+((y_T - y_I)^2}
 \end{equation}
 
-\begin{equation} \label{eq:LOS}
-\lambda = \tan^{-1} \left(\frac{y_T - y_I}{x_T - x_I}\right)
-\end{equation}
+
 
 The PN guidance law provides a heading rate whereas the model requires a heading. To determine the heading from the heading rate, the second order Runge-Kutta integration technique was used. 
 
@@ -445,17 +455,9 @@ The impact of $r_0$ on following distance can be seen in Figures \ref{fig:rti07}
 The modified pseudotarget PN guidance was given the same initial conditions as shown in Figure \ref{fig:failedIntercept} and the performance compared. Traditional PN guidance performed well during the tail-chase but failed to follow the target and experienced a LOS singularity for a head-on intercept. The PN guidance with a psuedotarget successfully intercepts and follows the target, Figure \ref{fig:modifiedPNsuccess}, with non-singularity LOS rates, shown in Figure \ref{fig:modifiedPNsuccessLOS}. Traditional PN out performed the pseudotarget PN guidance for target initial condition $x_{T} = 15$ which demonstrates that a single guidance algorithm may not be suitable for all cases and a decision on which algorithm to use for a given set of initial conditions should be made. Table \ref{my-label} summarizes the performance of the algorithms for the two initial conditions.
 
 
-
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=7cm] {fixedSingularityWithLedgend}
-	\caption{Initial target position $x_T=50$ ending in tail chase}
-	\label{fig:modifiedPNsuccess}
-	\hspace*{0mm}
-\end{figure}
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=7cm] {ptx50_range_LOSrate}
+	\includegraphics[width=7cm] {fixedSingularity}
 	\caption{Tail chase with no singularities, and steady state range $R_{TI}\approx0$}
 	\label{fig:modifiedPNsuccessLOS}
 	\hspace*{0mm}
