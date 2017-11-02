@@ -48,7 +48,7 @@ Email: david.casbeer@us.af.mil, grymin, isaacweintraub.1@us.af.mil}
 
 
 \begin{abstract}
-	Combatant small Unmanned Aerial Vehicles (CUAVs) can easily enter restricted airspace and may be mitigated by counter UAVs. Intercepting and following combatant UAVs in restricted airspace could be achieved with multi-rotor UAVs. A pseudotarget based proportional navigation (PN) guidance algorithm that guides a UAV to intercept and follow a combatant UAV using highly uncertain sensor position information was developed. Simulations were performed to validate the model and develop a ratio of following distance to initial range. Near zero following distance was achieved for a finite range of initial line-of-sight angles.
+	Combatant small Unmanned Aerial Vehicles (CUAVs) can easily enter restricted airspace and may be mitigated by counter UAVs. Intercepting and following combatant UAVs in restricted airspace could be achieved with multi-rotor UAVs. A pseudotarget based proportional navigation (PN) guidance algorithm that guides a UAV to intercept and follow a combatant UAV using highly uncertain sensor position information was investigated. Simulations were performed to validate the model and develop a ratio of following distance to initial range. Near zero following distance was achieved for a finite range of initial line-of-sight angles.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -69,7 +69,7 @@ Email: david.casbeer@us.af.mil, grymin, isaacweintraub.1@us.af.mil}
 
 % Need to insert problem statement into the first few sentences
 
-Multi-rotor sUAS may be guided to passively track and follow another sUAS. Direction and ranging sensor technology for sUAS currently only provides a highly uncertain position estimation. Proportional navigation guidance has been used by missiles to track targets. PN guidance may be useful for guiding a mutli-rotor sUAS to intercept and follow other sUAS. Intercept and following has applications in autonomous flight formation, swarming, and loyal wingman scenarios as well. The objective was to use a modified PN guidance with uncertain position information to reduce distance to another sUAS.
+Multi-rotor sUAS may be guided to passively track and follow another small Unmanned Aerial Systems (sUAS). Direction and ranging sensor technology for sUAS currently only provides a highly uncertain position estimation. Proportional navigation guidance has been used by missiles to track targets. PN guidance may be useful for guiding a mutli-rotor sUAS to intercept and follow other sUAS. Intercept and following has applications in autonomous flight formation, swarming, and loyal wingman scenarios as well. The objective was to use a modified PN guidance with uncertain position information to reduce distance to another sUAS.
 %Increased popularity of UAVs by the civilian community has led to the use of UAVs for malicious purposes. Airspace restrictions on when and where UAVs are given clearance to fly have been imposed by the FAA. When restricted airspace is violated, jamming and projectile countermeasures can be deployed. Jamming systems rely on autopilot fail-safes to land the UAV when GPS or RF signals are compromised. Effective distance for jamming systems range from 400 meters to 10 kilometers. Projectile systems that launch a net and parachute at a target UAV have a shorter range of 100 meters. A counter UAV system that supplements or replaces current costly and limited range countermeasures is in need. Intercepting and following target UAV can be achieved with a multi-rotor UAV guided by proportional navigation (PN) guidance.
 
 \subsection{Literature}
@@ -93,9 +93,7 @@ Multi-rotor sUAS may be guided to passively track and follow another sUAS. Direc
 Tracking a target has been achieved by implementing closed-loop feedback systems, path following guidance, and line-of-sight (LOS) guidance algorithms. Closed-loop position and velocity control of a multi-rotor for following a ground target with intermittent and noisy vision data was achieved in \cite{teuliere_chasing_2011}. Following time varying paths and intercepting multiple ground targets was demonstrated in \cite{oliveira_moving_2016} by introducing a heading control law. Modifying an autopilot's low level control may be difficult and may require tuning.
 Target tracking without modification of a UAVs control system has been accomplished by framing target tracking as a path planning problem. A waypoint generation technique was developed in \cite{ariyur_autonomous_2008} that satisfied fixed wing forward velocity constraints while maintaining the target in the field-of-view. Sub-optimal placement of waypoints resulted in exaggerated trajectories for fixed wings when tracking an accelerating target. Multi-rotors tracked the target with less error when navigating the waypoints for the same scenario due to the multi-rotors ability to hover. Less exagerated trajectories for tracking a maneuvering target was accomplished for a fixed wing UAV in \cite{lee_strategies_2003}. An optimal path planning strategy consisting of a Markov Decision Process and cost based state reduction showed less tracking error in comparison to lookup tables and heuristic methods, but took considerably longer to provide a solution \cite{baek_optimal_2013}. A compromise between path planning and a target tracking control system was found in \cite{yamasaki_advanced_2009}, where a modified pure pursuit line of sight (LOS) guidance chased a target with less tracking error than traditional pure pursuit guidance\cite{yamasaki_advanced_2009}. 
 
-Proportional navigation (PN) has been in use since the 1950's \cite{zarchan} and is used primarily to guide missiles to a target by nulling the line-of-sight (LOS) rate \cite{shneydor1998missile,yanushevsky2007modern}. PN guidance has had continued interest and may have new uses such as cooperative defense strategies \cite{isaac}. The traditional PN guidance law is adequate for commanding a UAV to intercept a target but it would be useful to command the angle in which the UAV would approach the target to prevent unwanted collisions. Ratnoo and Ghose modified the PN guidance gain throughout flight to satisfy a terminal angle constraint \cite{ratnoo2009satisfying}. Oza and Padhi discuss how time varying guidance gains result in singularities near the end of the flight and provide an impact-angle-constrained suboptimal model predictive static programming guidance \cite{oza2012impact}. Optimal impact-angle-constrained guidance algorithms have been developed for 2D \cite{park2013optimal} and 3D \cite{kumar2014three} engagements. The impact-angle constrained guidance in literature have additional levels of complexity in comparison to traditional PN guidance and may be more complicated to implement. Achieving a terminal angle constraint can be accomplished without modifying the PN guidance gain or implementing an entirely new guidance model by introducing a pseudotarget into the engagement scenario.\hl{ The objective was to use a modified PN guidance with uncertain position information to reduce the distance to target, referred to as intercept, and to tail chase the target, referred to as follow.}
-
-%\hl{ PN guidance was used to reduce the distance between a target and interceptor, referred to as intercept, and to tail chase the target, referred to as follow.}
+Proportional navigation (PN) has been in use since the 1950's \cite{zarchan} and is used primarily to guide missiles to a target by nulling the line-of-sight (LOS) rate \cite{shneydor1998missile,yanushevsky2007modern}. PN guidance has had continued interest and may have new uses such as cooperative defense strategies \cite{isaac}. The traditional PN guidance law is adequate for commanding a UAV to intercept a target but it would be useful to command the angle in which the UAV would approach the target to prevent unwanted collisions. Ratnoo and Ghose modified the PN guidance gain throughout flight to satisfy a terminal angle constraint \cite{ratnoo2009satisfying}. Oza and Padhi discuss how time varying guidance gains result in singularities near the end of the flight and provide an impact-angle-constrained suboptimal model predictive static programming guidance \cite{oza2012impact}. Optimal impact-angle-constrained guidance algorithms have been developed for 2D \cite{park2013optimal} and 3D \cite{kumar2014three} engagements. The impact-angle constrained guidance in literature have additional levels of complexity in comparison to traditional PN guidance and may be more complicated to implement. Achieving a terminal angle constraint can be accomplished without modifying the PN guidance gain or implementing an entirely new guidance model by introducing a pseudotarget into the engagement scenario.
 
 
 
@@ -110,62 +108,20 @@ Interceptor and target kinematics are first presented, followed by the tradition
 
 
 \subsection{Intercept Model}
-Prior to investigating position uncertainty and a state machine pseudotarget, the traditional PN guidance algorithm is presented using Zarchan's notation \cite{zarchan}. Consider a two agent engagement scenario shown in Figure \ref{fig:Egagement} consisting of a target \textit{T} and an interceptor \textit{I}. \hl{East is the positive $X$ axis and up, or altitude, is the positive $Y$ axis.} The interceptor is tasked with intercepting the target whose position at any time is $\overrightarrow{X}_T=[x_T y_T]^{T}$ which is determined from the previous position $\overrightarrow{X}_T'$, velocity $v_T$, and heading $\beta$ shown in Equation \ref{eq:targPos}. Position of the interceptor $\overrightarrow{X}_I$ is updated identically to the target with velocity $v_I$ and heading $\gamma$.  Headings are measured with respect to the horizontal $x$ axis. $dt$ represents the discrete change in time from one update to the next.
 
-% \begin{align}
-% \label{eq:targetkin}
-% \begin{split}
-% (x_T)_t &= (x_T)_{t-1}+V_T\cos(\beta)dt 
-% \\
-% (y_T)_t &= (y_T)_{t-1}+V_T\sin(\beta)dt
-% \\
-% \end{split}
-% \end{align}
+An interceptor and target were modeled as Dubins vehicles in $\mathbb{R}^2$ with $x$ representing East and $y$ altitude, shown in Figure \ref{fig:Egagement}. UAV position $[x \quad y]^T$ was determined from the integral of the velocity $[\dot{x} \quad \dot{y}]^T$ shown in Equation \ref{eq:dubinUAV}. The heading of both sUAS is the input $u$ and is bounded on the interval $[0,2\pi)$. The non-maneuvering target heading $\beta$ was a constant while interceptor heading $\gamma$ was determined by PN guidance. The line-of-sight angle $\lambda$ is the angle between the interceptor and target with respect to the positive $x$ axis. 
 
-
-\begin{equation}\label{eq:targPos}
-\overrightarrow{X}_T = \overrightarrow{X}_T' + \overrightarrow{V}_Tdt
+\begin{equation} \label{eq:dubinUAV}
+\begin{split}
+\dot{x} = v\cos(\phi)\\
+\dot{y} = v\sin(\phi)
+\end{split}
 \end{equation}
 
-\begin{equation}\label{eq:targVel}
-\overrightarrow{V}_{T} =  v_{T} \begin{bmatrix} cos(\beta) \\ sin(\beta) \end{bmatrix}
+\begin{equation}\label{eq:dubinsVel}
+\phi = u
 \end{equation}
-
-
-%\begin{equation}\label{eq:intkin}
-%\overrightarrow{V}_{I} =  V_{I} \begin{bmatrix} cos(\gamma) \\ sin(\gamma) \end{bmatrix}
-%\end{equation}
-%\begin{equation}\label{eq:intkintwo}
-%\overrightarrow{X}_I(k) =  \overrightarrow{V_I}dt + \overrightarrow{X}_I(k-1) 
-%\end{equation}
-%
-%
-%\begin{equation}\label{eq:targetkin}
-%\overrightarrow{V}_{T} =  V_{T} \begin{bmatrix} cos(\beta) \\ sin(\beta) \end{bmatrix}
-%\end{equation}
-%\begin{equation}\label{eq:targetkintwo}
-%\overrightarrow{X}_T(k) =  \overrightarrow{V_T}dt + \overrightarrow{X}_T(k-1) 
-%\end{equation}
-%
-%\begin{equation}\label{eq:intkin}
-%\overrightarrow{V}_{I} =  V_{I} \begin{bmatrix} cos(\gamma) \\ sin(\gamma) \end{bmatrix}
-%\end{equation}
-%\begin{equation}\label{eq:intkintwo}
-%\overrightarrow{X}_I(k) =  \overrightarrow{V_I}dt + \overrightarrow{X}_I(k-1) 
-%\end{equation}
-
-
-
-
-% \begin{align}
-% \label{eq:intkin}
-% \begin{split}
-% (x_I)_t &= (x_I)_{t-1}+V_I\cos(\gamma)dt 
-% \\
-% (y_I)_t &= (y_I)_{t-1}+V_I\sin(\gamma)dt
-% \\
-% \end{split}
-% \end{align}
+ 
 
 \begin{figure}[H]
 	\centering
@@ -174,13 +130,17 @@ Prior to investigating position uncertainty and a state machine pseudotarget, th
 	\label{fig:Egagement}
 \end{figure}
 
- Heading changes are determined by the PN guidance algorithm operating on the principle of nulling the LOS rate $\dot{\lambda}$ by issuing heading change commands proportional to the LOS rate. For a non zero LOS rate, a heading rate command $\dot{\gamma}$ is issued by multiplying the LOS rate by the fixed guidance gain $N$.
+The PN guidance law operates on the principle of modifying heading so that the line-of-sight rate (LOS) $\dot{\lambda}$ is null. The input rate $\dot{u}$ is proportional to the LOS rate and a fixed guidance gain $N$. Second order Runge-Kutta integration was used to determine $u$ from Equation \ref{eq:PNlaw}.
 
 \begin{equation} \label{eq:PNlaw}
-\dot{\gamma} = N\dot{\lambda}
+\dot{u} = N\dot{\lambda}
 \end{equation}
 
-Guidance gains of $N < 3$ are generally referred to as conservative while $N > 5$ are referred to as more aggressive \cite{zarchan}. Conservative gains lead to larger turn radii and make for a less maneuverable interceptor. Higher gains result in a more maneuverable vehicle as long as the commanded heading changes are not beyond the vehicles physical capabilities. \hl{Multi-rotors are capable of making abrupt heading changes in comparison to fixed wing UAVs and it was assumed a guidance gain of $N = 5$ is not beyond multi-rotor capability. The resulting guidance is expected to return sharp turns and straight line optimal paths when used with the Dubins kinematic model.} The LOS angle and rate are calculated in Equations \ref{eq:LOS} and \ref{eq:losrate} respectively. 
+
+Guidance gains of $N < 3$ are generally referred to as conservative while $N > 5$ are referred to as more aggressive \cite{zarchan}. Conservative gains result in larger turn radii whereas larger gains result in smaller turn radii. \hl{Multi-rotors are capable of making abrupt heading changes in comparison to fixed wing UAVs and it was assumed a guidance gain of $N = 5$ is not beyond multi-rotor capability. The resulting guidance is expected to return sharp turns and straight line optimal paths when used with the Dubins kinematic model.} The LOS angle and rate are calculated in Equations \ref{eq:LOS} and \ref{eq:losrate} respectively. 
+ 
+ 
+
 
 
 
@@ -224,7 +184,7 @@ R_{TI} =\sqrt[]{(x_T - x_I)^2+((y_T - y_I)^2}
 
 
 
-The PN guidance law provides a heading rate whereas the model requires a heading. To determine the heading from the heading rate, the second order Runge-Kutta integration technique was used. 
+%The PN guidance law provides a heading rate whereas the model requires a heading. To determine the heading from the heading rate, the second order Runge-Kutta integration technique was used. 
 
 %\begin{equation} \label{gamma}
 %\frac{d\gamma}{dt} = \dot{\gamma}
@@ -237,8 +197,7 @@ The PN guidance law provides a heading rate whereas the model requires a heading
 % The interceptor is tasked with following a pseudo-target that is placed strategically to promote target interception and following while preventing an in air collision of the vehicles. The pseudo-target is first placed at $(0,0)$ and remains in place until the minimum point on the uncertainty bubble is above the horizon. Once the minimum point of the uncertainty bubble is above the horizon, the pseudo-target is placed at $(0, r_{ymin})$ as shown in \ref{fig:pseudotarget}a. The interceptor follows the pseudo-target placed at the minimum point of the uncertainty bubble present at $x = 0$ in \ref{fig:pseudotarget}b and \ref{fig:pseudotarget}c. Once the uncertainty bubble has passed the $y$ plane, the pseudo-target is placed on top of the targets estimated position, forcing the interceptor to enter a follow pattern shown in \ref{fig:pseudotarget}d. 
 
 
-PN guidance is effective at reducing the range between the interceptor and the target, however at or near the point of interception a singularity in the LOS rate will occur for head-on interception. The cause of the singularity is due to the near zero range and the change of sign in relative velocities. Solutions around the singularity can be obtained for a linearized proportional navigation \cite{singularitySolution} but are not of a major concern for traditional missile systems because the mission is complete when the range is near zero. For an intercepting UAV with the intention of following the target, the singularity could call for control efforts beyond the saturation point. Additionally, after the singularity occurs there remains a possibility for the nulled LOS condition to be met even if the interceptor and target are heading away from each other. \hl{Figure} \ref{fig:failedIntercept} \hl{demonstrates how for head-on intercepts the nulled LOS rate can be satisfied and the interceptor flys away from the target. Figure} \ref{fig:failedInterceptLOS} \hl{shows how a singularity can occur near zero range.}
-
+PN guidance is effective at reducing the range between the interceptor and the target, however when range is near zero a singularity in the LOS rate will occur for head-on intercept, shown in Figure \ref{fig:failedIntercept} and \ref{fig:failedInterceptLOS}. The singularity is caused by a combination of relative velocity sign change and division by zero. Solutions around the singularity can be obtained for a linearized proportional navigation \cite{singularitySolution} but are not a concern for traditional missile systems because the mission is complete when the range is near zero. For an intercepting UAV with the intention of following the target, a singularity  calls for control efforts beyond the saturation point. After the singularity occurs there remains a possibility for the nulled LOS condition to be met even if the interceptor and target are heading away from each other. \hl{Figure} \ref{fig:failedIntercept} \hl{demonstrates how for head-on intercepts the nulled LOS rate can be satisfied and the interceptor flys away from the target. Figure} \ref{fig:failedInterceptLOS} \hl{shows how a singularity can occur near zero range.}
 
 
 % Demonstrating the effectiveness of the PN guidance algorithm at reducing the range between a target and an interceptor, 
