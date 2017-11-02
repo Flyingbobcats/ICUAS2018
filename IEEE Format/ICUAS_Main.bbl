@@ -36,15 +36,6 @@ T.~Oliveira, A.~P. Aguiar, and P.~Encarnacao, ``Moving {Path} {Following} for
   \url{http://ieeexplore.ieee.org/document/7553466/}
 \BIBentrySTDinterwordspacing
 
-\bibitem{baek_optimal_2013}
-\BIBentryALTinterwordspacing
-S.~S. Baek, {Hyukseong Kwon}, J.~A. Yoder, and D.~Pack, ``Optimal path planning
-  of a target-following fixed-wing {UAV} using sequential decision
-  processes.''\hskip 1em plus 0.5em minus 0.4em\relax IEEE, Nov. 2013, pp.
-  2955--2962. [Online]. Available:
-  \url{http://ieeexplore.ieee.org/document/6696775/}
-\BIBentrySTDinterwordspacing
-
 \bibitem{ariyur_autonomous_2008}
 K.~B. Ariyur and K.~O. Fregene, ``Autonomous tracking of a ground vehicle by a
   {UAV},'' in \emph{American {Control} {Conference}, 2008}.\hskip 1em plus
@@ -54,6 +45,15 @@ K.~B. Ariyur and K.~O. Fregene, ``Autonomous tracking of a ground vehicle by a
 J.~Lee, R.~Huang, A.~Vaughn, X.~Xiao, J.~K. Hedrick, M.~Zennaro, and
   R.~Sengupta, ``Strategies of path-planning for a {UAV} to track a ground
   vehicle,'' in \emph{{AINS} {Conference}}, vol. 2003, 2003.
+
+\bibitem{baek_optimal_2013}
+\BIBentryALTinterwordspacing
+S.~S. Baek, {Hyukseong Kwon}, J.~A. Yoder, and D.~Pack, ``Optimal path planning
+  of a target-following fixed-wing {UAV} using sequential decision
+  processes.''\hskip 1em plus 0.5em minus 0.4em\relax IEEE, Nov. 2013, pp.
+  2955--2962. [Online]. Available:
+  \url{http://ieeexplore.ieee.org/document/6696775/}
+\BIBentrySTDinterwordspacing
 
 \bibitem{yamasaki_advanced_2009}
 T.~Yamasaki, K.~Enomoto, H.~Takano, Y.~Baba, and S.~N. Balakrishnan, ``Advanced
@@ -103,6 +103,5 @@ S.~R. Kumar and D.~Ghose, ``Three dimensional impact angle constrained guidance
 P.~T. Kabamba and A.~R. Girard, \emph{Fundamentals of Aerospace navigation and
   guidance}.\hskip 1em plus 0.5em minus 0.4em\relax Cambridge University Press,
   2014.
-
 
 \end{thebibliography}

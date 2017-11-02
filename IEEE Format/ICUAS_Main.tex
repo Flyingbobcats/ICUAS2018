@@ -68,7 +68,9 @@ Email: david.casbeer@us.af.mil, grymin, isaacweintraub.1@us.af.mil}
 % In event that restrictions are ignored jamming or projectile countermeasures deployed
 
 % Need to insert problem statement into the first few sentences
-Increased popularity of UAVs by the civilian community has led to the use of UAVs for malicious purposes. Airspace restrictions on when and where UAVs are given clearance to fly have been imposed by the FAA. When restricted airspace is violated, jamming and projectile countermeasures can be deployed. Jamming systems rely on autopilot fail-safes to land the UAV when GPS or RF signals are compromised. Effective distance for jamming systems range from 400 meters to 10 kilometers. Projectile systems that launch a net and parachute at a target UAV have a shorter range of 100 meters. A counter UAV system that supplements or replaces current costly and limited range countermeasures is in need. Intercepting and following target UAV can be achieved with a multi-rotor UAV guided by proportional navigation (PN) guidance.
+
+Multi-rotor sUAS may be guided to passively track and follow another sUAS. Direction and ranging sensor technology for sUAS currently only provides a highly uncertain position estimation. Proportional navigation guidance has been used by missiles to track targets. PN guidance may be useful for guiding a mutli-rotor sUAS to intercept and follow other sUAS. Intercept and following has applications in autonomous flight formation, swarming, and loyal wingman scenarios as well. The objective was to use a modified PN guidance with uncertain position information to reduce distance to another sUAS.
+%Increased popularity of UAVs by the civilian community has led to the use of UAVs for malicious purposes. Airspace restrictions on when and where UAVs are given clearance to fly have been imposed by the FAA. When restricted airspace is violated, jamming and projectile countermeasures can be deployed. Jamming systems rely on autopilot fail-safes to land the UAV when GPS or RF signals are compromised. Effective distance for jamming systems range from 400 meters to 10 kilometers. Projectile systems that launch a net and parachute at a target UAV have a shorter range of 100 meters. A counter UAV system that supplements or replaces current costly and limited range countermeasures is in need. Intercepting and following target UAV can be achieved with a multi-rotor UAV guided by proportional navigation (PN) guidance.
 
 \subsection{Literature}
 % ======= Literature =========
@@ -458,6 +460,14 @@ The modified pseudotarget PN guidance was given the same initial conditions as s
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=7cm] {fixedSingularity}
+	\caption{Tail chase with no singularities, and steady state range $R_{TI}\approx0$}
+	\label{fig:modifiedPNsuccess}
+	\hspace*{0mm}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=7cm] {ptx50_range_LOSrate}
 	\caption{Tail chase with no singularities, and steady state range $R_{TI}\approx0$}
 	\label{fig:modifiedPNsuccessLOS}
 	\hspace*{0mm}
