@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.9.26)  2 NOV 2017 18:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.9.26)  2 NOV 2017 18:28
 entering extended mode
 **./ICUAS_Main.tex
 (ICUAS_Main.tex
@@ -1146,9 +1146,7 @@ Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@ttwidth=\dimen257
 \SOUL@uldp=\dimen258
 \SOUL@ulht=\dimen259
-)
-\@float@every@figure=\toks35
- (ICUAS_Main.aux)
+) (ICUAS_Main.aux)
 \openout1 = `ICUAS_Main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
@@ -1171,12 +1169,12 @@ LaTeX Font Info:    ... okay on input line 30.
 \scratchbox=\box86
 \nofMPsegments=\count316
 \nofMParguments=\count317
-\everyMPshowfont=\toks36
+\everyMPshowfont=\toks35
 \MPscratchCnt=\count318
 \MPscratchDim=\dimen261
 \MPnumerator=\count319
 \makeMPintoPDFobject=\count320
-\everyMPtoPDFconversion=\toks37
+\everyMPtoPDFconversion=\toks36
 ) ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
 Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -1408,33 +1406,33 @@ Package pdftex.def Info: rinit08new.png used on input line 398.
 (pdftex.def)             Requested size: 199.16928pt x 146.51872pt.
 
 [4 <./wait.png> <./intercept.png> <./follow.png> <./Rinit07new.png> <./rinit08n
-ew.png>] <fixedSingularity.png, id=47, 696.35156pt x 450.18187pt>
+ew.png>] <fixedSingularity.png, id=50, 696.35156pt x 450.18187pt>
 File: fixedSingularity.png Graphic file (type png)
 
 <use fixedSingularity.png>
 Package pdftex.def Info: fixedSingularity.png used on input line 421.
 (pdftex.def)             Requested size: 199.16928pt x 128.75653pt.
 
-<ptx50_range_LOSrate.png, id=48, 421.575pt x 316.18124pt>
+<ptx50_range_LOSrate.png, id=51, 421.575pt x 316.18124pt>
 File: ptx50_range_LOSrate.png Graphic file (type png)
 
 <use ptx50_range_LOSrate.png>
 Package pdftex.def Info: ptx50_range_LOSrate.png used on input line 429.
 (pdftex.def)             Requested size: 199.16928pt x 149.37712pt.
- <FDIR_Rays.png, id=49, 421.575pt x 316.18124pt>
+ <FDIR_Rays.png, id=52, 421.575pt x 316.18124pt>
 File: FDIR_Rays.png Graphic file (type png)
 
 <use FDIR_Rays.png>
 Package pdftex.def Info: FDIR_Rays.png used on input line 503.
 (pdftex.def)             Requested size: 227.62204pt x 170.72084pt.
- <correctpolar.png, id=50, 624.08156pt x 393.72093pt>
+ <correctpolar.png, id=53, 624.08156pt x 393.72093pt>
 File: correctpolar.png Graphic file (type png)
 
 <use correctpolar.png>
 Package pdftex.def Info: correctpolar.png used on input line 512.
 (pdftex.def)             Requested size: 227.62204pt x 143.6018pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 7869) has occurred while \output is active []
 
  [5 <./fixedSingularity.png> <./ptx50_range_LOSrate.png (PNG copy)> <./FDIR_Ray
 s.png (PNG copy)>] (ICUAS_Main.bbl)
@@ -1451,28 +1449,33 @@ Before submitting the final camera ready copy, remember to:
 
 [6 <./correctpolar.png>] (ICUAS_Main.aux) ) 
 Here is how much of TeX's memory you used:
- 17302 strings out of 493320
- 336028 string characters out of 3138948
- 402433 words of memory out of 3000000
- 20637 multiletter control sequences out of 15000+200000
- 568105 words of font info for 90 fonts, out of 3000000 for 9000
+ 17323 strings out of 493320
+ 336246 string characters out of 3138948
+ 403392 words of memory out of 3000000
+ 20652 multiletter control sequences out of 15000+200000
+ 571034 words of font info for 105 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,16n,38p,10374b,490s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/e
 nc/dvips/base/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/
-Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/public/amsfonts/symbols/msbm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/ur
-w/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.p
-fb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ICUAS_Main.pdf (6 pages, 909573 bytes).
+.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pf
+b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.
+9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/ur
+w/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.p
+fb>
+Output written on ICUAS_Main.pdf (6 pages, 947463 bytes).
 PDF statistics:
- 96 PDF objects out of 1000 (max. 8388607)
+ 116 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  76 words of extra memory for PDF output out of 10000 (max. 10000000)
 
