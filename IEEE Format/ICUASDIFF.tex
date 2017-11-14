@@ -310,20 +310,20 @@ R_{TIy} = y_T-y_I
 \end{split}
 \DIFaddend \end{equation}
 
-\DIFdelbegin \begin{displaymath} \DIFdel{%DIFDELCMD < \label{eq:losrate}%%%
-\dot{\lambda} = \frac{(x_T - x_I)(V_{Ty}-V_{Iy}) - (y_T - y_I)(V_{Tx}-V_{Ix})}{(x_T - x_I)^2+(y_T - y_I)^2}
-}\end{displaymath}
-%DIFAUXCMD
-\DIFdelend \DIFaddbegin \begin{align}
-\DIFadd{\label{eq:vel}
-\begin{split}
-V_{TIx} &= V_{Tx}-V_{Ix}
-\\
-V_{TIy} &= V_{Ty}-V_{Iy}
-\\
-\end{split}
-}\end{align}
-\DIFaddend 
+%\DIFdelbegin \begin{displaymath} \DIFdel{%DIFDELCMD < \label{eq:losrate}%%%
+%\dot{\lambda} = \frac{(x_T - x_I)(V_{Ty}-V_{Iy}) - (y_T - y_I)(V_{Tx}-V_{Ix})}{(x_T - x_I)^2+(y_T - y_I)^2}
+%}\end{displaymath}
+%%DIFAUXCMD
+%\DIFdelend \DIFaddbegin \begin{align}
+%\DIFadd{\label{eq:vel}
+%\begin{split}
+%V_{TIx} &= V_{Tx}-V_{Ix}
+%\\
+%V_{TIy} &= V_{Ty}-V_{Iy}
+%\\
+%\end{split}
+%}\end{align}
+%\DIFaddend 
 
 %DIF < \begin{equation} \label{eq:pos}
 %DIF < \begin{split}
@@ -341,11 +341,11 @@ V_{TIy} &= V_{Ty}-V_{Iy}
 %DIF < \\
 %DIF < \end{split}
 %DIF < \end{align}
-\DIFdelbegin %DIFDELCMD < 
-
-%DIFDELCMD < %%%
-\DIFdelend Range is the Euclidean distance between the target and the interceptor, shown in Equation \ref{eq:range}. \DIFaddbegin \DIFadd{The LOS angle $\lambda$ is calculated in Equation \ref{eq:LOS}. 
-}\DIFaddend 
+%\DIFdelbegin %DIFDELCMD < 
+%
+%%DIFDELCMD < %%%
+%\DIFdelend Range is the Euclidean distance between the target and the interceptor, shown in Equation \ref{eq:range}. \DIFaddbegin \DIFadd{The LOS angle $\lambda$ is calculated in Equation \ref{eq:LOS}. 
+%}\DIFaddend 
 
 \begin{equation} \label{eq:range}
 R_{TI} =\sqrt[]{\DIFdelbegin \DIFdel{(x_T - x_I)}\DIFdelend \DIFaddbegin \DIFadd{R_{TIx}}\DIFaddend ^2+\DIFdelbegin \DIFdel{((y_T - y_I)}\DIFdelend \DIFaddbegin \DIFadd{R_{TIy}}\DIFaddend ^2}
@@ -402,16 +402,16 @@ PN guidance is effective at reducing the range between the interceptor and the t
 %DIFDELCMD < \begin{figure}[H]
 %DIFDELCMD < 	\centering
 %DIFDELCMD < 	\includegraphics[width=7cm] {%%%
-\DIFdelFL{x50_range_LOSrate}%DIFDELCMD < }
-%DIFDELCMD < 	%%%
-%DIFDELCMD < \caption{%
-{%DIFAUXCMD
-\DIFdelFL{Failed follow with LOS-rate singularity and range}}
-	%DIFAUXCMD
-%DIFDELCMD < \label{fig:failedInterceptLOS}
-%DIFDELCMD < 	%%%
-\DIFdelFL{\hspace*{0mm}
-}%DIFDELCMD < \end{figure}
+%\DIFdelFL{x50_range_LOSrate}%DIFDELCMD < }
+%%DIFDELCMD < 	%%%
+%%DIFDELCMD < \caption{%
+%{%DIFAUXCMD
+%\DIFdelFL{Failed follow with LOS-rate singularity and range}}
+%	%DIFAUXCMD
+%%DIFDELCMD < \label{fig:failedInterceptLOS}
+%%DIFDELCMD < 	%%%
+%\DIFdelFL{\hspace*{0mm}
+%}%DIFDELCMD < \end{figure}
 %DIFDELCMD < 
 
 %DIFDELCMD < %%%
@@ -422,40 +422,40 @@ PN guidance is effective at reducing the range between the interceptor and the t
 
 %DIF >  Demonstrating the effectiveness of the PN guidance algorithm at reducing the range between a target and an interceptor, 
 %DIF >  The PN guidance reduces the range between the interceptor and target as shown in Figure \ref{fig:comp}. 
-\DIFaddbegin 
-
-\DIFaddend \begin{figure}[H]
-	\DIFaddbeginFL \begin{subfigmatrix}{2}%DIF >  number of columns
-		\DIFaddendFL \centering
-		\DIFaddbeginFL \subfigure []{\DIFaddendFL \includegraphics[width=7cm] {\DIFdelbeginFL \DIFdelFL{tailChaseWithLedgend}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{x50}\DIFaddendFL }\DIFdelbeginFL %DIFDELCMD < \caption{%
-{%DIFAUXCMD
-\DIFdelFL{Successful follow for tail chase intercept}}
-	%DIFAUXCMD
-%DIFDELCMD < \label{fig:successfulFollow}
-%DIFDELCMD < 	%%%
-\DIFdelFL{\hspace*{0mm}
-}%DIFDELCMD < \end{figure}
-%DIFDELCMD < 
-
-%DIFDELCMD < \begin{figure}[H]
-%DIFDELCMD < 	\centering
-%DIFDELCMD < 	%%%
-\DIFdelendFL \DIFaddbeginFL }
-		\subfigure []{\DIFaddendFL \includegraphics[width=7cm] {x15\DIFaddbeginFL }}
-		\subfigure []{\includegraphics [\DIFaddFL{width=7cm}]{\DIFaddFL{x50}\DIFaddendFL _range_LOSrate}\DIFdelbeginFL %DIFDELCMD < \caption{%
-{%DIFAUXCMD
-\DIFdelFL{Successful follow LOS-rate and range}}
-	%DIFAUXCMD
-%DIFDELCMD < \label{fig:successfulFollowLOS}
-%DIFDELCMD < 		%%%
-\DIFdelFL{\hspace*{0mm}
-	}\DIFdelendFL \DIFaddbeginFL }
-		\subfigure []{\includegraphics [\DIFaddFL{width=7cm}]{\DIFaddFL{x15_range_LOSrate}}}
-		\DIFaddFL{\hspace*{0mm}
-	}\end{subfigmatrix}
-	\caption{\DIFaddFL{Simulation Scenarios}}
-	\label{fig:comp}
-\DIFaddendFL \end{figure}
+%\DIFaddbegin 
+%
+%\DIFaddend \begin{figure}[H]
+%	\DIFaddbeginFL \begin{subfigmatrix}{2}%DIF >  number of columns
+%		\DIFaddendFL \centering
+%		\DIFaddbeginFL \subfigure []{\DIFaddendFL \includegraphics[width=7cm] {\DIFdelbeginFL \DIFdelFL{tailChaseWithLedgend}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{x50}\DIFaddendFL }\DIFdelbeginFL %DIFDELCMD < \caption{%
+%{%DIFAUXCMD
+%\DIFdelFL{Successful follow for tail chase intercept}}
+%	%DIFAUXCMD
+%%DIFDELCMD < \label{fig:successfulFollow}
+%%DIFDELCMD < 	%%%
+%\DIFdelFL{\hspace*{0mm}
+%}%DIFDELCMD < \end{figure}
+%%DIFDELCMD < 
+%
+%%DIFDELCMD < \begin{figure}[H]
+%%DIFDELCMD < 	\centering
+%%DIFDELCMD < 	%%%
+%\DIFdelendFL \DIFaddbeginFL }
+%		\subfigure []{\DIFaddendFL \includegraphics[width=7cm] {x15\DIFaddbeginFL }}
+%		\subfigure []{\includegraphics [\DIFaddFL{width=7cm}]{\DIFaddFL{x50}\DIFaddendFL _range_LOSrate}\DIFdelbeginFL %DIFDELCMD < \caption{%
+%{%DIFAUXCMD
+%\DIFdelFL{Successful follow LOS-rate and range}}
+%	%DIFAUXCMD
+%%DIFDELCMD < \label{fig:successfulFollowLOS}
+%%DIFDELCMD < 		%%%
+%\DIFdelFL{\hspace*{0mm}
+%	}\DIFdelendFL \DIFaddbeginFL }
+%		\subfigure []{\includegraphics [\DIFaddFL{width=7cm}]{\DIFaddFL{x15_range_LOSrate}}}
+%		\DIFaddFL{\hspace*{0mm}
+%	}\end{subfigmatrix}
+%	\caption{\DIFaddFL{Simulation Scenarios}}
+%	\label{fig:comp}
+%\DIFaddendFL \end{figure}
 
 
 %DIF < \begin{figure}[h]
@@ -510,28 +510,28 @@ r(k) = drR_{TI}(k)+b
 }\end{equation}
 \DIFaddend 
 
-\begin{equation} \DIFdelbegin %DIFDELCMD < \label{eq:uncert}
-%DIFDELCMD < %%%
-\DIFdel{r = dr \,\sqrt[}%DIFDELCMD < ]{%%%
-\DIFdel{(x_T - x_I)^2+(y_T - y_I)^2}%DIFDELCMD < }%%%
-\DIFdel{+}\DIFdelend \DIFaddbegin \label{beq}
-\DIFaddend b \DIFaddbegin \DIFadd{= r_0-drR_{TI0}
-}\DIFaddend \end{equation}
+%\begin{equation} \DIFdelbegin %DIFDELCMD < \label{eq:uncert}
+%%DIFDELCMD < %%%
+%\DIFdel{r = dr \,\sqrt[}%DIFDELCMD < ]{%%%
+%\DIFdel{(x_T - x_I)^2+(y_T - y_I)^2}%DIFDELCMD < }%%%
+%\DIFdel{+}\DIFdelend \DIFaddbegin \label{beq}
+%\DIFaddend b \DIFaddbegin \DIFadd{= r_0-drR_{TI0}
+%}\DIFaddend \end{equation}
 
 %DIF < \begin{equation} \label{beq}
 %DIF < b = r_0-drR_{TI0}
 %DIF < \end{equation}
-\DIFdelbegin %DIFDELCMD < 
-
-%DIFDELCMD < %%%
-\begin{displaymath} \DIFdel{%DIFDELCMD < \label{beq}%%%
-b = r_0-dr \,\sqrt[}]{\DIFdel{(x_{T0} - x_{I0})^2+(y_{T0} - y_{I0})^2}}
-\end{displaymath}
-%DIFAUXCMD
-%DIFDELCMD < 
-
-%DIFDELCMD < %%%
-\DIFdelend The radius of position uncertainty $r$ \DIFdelbegin \DIFdel{was represented as }\DIFdelend \DIFaddbegin \DIFadd{is }\DIFaddend a function of the range $R_{TI}$, rate of change $dr$, and the minimum uncertainty radius $b$. A pseudotarget was introduced into the engagement scenario which prevents the interceptor from entering the region of uncertainty while maintaining the requirements of intercepting and following the target. The modified guidance was developed to satisfy a small range of scenarios where the target travels at constant heading, altitude, and speed equal to that of the interceptor \DIFaddbegin \DIFadd{shown in Figure \ref{fig:pseudotarget}}\DIFaddend . The interceptor avoids the region of uncertainty while following and intercepting the target by pursuing a pseudotarget. 
+%\DIFdelbegin %DIFDELCMD < 
+%
+%%DIFDELCMD < %%%
+%\begin{displaymath} \DIFdel{%DIFDELCMD < \label{beq}%%%
+%b = r_0-dr \,\sqrt[}]{\DIFdel{(x_{T0} - x_{I0})^2+(y_{T0} - y_{I0})^2}}
+%\end{displaymath}
+%%DIFAUXCMD
+%%DIFDELCMD < 
+%
+%%DIFDELCMD < %%%
+%\DIFdelend The radius of position uncertainty $r$ \DIFdelbegin \DIFdel{was represented as }\DIFdelend \DIFaddbegin \DIFadd{is }\DIFaddend a function of the range $R_{TI}$, rate of change $dr$, and the minimum uncertainty radius $b$. A pseudotarget was introduced into the engagement scenario which prevents the interceptor from entering the region of uncertainty while maintaining the requirements of intercepting and following the target. The modified guidance was developed to satisfy a small range of scenarios where the target travels at constant heading, altitude, and speed equal to that of the interceptor \DIFaddbegin \DIFadd{shown in Figure \ref{fig:pseudotarget}}\DIFaddend . The interceptor avoids the region of uncertainty while following and intercepting the target by pursuing a pseudotarget. 
 
 The pseudotarget \DIFdelbegin \DIFdel{acted }\DIFdelend \DIFaddbegin \DIFadd{acts }\DIFaddend as a state machine consisting of $wait$, $intercept$, and $follow$ states\DIFdelbegin \DIFdel{shown in Figures \ref{fig:wait}, \ref{fig:intercept}, and \ref{fig:follow} respectively}\DIFdelend . When the minimum altitude of the uncertainty is below the horizon $y_I-r<0$ the pseudotarget \DIFdelbegin %DIFDELCMD < \hl{'s} %%%
 \DIFdelend state is set to \DIFdelbegin %DIFDELCMD < \hl{$wait$} %%%
@@ -550,61 +550,61 @@ The pseudotarget \DIFdelbegin \DIFdel{acted }\DIFdelend \DIFaddbegin \DIFadd{act
 
 % When in $intercept$ state, the pseudotarget is placed at the minimum altitude of the uncertainty region that is to the right of the interceptor. During $follow$, the pseudotarget is placed directly on top of the target's estimated position.
 
-\begin{figure}[H]
-	\DIFaddbeginFL \begin{subfigmatrix}{3}%DIF >  number of columns
-		\DIFaddendFL \centering
-		\DIFdelbeginFL %DIFDELCMD < \includegraphics[width=7cm]{wait}
-%DIFDELCMD < 	%%%
-\DIFdelendFL \DIFaddbeginFL \subfigure []{\includegraphics[width=5cm] {\DIFaddFL{step1}}}
-		\subfigure []{\includegraphics[width=5cm] {\DIFaddFL{step2}}}
-		\subfigure []{\includegraphics [\DIFaddFL{width=5cm}]{\DIFaddFL{step3}}}
-	\end{subfigmatrix}
-	\DIFaddendFL \caption{\DIFdelbeginFL \DIFdelFL{Uncertainty below the horizon sets pseudotarget state to wait}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Simulation Scenarios}\DIFaddendFL }
-	\DIFdelbeginFL %DIFDELCMD < \label{fig:wait}
-%DIFDELCMD < %%%
-\DIFdelendFL \DIFaddbeginFL \label{fig:pseudotarget}
-\DIFaddendFL \end{figure}
-
-\DIFdelbegin %DIFDELCMD < \begin{figure}[H]
-%DIFDELCMD < 	\centering
-%DIFDELCMD < 	\includegraphics[width=7cm]{intercept}
-%DIFDELCMD < 	%%%
-%DIFDELCMD < \caption{%
-{%DIFAUXCMD
-\DIFdelFL{Uncertainty above the horizon sets pseudotarget state to intercept}}
-	%DIFAUXCMD
-%DIFDELCMD < \label{fig:intercept}
-%DIFDELCMD < \end{figure}
-%DIFDELCMD < 
-
-%DIFDELCMD < \begin{figure}[H]
-%DIFDELCMD < 	\centering
-%DIFDELCMD < 	\includegraphics[width=7cm]{follow}
-%DIFDELCMD < 	%%%
-%DIFDELCMD < \caption{%
-{%DIFAUXCMD
-\DIFdelFL{Target estimate $x_T < 0$ sets pseudotarget state to follow}}
-	%DIFAUXCMD
-%DIFDELCMD < \label{fig:follow}
-%DIFDELCMD < \end{figure}
-%DIFDELCMD < 
-
-%DIFDELCMD < %%%
-%DIF < \begin{figure}[H]
-%DIF < 	\begin{subfigmatrix}{3}% number of columns
-%DIF < 		\centering
-%DIF < 		\subfigure []{\includegraphics[width=5cm] {step1}}
-%DIF < 		\subfigure []{\includegraphics[width=5cm] {step2}}
-%DIF < 		\subfigure []{\includegraphics [width=5cm]{step3}}
-%DIF < 	\end{subfigmatrix}
-%DIF < 	\caption{Simulation Scenarios}
-%DIF < 	\label{fig:pseudotarget}
-%DIF < \end{figure}
-%DIFDELCMD < 
-
-%DIFDELCMD < %%%
-\DIFdelend %Change figures to better represent algorithm.
-% In Figure \ref{fig:pseudotarget}a the pseudotarget $waits$ while the minimum uncertainty is below the horizon. As the target approaches, the uncertainty is reduced so that the uncertainty circle is above the horizon shown in Figure \ref{fig:pseudotarget}b. With the minimum of the uncertainty above the horizon, the pseudotarget is placed in the $intercept$ state and is placed at $x = 0$ and $y = y_T-r$. Placing the pseudotarget at the edge of the uncertainty region prevents the possibility of an unintended collision. Once $x_T<x_I$ the risk of collision is non existent and the pseudotarget is placed in $follow$ state. The $follow$ state shown in Figure \ref{fig:pseudotarget}c places the pseudotarget on top of the target estimate, guiding the interceptor to follow the target. 
+%\begin{figure}[H]
+%	\DIFaddbeginFL \begin{subfigmatrix}{3}%DIF >  number of columns
+%		\DIFaddendFL \centering
+%		\DIFdelbeginFL %DIFDELCMD < \includegraphics[width=7cm]{wait}
+%%DIFDELCMD < 	%%%
+%\DIFdelendFL \DIFaddbeginFL \subfigure []{\includegraphics[width=5cm] {\DIFaddFL{step1}}}
+%		\subfigure []{\includegraphics[width=5cm] {\DIFaddFL{step2}}}
+%		\subfigure []{\includegraphics [\DIFaddFL{width=5cm}]{\DIFaddFL{step3}}}
+%	\end{subfigmatrix}
+%	\DIFaddendFL \caption{\DIFdelbeginFL \DIFdelFL{Uncertainty below the horizon sets pseudotarget state to wait}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Simulation Scenarios}\DIFaddendFL }
+%	\DIFdelbeginFL %DIFDELCMD < \label{fig:wait}
+%%DIFDELCMD < %%%
+%\DIFdelendFL \DIFaddbeginFL \label{fig:pseudotarget}
+%\DIFaddendFL \end{figure}
+%
+%\DIFdelbegin %DIFDELCMD < \begin{figure}[H]
+%%DIFDELCMD < 	\centering
+%%DIFDELCMD < 	\includegraphics[width=7cm]{intercept}
+%%DIFDELCMD < 	%%%
+%%DIFDELCMD < \caption{%
+%{%DIFAUXCMD
+%\DIFdelFL{Uncertainty above the horizon sets pseudotarget state to intercept}}
+%	%DIFAUXCMD
+%%DIFDELCMD < \label{fig:intercept}
+%%DIFDELCMD < \end{figure}
+%%DIFDELCMD < 
+%
+%%DIFDELCMD < \begin{figure}[H]
+%%DIFDELCMD < 	\centering
+%%DIFDELCMD < 	\includegraphics[width=7cm]{follow}
+%%DIFDELCMD < 	%%%
+%%DIFDELCMD < \caption{%
+%{%DIFAUXCMD
+%\DIFdelFL{Target estimate $x_T < 0$ sets pseudotarget state to follow}}
+%	%DIFAUXCMD
+%%DIFDELCMD < \label{fig:follow}
+%%DIFDELCMD < \end{figure}
+%%DIFDELCMD < 
+%
+%%DIFDELCMD < %%%
+%%DIF < \begin{figure}[H]
+%%DIF < 	\begin{subfigmatrix}{3}% number of columns
+%%DIF < 		\centering
+%%DIF < 		\subfigure []{\includegraphics[width=5cm] {step1}}
+%%DIF < 		\subfigure []{\includegraphics[width=5cm] {step2}}
+%%DIF < 		\subfigure []{\includegraphics [width=5cm]{step3}}
+%%DIF < 	\end{subfigmatrix}
+%%DIF < 	\caption{Simulation Scenarios}
+%%DIF < 	\label{fig:pseudotarget}
+%%DIF < \end{figure}
+%%DIFDELCMD < 
+%
+%%DIFDELCMD < %%%
+%\DIFdelend %Change figures to better represent algorithm.
+%% In Figure \ref{fig:pseudotarget}a the pseudotarget $waits$ while the minimum uncertainty is below the horizon. As the target approaches, the uncertainty is reduced so that the uncertainty circle is above the horizon shown in Figure \ref{fig:pseudotarget}b. With the minimum of the uncertainty above the horizon, the pseudotarget is placed in the $intercept$ state and is placed at $x = 0$ and $y = y_T-r$. Placing the pseudotarget at the edge of the uncertainty region prevents the possibility of an unintended collision. Once $x_T<x_I$ the risk of collision is non existent and the pseudotarget is placed in $follow$ state. The $follow$ state shown in Figure \ref{fig:pseudotarget}c places the pseudotarget on top of the target estimate, guiding the interceptor to follow the target. 
 
 With the target moving at constant altitude and both vehicles sharing the same velocity, it is expected that the following distance will be near zero if the intercept is active when $x_T \geq y_T$. If the intercept occurs when $x_T<y_T$, the interceptor is at a disadvantage and will fail to close the distance. The sensor was modeled so that the uncertainty circle is above the horizon once the target has crossed the $x=y$ line by calculating an appropriate initial uncertainty $r_0$. Referring back to Figure \ref{fig:uncertrad} a target \DIFaddbegin \DIFadd{is detected }\DIFaddend at a LOS of $45^{\circ}$, has an altitude of $R_{TIy}$, and an initial uncertainty radius $r_0$. Determining the initial radius was done geometrically in Equations \ref{minr} and \ref{rtiforminr} and was set to $0.7$ times the initial range.
 
@@ -629,11 +629,11 @@ R_{TI}\frac{\sqrt[]{2}}{2} = R_{TIy}
 %DIFDELCMD < 
 
 %DIFDELCMD < %%%
-\begin{displaymath} \DIFdel{%DIFDELCMD < \label{rtiforminr}%%%
- (y_T - y_I) = \sqrt[}]{\DIFdel{(x_T - x_I)^2+(y_T - y_I)^2}}\DIFdel{\sin(45^\circ)
-}\end{displaymath}
-%DIFAUXCMD
-%DIFDELCMD < 
+%\begin{displaymath} \DIFdel{%DIFDELCMD < \label{rtiforminr}%%%
+% (y_T - y_I) = \sqrt[}]{\DIFdel{(x_T - x_I)^2+(y_T - y_I)^2}}\DIFdel{\sin(45^\circ)
+%}\end{displaymath}
+%%DIFAUXCMD
+%%DIFDELCMD < 
 
 %DIFDELCMD < %%%
 %DIF < \begin{equation} \label{rtiforminr}
@@ -649,20 +649,20 @@ r_0 = 0.7R_{TI}
 The impact of $r_0$ on following distance can be seen in \DIFdelbegin \DIFdel{Figures \ref{fig:rti07} and \ref{fig:rti08}. Each Figure shows }\DIFdelend \DIFaddbegin \DIFadd{Figure \ref{fig:RinitSelection}, where three $r_0$ ratios were evaluated. Each subfigure show }\DIFaddend the results of three target initial conditions along the $x=y$ line. Figure \DIFdelbegin \DIFdel{\ref{fig:rti07} }\DIFdelend \DIFaddbegin \DIFadd{\ref{fig:RinitSelection}a }\DIFaddend shows a near zero following distance for a $r_0$ ratio of \DIFaddbegin \DIFadd{$0.6R_{TI}$. Figure \ref{fig:RinitSelection}b shows a near zero following distance for a $r_0$ ratio of }\DIFaddend $0.7R_{TI}$. \DIFdelbegin \DIFdel{When $r_0>0.7R_{TI}$ the }\DIFdelend \DIFaddbegin \DIFadd{As the $r_0$ ratio passes $0.7R_{TI}$ the }\DIFaddend following distance becomes less predictable and is not constant along the target initial conditions on the $x=y$ line\DIFdelbegin \DIFdel{as shown in Figure \ref{fig:rti08}}\DIFdelend .
 
 
-\begin{figure}[H]
-	\DIFaddbeginFL \begin{subfigmatrix}{2}%DIF >  number of columns
-		\DIFaddendFL \centering
-		\DIFdelbeginFL %DIFDELCMD < \includegraphics[width=7cm]{Rinit07new.png}
-%DIFDELCMD < 	%%%
-\DIFdelendFL \DIFaddbeginFL \subfigure []{\includegraphics {\DIFaddFL{rinit07.png}}}
-		\subfigure []{\includegraphics {\DIFaddFL{rinit08.png}}}
-		\DIFaddFL{\hspace*{0mm}
-	}\end{subfigmatrix}
-	\DIFaddendFL \caption{Initial \DIFdelbeginFL \DIFdelFL{uncertainty ratio $0.7R_{TI}$ results in consistent following distance}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Uncertainty Radius Ratio}\DIFaddendFL }
-	\DIFdelbeginFL %DIFDELCMD < \label{fig:rti07}
-%DIFDELCMD < %%%
-\DIFdelendFL \DIFaddbeginFL \label{fig:RinitSelection}
-\DIFaddendFL \end{figure}
+%\begin{figure}[H]
+%	\DIFaddbeginFL \begin{subfigmatrix}{2}%DIF >  number of columns
+%		\DIFaddendFL \centering
+%		\DIFdelbeginFL %DIFDELCMD < \includegraphics[width=7cm]{Rinit07new.png}
+%%DIFDELCMD < 	%%%
+%\DIFdelendFL \DIFaddbeginFL \subfigure []{\includegraphics {\DIFaddFL{rinit07.png}}}
+%		\subfigure []{\includegraphics {\DIFaddFL{rinit08.png}}}
+%		\DIFaddFL{\hspace*{0mm}
+%	}\end{subfigmatrix}
+%	\DIFaddendFL \caption{Initial \DIFdelbeginFL \DIFdelFL{uncertainty ratio $0.7R_{TI}$ results in consistent following distance}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Uncertainty Radius Ratio}\DIFaddendFL }
+%	\DIFdelbeginFL %DIFDELCMD < \label{fig:rti07}
+%%DIFDELCMD < %%%
+%\DIFdelendFL \DIFaddbeginFL \label{fig:RinitSelection}
+%\DIFaddendFL \end{figure}
 
 \DIFdelbegin %DIFDELCMD < \begin{figure}[H]
 %DIFDELCMD < 	\centering
@@ -692,39 +692,39 @@ The impact of $r_0$ on following distance can be seen in \DIFdelbegin \DIFdel{Fi
 %DIFDELCMD < %%%
 \DIFdelend The modified pseudotarget PN guidance was given the same initial conditions as shown in Figure \DIFdelbegin \DIFdel{\ref{fig:failedIntercept} }\DIFdelend \DIFaddbegin \DIFadd{\ref{fig:comp} }\DIFaddend and the performance compared. Traditional PN guidance performed well during the tail-chase but failed to follow the target and experienced a LOS singularity for a head-on intercept. The PN guidance with a psuedotarget successfully intercepts and follows the target \DIFdelbegin \DIFdel{, Figure \ref{fig:modifiedPNsuccess}, }\DIFdelend with non-singularity LOS rates, shown in Figure \DIFdelbegin \DIFdel{\ref{fig:modifiedPNsuccessLOS}}\DIFdelend \DIFaddbegin \DIFadd{\ref{fig:compwithpt}}\DIFaddend . Traditional PN out performed the pseudotarget PN guidance for target initial condition $x_{T} = 15$ which demonstrates that a single guidance algorithm may not be suitable for all cases and a decision on which algorithm to use for a given set of initial conditions should be made. Table \ref{my-label} summarizes the performance of the algorithms for the two initial conditions.
 
-\begin{figure}[H]
-	\DIFaddbeginFL \begin{subfigmatrix}{2}%DIF >  number of columns
-		\DIFaddendFL \centering
-		\DIFdelbeginFL %DIFDELCMD < \includegraphics[width=7cm] %%%
-\DIFdelendFL \DIFaddbeginFL \subfigure []\DIFaddendFL {\DIFdelbeginFL \DIFdelFL{fixedSingularity}\DIFdelendFL \DIFaddbeginFL \includegraphics[width=4cm] {\DIFaddFL{ptx50}\DIFaddendFL }\DIFdelbeginFL %DIFDELCMD < \caption{%
-{%DIFAUXCMD
-\DIFdelFL{Tail chase with no singularities, and steady state range $R_{TI}\approx0$}}
-	%DIFAUXCMD
-%DIFDELCMD < \label{fig:modifiedPNsuccess}
-%DIFDELCMD < 	%%%
-\DIFdelFL{\hspace*{0mm}
-}%DIFDELCMD < \end{figure}
-%DIFDELCMD < 
-
-%DIFDELCMD < \begin{figure}[H]
-%DIFDELCMD < 	\centering
-%DIFDELCMD < 	\includegraphics[width=7cm] %%%
-\DIFdelendFL \DIFaddbeginFL }
-		\subfigure []\DIFaddendFL {\DIFaddbeginFL \includegraphics[width=4cm] {\DIFaddFL{ptx15}}}
-		\subfigure []{\includegraphics [\DIFaddFL{width=4cm}]{\DIFaddendFL ptx50_range_LOSrate}\DIFdelbeginFL %DIFDELCMD < \caption{%
-{%DIFAUXCMD
-\DIFdelFL{Tail chase with no singularities, and steady state range $R_{TI}\approx0$}}
-	%DIFAUXCMD
-%DIFDELCMD < \label{fig:modifiedPNsuccessLOS}
-%DIFDELCMD < 	%%%
-\DIFdelFL{\hspace*{0mm}
-	}\DIFdelendFL \DIFaddbeginFL }
-		\subfigure []{\includegraphics [\DIFaddFL{width=4cm}]{\DIFaddFL{ptx15_range_LOSrate}}}
-		\DIFaddFL{\hspace*{0mm}
-	}\end{subfigmatrix}
-	\caption{\DIFaddFL{Simulation Scenarios}}
-	\label{fig:compwithpt}
-\DIFaddendFL \end{figure}
+%\begin{figure}[H]
+%	\DIFaddbeginFL \begin{subfigmatrix}{2}%DIF >  number of columns
+%		\DIFaddendFL \centering
+%		\DIFdelbeginFL %DIFDELCMD < \includegraphics[width=7cm] %%%
+%\DIFdelendFL \DIFaddbeginFL \subfigure []\DIFaddendFL {\DIFdelbeginFL \DIFdelFL{fixedSingularity}\DIFdelendFL \DIFaddbeginFL \includegraphics[width=4cm] {\DIFaddFL{ptx50}\DIFaddendFL }\DIFdelbeginFL %DIFDELCMD < \caption{%
+%{%DIFAUXCMD
+%\DIFdelFL{Tail chase with no singularities, and steady state range $R_{TI}\approx0$}}
+%	%DIFAUXCMD
+%%DIFDELCMD < \label{fig:modifiedPNsuccess}
+%%DIFDELCMD < 	%%%
+%\DIFdelFL{\hspace*{0mm}
+%}%DIFDELCMD < \end{figure}
+%%DIFDELCMD < 
+%
+%%DIFDELCMD < \begin{figure}[H]
+%%DIFDELCMD < 	\centering
+%%DIFDELCMD < 	\includegraphics[width=7cm] %%%
+%\DIFdelendFL \DIFaddbeginFL }
+%		\subfigure []\DIFaddendFL {\DIFaddbeginFL \includegraphics[width=4cm] {\DIFaddFL{ptx15}}}
+%		\subfigure []{\includegraphics [\DIFaddFL{width=4cm}]{\DIFaddendFL ptx50_range_LOSrate}\DIFdelbeginFL %DIFDELCMD < \caption{%
+%{%DIFAUXCMD
+%\DIFdelFL{Tail chase with no singularities, and steady state range $R_{TI}\approx0$}}
+%	%DIFAUXCMD
+%%DIFDELCMD < \label{fig:modifiedPNsuccessLOS}
+%%DIFDELCMD < 	%%%
+%\DIFdelFL{\hspace*{0mm}
+%	}\DIFdelendFL \DIFaddbeginFL }
+%		\subfigure []{\includegraphics [\DIFaddFL{width=4cm}]{\DIFaddFL{ptx15_range_LOSrate}}}
+%		\DIFaddFL{\hspace*{0mm}
+%	}\end{subfigmatrix}
+%	\caption{\DIFaddFL{Simulation Scenarios}}
+%	\label{fig:compwithpt}
+%\DIFaddendFL \end{figure}
 
 %DIF < \begin{figure}[H]
 %DIF < 	\begin{subfigmatrix}{2}% number of columns

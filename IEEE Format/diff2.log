@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.9.26)  14 NOV 2017 15:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.9.26)  3 NOV 2017 15:46
 entering extended mode
-**./ICUAS_Main.tex
-(ICUAS_Main.tex
+**./diff2.tex
+(diff2.tex
 LaTeX2e <2017-04-15>
 Babel <3.9t> and hyphenation patterns for 76 language(s) loaded.
 (IEEEtran.cls
@@ -1146,35 +1146,66 @@ Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@ttwidth=\dimen257
 \SOUL@uldp=\dimen258
 \SOUL@ulht=\dimen259
-) (ICUAS_Main.aux)
-\openout1 = `ICUAS_Main.aux'.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\ulem\ulem.sty"
+\UL@box=\box86
+\UL@hyphenbox=\box87
+\UL@skip=\skip90
+\UL@hook=\toks35
+\UL@height=\dimen260
+\UL@pe=\count315
+\UL@pixel=\dimen261
+\ULC@box=\box88
+Package: ulem 2012/05/18
+\ULdepth=\dimen262
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\settobox.sty"
+Package: settobox 2016/05/16 v1.5 Assign box dimensions to length registers (HO
+)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\letltxmacro.sty"
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+)
+\DIFdelgraphicsbox=\box89
+\DIFdelgraphicswidth=\skip91
+\DIFdelgraphicsheight=\skip92
+LaTeX Info: Redefining \DIFaddbegin on input line 78.
+LaTeX Info: Redefining \DIFaddend on input line 79.
+LaTeX Info: Redefining \DIFdelbegin on input line 80.
+LaTeX Info: Redefining \DIFdelend on input line 81.
+LaTeX Info: Redefining \DIFaddbeginFL on input line 86.
+LaTeX Info: Redefining \DIFaddendFL on input line 87.
+LaTeX Info: Redefining \DIFdelbeginFL on input line 88.
+LaTeX Info: Redefining \DIFdelendFL on input line 89.
+ (diff2.aux)
+\openout1 = `diff2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count315
-\scratchdimen=\dimen260
-\scratchbox=\box86
-\nofMPsegments=\count316
-\nofMParguments=\count317
-\everyMPshowfont=\toks35
-\MPscratchCnt=\count318
-\MPscratchDim=\dimen261
-\MPnumerator=\count319
-\makeMPintoPDFobject=\count320
-\everyMPtoPDFconversion=\toks36
+\scratchcounter=\count316
+\scratchdimen=\dimen263
+\scratchbox=\box90
+\nofMPsegments=\count317
+\nofMParguments=\count318
+\everyMPshowfont=\toks36
+\MPscratchCnt=\count319
+\MPscratchDim=\dimen264
+\MPnumerator=\count320
+\makeMPintoPDFobject=\count321
+\everyMPtoPDFconversion=\toks37
 ) ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
 Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -1223,7 +1254,7 @@ G,.JBIG2,.JB2,.eps]
 .................................................
 . chemgreek info: "mapping-activated"
 . 
-. Activating mapping `default' on line 30.
+. Activating mapping `default' on line 104.
 .................................................
 Now handling font encoding TS1 ...
 ... processing UTF-8 mapping file for font encoding TS1
@@ -1307,132 +1338,225 @@ Dictionary: translator-basic-dictionary, Language: English
 ("C:\Program Files\MiKTeX 2.9\tex\latex\siunitx\siunitx-abbreviations.cfg"
 File: siunitx-abbreviations.cfg 2017/03/23 v2.7f siunitx: Abbreviated units
 )
-\c@lstlisting=\count321
+\c@lstlisting=\count322
 
 Redefining \end@dblfloat\ for use with subfigure
-\c__siunitx_mathsf_int=\count322
-LaTeX Font Info:    Try loading font information for U+msa on input line 30.
+\c__siunitx_mathsf_int=\count323
+LaTeX Font Info:    Try loading font information for U+msa on input line 104.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 30.
+LaTeX Font Info:    Try loading font information for U+msb on input line 104.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-\c__siunitx_mathtt_int=\count323
+\c__siunitx_mathtt_int=\count324
 
-Underfull \hbox (badness 5847) in paragraph at lines 50--52
-[]\OT1/ptm/b/it/9 Abstract\OT1/ptm/b/n/9 ---Combatant small Un-manned Aerial Ve
--hi-cles
+Underfull \hbox (badness 5847) in paragraph at lines 134--136
+[]\OT1/ptm/b/it/9 Abstract\OT1/ptm/b/n/9 ---Combatant []|   []   []Un-manned Ae
+rial Ve-hi-cles
+ []
+
+
+Underfull \hbox (badness 6592) in paragraph at lines 161--162
+|   []   |   []   |   []   |   []   |   []   |   []   |   []
+ []
+
+
+Underfull \hbox (badness 1365) in paragraph at lines 181--198
+|   []   |   []   |   []   |   []   |   []   |   []
  []
 
 [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
 ]
-<Engagement_Model.PNG, id=9, 499.8675pt x 471.26062pt>
+Underfull \hbox (badness 6859) in paragraph at lines 216--217
+[]|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []
+ []
+
+
+Underfull \hbox (badness 4024) in paragraph at lines 216--217
+|   []   |   []   |   []   |   []   |   []   |   []   |   []
+ []
+
+
+LaTeX Warning: Reference `eq:targetkintwo' on page 2 undefined on input line 22
+0.
+
+
+LaTeX Warning: Reference `eq:intkintwo' on page 2 undefined on input line 220.
+
+
+Package amsmath Warning: Cannot use `split' here;
+(amsmath)                trying to recover with `aligned' on input line 238.
+
+<Engagement_Model.PNG, id=10, 499.8675pt x 471.26062pt>
 File: Engagement_Model.PNG Graphic file (type png)
 
 <use Engagement_Model.PNG>
-Package pdftex.def Info: Engagement_Model.PNG used on input line 130.
+Package pdftex.def Info: Engagement_Model.PNG used on input line 280.
 (pdftex.def)             Requested size: 170.71652pt x 160.94557pt.
 
-<failedHeadOn.png, id=11, 696.35156pt x 455.45157pt>
-File: failedHeadOn.png Graphic file (type png)
- <use failedHeadOn.png>
-Package pdftex.def Info: failedHeadOn.png used on input line 234.
-(pdftex.def)             Requested size: 199.16928pt x 130.26372pt.
+Underfull \hbox (badness 1803) in paragraph at lines 285--287
+|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []
+ []
 
-<x50_range_LOSrate.png, id=12, 421.575pt x 316.18124pt>
-File: x50_range_LOSrate.png Graphic file (type png)
 
-<use x50_range_LOSrate.png>
-Package pdftex.def Info: x50_range_LOSrate.png used on input line 243.
-(pdftex.def)             Requested size: 199.16928pt x 149.37712pt.
- [2 <./Engagement_Model.PNG> <./failedHeadOn.png>]
-<tailChaseWithLedgend.png, id=27, 709.90219pt x 441.90094pt>
-File: tailChaseWithLedgend.png Graphic file (type png)
+LaTeX Warning: Reference `eq:pos' on page 2 undefined on input line 296.
 
-<use tailChaseWithLedgend.png>
-Package pdftex.def Info: tailChaseWithLedgend.png used on input line 254.
-(pdftex.def)             Requested size: 199.16928pt x 123.97415pt.
 
-<x15_range_LOSrate.png, id=28, 421.575pt x 316.18124pt>
-File: x15_range_LOSrate.png Graphic file (type png)
+LaTeX Warning: Reference `eq:vel' on page 2 undefined on input line 296.
 
-<use x15_range_LOSrate.png>
-Package pdftex.def Info: x15_range_LOSrate.png used on input line 262.
-(pdftex.def)             Requested size: 199.16928pt x 149.37712pt.
- <45deguncert.PNG, id=29, 464.4853pt x 468.24937pt>
+[2 <./Engagement_Model.PNG>]
+
+LaTeX Warning: Reference `fig:failedIntercept' on page 3 undefined on input lin
+e 392.
+
+
+LaTeX Warning: Reference `fig:failedInterceptLOS' on page 3 undefined on input 
+line 392.
+
+
+LaTeX Warning: Reference `fig:failedIntercept' on page 3 undefined on input lin
+e 392.
+
+
+LaTeX Warning: Reference `fig:failedInterceptLOS' on page 3 undefined on input 
+line 392.
+
+
+LaTeX Warning: Reference `fig:comp' on page 3 undefined on input line 417.
+
+
+LaTeX Warning: Reference `fig:successfulFollow' on page 3 undefined on input li
+ne 417.
+
+
+LaTeX Warning: Reference `fig:successfulFollowLOS' on page 3 undefined on input
+ line 417.
+
+
+LaTeX Warning: Reference `eq:uncert' on page 3 undefined on input line 495.
+
+
+LaTeX Warning: Reference `beq' on page 3 undefined on input line 495.
+
+
+Underfull \hbox (badness 1688) in paragraph at lines 495--496
+[]|   [][][]|   []   |   []   |   []   |   []   |   []   |   []   |   []
+ []
+
+<45deguncert.PNG, id=23, 464.4853pt x 468.24937pt>
 File: 45deguncert.PNG Graphic file (type png)
-
-<use 45deguncert.PNG>
-Package pdftex.def Info: 45deguncert.PNG used on input line 304.
+ <use 45deguncert.PNG>
+Package pdftex.def Info: 45deguncert.PNG used on input line 499.
 (pdftex.def)             Requested size: 113.81102pt x 114.7328pt.
- <wait.png, id=30, 505.13719pt x 389.20406pt>
+
+
+LaTeX Warning: Reference `fig:pseudotarget' on page 3 undefined on input line 5
+30.
+
+
+LaTeX Warning: Reference `fig:pseudotarget' on page 3 undefined on input line 5
+36.
+
+[3 <./45deguncert.PNG>] <wait.png, id=29, 505.13719pt x 389.20406pt>
 File: wait.png Graphic file (type png)
 
 <use wait.png>
-Package pdftex.def Info: wait.png used on input line 348.
+Package pdftex.def Info: wait.png used on input line 564.
 (pdftex.def)             Requested size: 199.16928pt x 153.45776pt.
- [3 <./x50_range_LOSrate.png (PNG copy)> <./tailChaseWithLedgend.png> <./x15_ra
-nge_LOSrate.png (PNG copy)> <./45deguncert.PNG>]
-<intercept.png, id=36, 497.60907pt x 396.7322pt>
+
+Overfull \hbox (61.88806pt too wide) in paragraph at lines 556--565
+ []|   [][][]|   [][][]|   [][][]|   [][][][][] 
+ []
+
+<intercept.png, id=30, 497.60907pt x 396.7322pt>
 File: intercept.png Graphic file (type png)
  <use intercept.png>
-Package pdftex.def Info: intercept.png used on input line 355.
+Package pdftex.def Info: intercept.png used on input line 573.
 (pdftex.def)             Requested size: 199.16928pt x 158.79297pt.
 
-<follow.png, id=37, 562.35094pt x 432.86719pt>
+<follow.png, id=31, 562.35094pt x 432.86719pt>
 File: follow.png Graphic file (type png)
  <use follow.png>
-Package pdftex.def Info: follow.png used on input line 362.
+Package pdftex.def Info: follow.png used on input line 580.
 (pdftex.def)             Requested size: 199.16928pt x 153.30894pt.
 
-<Rinit07new.png, id=38, 779.91376pt x 590.205pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+LaTeX Warning: Reference `rtiforminr' on page 4 undefined on input line 599.
+
+
+LaTeX Warning: Reference `fig:RinitSelection' on page 4 undefined on input line
+ 636.
+
+
+LaTeX Warning: Reference `fig:RinitSelection' on page 4 undefined on input line
+ 637.
+
+
+LaTeX Warning: Reference `fig:RinitSelection' on page 4 undefined on input line
+ 637.
+
+<Rinit07new.png, id=32, 779.91376pt x 590.205pt>
 File: Rinit07new.png Graphic file (type png)
  <use Rinit07new.png>
-Package pdftex.def Info: Rinit07new.png used on input line 416.
+Package pdftex.def Info: Rinit07new.png used on input line 653.
 (pdftex.def)             Requested size: 199.16928pt x 150.72092pt.
 
-<rinit08new.png, id=39, 800.23969pt x 588.69937pt>
+Overfull \hbox (43.55862pt too wide) in paragraph at lines 646--654
+ []|   [][][]|   [][][]|   []         [][][][] 
+ []
+
+[4 <./wait.png> <./intercept.png> <./follow.png>]
+<rinit08new.png, id=42, 800.23969pt x 588.69937pt>
 File: rinit08new.png Graphic file (type png)
  <use rinit08new.png>
-Package pdftex.def Info: rinit08new.png used on input line 423.
+Package pdftex.def Info: rinit08new.png used on input line 662.
 (pdftex.def)             Requested size: 199.16928pt x 146.51872pt.
 
-[4 <./wait.png> <./intercept.png> <./follow.png> <./Rinit07new.png> <./rinit08n
-ew.png>] <fixedSingularity.png, id=51, 696.35156pt x 450.18187pt>
-File: fixedSingularity.png Graphic file (type png)
 
-<use fixedSingularity.png>
-Package pdftex.def Info: fixedSingularity.png used on input line 446.
-(pdftex.def)             Requested size: 199.16928pt x 128.75653pt.
+LaTeX Warning: Reference `fig:comp' on page 5 undefined on input line 680.
 
-<ptx50_range_LOSrate.png, id=52, 421.575pt x 316.18124pt>
-File: ptx50_range_LOSrate.png Graphic file (type png)
 
-<use ptx50_range_LOSrate.png>
-Package pdftex.def Info: ptx50_range_LOSrate.png used on input line 454.
-(pdftex.def)             Requested size: 199.16928pt x 149.37712pt.
- <FDIR_Rays.png, id=53, 421.575pt x 316.18124pt>
+LaTeX Warning: Reference `fig:failedIntercept' on page 5 undefined on input lin
+e 680.
+
+
+LaTeX Warning: Reference `fig:modifiedPNsuccess' on page 5 undefined on input l
+ine 680.
+
+
+LaTeX Warning: Reference `fig:compwithpt' on page 5 undefined on input line 680
+.
+
+
+LaTeX Warning: Reference `fig:modifiedPNsuccessLOS' on page 5 undefined on inpu
+t line 680.
+
+<FDIR_Rays.png, id=43, 421.575pt x 316.18124pt>
 File: FDIR_Rays.png Graphic file (type png)
-
-<use FDIR_Rays.png>
-Package pdftex.def Info: FDIR_Rays.png used on input line 528.
+ <use FDIR_Rays.png>
+Package pdftex.def Info: FDIR_Rays.png used on input line 797.
 (pdftex.def)             Requested size: 227.62204pt x 170.72084pt.
- <correctpolar.png, id=54, 624.08156pt x 393.72093pt>
+ [5 <./Rinit07new.png> <./rinit08new.png> <./FDIR_Rays.png (PNG copy)>]
+<correctpolar.png, id=49, 624.08156pt x 393.72093pt>
 File: correctpolar.png Graphic file (type png)
-
-<use correctpolar.png>
-Package pdftex.def Info: correctpolar.png used on input line 537.
+ <use correctpolar.png>
+Package pdftex.def Info: correctpolar.png used on input line 810.
 (pdftex.def)             Requested size: 227.62204pt x 143.6018pt.
 
-Underfull \vbox (badness 7869) has occurred while \output is active []
+(diff2.bbl
+Underfull \hbox (badness 2057) in paragraph at lines 109--112
+[]\OT1/ptm/m/n/8 Freitas, ``3d po-lar plot,'' 2006. [On-line]. Avail-
+ []
 
- [5 <./fixedSingularity.png> <./ptx50_range_LOSrate.png (PNG copy)> <./FDIR_Ray
-s.png (PNG copy)>] (ICUAS_Main.bbl)
+)
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -1444,35 +1568,39 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[6 <./correctpolar.png>] (ICUAS_Main.aux) ) 
+[6 <./correctpolar.png>] (diff2.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 17323 strings out of 493320
- 336246 string characters out of 3138948
- 405392 words of memory out of 3000000
- 20652 multiletter control sequences out of 15000+200000
- 571034 words of font info for 105 fonts, out of 3000000 for 9000
+ 17468 strings out of 493320
+ 337668 string characters out of 3138948
+ 459872 words of memory out of 3000000
+ 20791 multiletter control sequences out of 15000+200000
+ 572247 words of font info for 107 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,16n,38p,10374b,490s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/e
-nc/dvips/base/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/
-Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
-sfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pf
-b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files/M
-iKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/u
-tmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ICUAS_Main.pdf (6 pages, 958970 bytes).
+ 41i,17n,38p,10369b,490s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
+10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+amsfonts/latxfont/lasy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+fonts/symbols/msbm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utm
+b8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on diff2.pdf (6 pages, 698400 bytes).
 PDF statistics:
- 120 PDF objects out of 1000 (max. 8388607)
+ 111 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 76 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 

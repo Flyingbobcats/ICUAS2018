@@ -69,7 +69,7 @@ Email: david.casbeer@us.af.mil, grymin, isaacweintraub.1@us.af.mil}
 
 % Need to insert problem statement into the first few sentences
 
-Multi-rotor sUAS may be guided to passively track and follow another small Unmanned Aerial Systems (sUAS). Direction and ranging sensor technology for sUAS currently only provides a highly uncertain position estimation. Proportional navigation guidance has been used by missiles to track targets. PN guidance may be useful for guiding a mutli-rotor sUAS to intercept and follow other sUAS. Intercept and following has applications in autonomous flight formation, swarming, and loyal wingman scenarios as well. The objective was to use a modified PN guidance with uncertain position information to reduce distance to another sUAS.
+Multi-rotor sUAS may be guided to passively track and follow another small Unmanned Aerial Systems (sUAS). On-board direction and ranging sensor technology for sUAS currently only provides a highly uncertain position estimation. Proportional navigation guidance has been used by missiles to track targets. PN guidance may be useful for guiding a mutli-rotor sUAS to intercept and follow other sUAS. Interception and following has applications in autonomous flight formation and swarming scenarios as well. The objective was to use a modified PN guidance to track other sUAS with uncertain position information.
 %Increased popularity of UAVs by the civilian community has led to the use of UAVs for malicious purposes. Airspace restrictions on when and where UAVs are given clearance to fly have been imposed by the FAA. When restricted airspace is violated, jamming and projectile countermeasures can be deployed. Jamming systems rely on autopilot fail-safes to land the UAV when GPS or RF signals are compromised. Effective distance for jamming systems range from 400 meters to 10 kilometers. Projectile systems that launch a net and parachute at a target UAV have a shorter range of 100 meters. A counter UAV system that supplements or replaces current costly and limited range countermeasures is in need. Intercepting and following target UAV can be achieved with a multi-rotor UAV guided by proportional navigation (PN) guidance.
 
 \subsection{Literature}
@@ -111,6 +111,8 @@ Interceptor and target kinematics are first presented, followed by the tradition
 
 An interceptor and target were modeled as Dubins vehicles in $\mathbb{R}^2$ with $x$ representing East and $y$ altitude, shown in Figure \ref{fig:Egagement}. UAV position $[x \quad y]^T$ was determined from the integral of the velocity $[\dot{x} \quad \dot{y}]^T$ shown in Equation \ref{eq:dubinUAV}. The heading of both sUAS is the input $u$ and is bounded on the interval $[0,2\pi)$. The non-maneuvering target heading $\beta$ was a constant while interceptor heading $\gamma$ was determined by PN guidance. The line-of-sight angle $\lambda$ is the angle between the interceptor and target with respect to the positive $x$ axis. 
 
+
+
 \begin{equation} \label{eq:dubinUAV}
 \begin{split}
 \dot{x} = v\cos(\phi)\\
@@ -130,16 +132,39 @@ An interceptor and target were modeled as Dubins vehicles in $\mathbb{R}^2$ with
 	\label{fig:Egagement}
 \end{figure}
 
-The PN guidance law operates on the principle of modifying heading so that the line-of-sight rate (LOS) $\dot{\lambda}$ is null. The input rate $\dot{u}$ is proportional to the LOS rate and a fixed guidance gain $N$. Second order Runge-Kutta integration was used to determine $u$ from Equation \ref{eq:PNlaw}.
+The PN guidance law operates on the principle of proportionally controlling heading so that the line-of-sight rate (LOS) $\dot{\lambda}$ is null. The input rate $\dot{u}$ is proportional to the LOS rate and a fixed guidance gain $N$. Second order Runge-Kutta integration is typically used to determine $u$ from Equation \ref{eq:PNlaw}.
 
 \begin{equation} \label{eq:PNlaw}
 \dot{u} = N\dot{\lambda}
 \end{equation}
 
 
-Guidance gains of $N < 3$ are generally referred to as conservative while $N > 5$ are referred to as more aggressive \cite{zarchan}. Conservative gains result in larger turn radii whereas larger gains result in smaller turn radii. \hl{Multi-rotors are capable of making abrupt heading changes in comparison to fixed wing UAVs and it was assumed a guidance gain of $N = 5$ is not beyond multi-rotor capability. The resulting guidance is expected to return sharp turns and straight line optimal paths when used with the Dubins kinematic model.} The LOS angle and rate are calculated in Equations \ref{eq:LOS} and \ref{eq:losrate} respectively. 
+Guidance gains of $N < 3$ are generally referred to as conservative, while $N > 5$ are referred to as more aggressive \cite{zarchan}. Conservative gains result in larger turn radii whereas larger gains result in smaller turn radii. \hl{Multi-rotors are capable of making abrupt heading changes in comparison to fixed wing UAVs and it was assumed a guidance gain of $N = 5$ is not beyond multi-rotor capability. The resulting guidance is expected to return sharp turns and straight line optimal paths when used with the Dubins kinematic model.} The LOS angle and rate are calculated in Equations \ref{eq:LOS} and \ref{eq:losrate} respectively. 
  
- 
+ \begin{table}
+ \centering
+ \begin{tabular}{cc}
+ 	
+ 	$Variable$ & $Relation$ \\
+ 	\hline 
+ 	$x_I$  & Interceptor x position \\ 
+ 	
+ 	$y_I$ & Interceptor y position \\ 
+ 	
+ 	$V_{Ix}$ & Interceptor x velocity \\ 
+ 	
+ 	$V_{Iy}$ & Interceptor y velocity \\ 
+ 	
+ 	$x_T$ & Target x position \\ 
+ 	
+ 	$y_T$ & Target y position \\ 
+ 	
+ 	$V_{Tx}$ & Target x velocity \\ 
+ 	
+ 	$v_{Ty}$ & Target y velocity \\ 
+ 	
+ \end{tabular}
+ \end{table}
 
 
 
