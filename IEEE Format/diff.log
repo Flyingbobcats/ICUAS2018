@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.9.26)  7 NOV 2017 09:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.9.26)  15 NOV 2017 14:31
 entering extended mode
 **./diff.tex
 (diff.tex
@@ -1169,29 +1169,29 @@ Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
 \DIFdelgraphicsbox=\box89
 \DIFdelgraphicswidth=\skip91
 \DIFdelgraphicsheight=\skip92
-LaTeX Info: Redefining \DIFaddbegin on input line 78.
-LaTeX Info: Redefining \DIFaddend on input line 79.
-LaTeX Info: Redefining \DIFdelbegin on input line 80.
-LaTeX Info: Redefining \DIFdelend on input line 81.
-LaTeX Info: Redefining \DIFaddbeginFL on input line 86.
-LaTeX Info: Redefining \DIFaddendFL on input line 87.
-LaTeX Info: Redefining \DIFdelbeginFL on input line 88.
-LaTeX Info: Redefining \DIFdelendFL on input line 89.
+LaTeX Info: Redefining \DIFaddbegin on input line 76.
+LaTeX Info: Redefining \DIFaddend on input line 77.
+LaTeX Info: Redefining \DIFdelbegin on input line 78.
+LaTeX Info: Redefining \DIFdelend on input line 79.
+LaTeX Info: Redefining \DIFaddbeginFL on input line 84.
+LaTeX Info: Redefining \DIFaddendFL on input line 85.
+LaTeX Info: Redefining \DIFdelbeginFL on input line 86.
+LaTeX Info: Redefining \DIFdelendFL on input line 87.
  (diff.aux)
 \openout1 = `diff.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1254,7 +1254,7 @@ G,.JBIG2,.JB2,.eps]
 .................................................
 . chemgreek info: "mapping-activated"
 . 
-. Activating mapping `default' on line 104.
+. Activating mapping `default' on line 102.
 .................................................
 Now handling font encoding TS1 ...
 ... processing UTF-8 mapping file for font encoding TS1
@@ -1342,1301 +1342,185 @@ File: siunitx-abbreviations.cfg 2017/03/23 v2.7f siunitx: Abbreviated units
 
 Redefining \end@dblfloat\ for use with subfigure
 \c__siunitx_mathsf_int=\count323
-LaTeX Font Info:    Try loading font information for U+msa on input line 104.
+LaTeX Font Info:    Try loading font information for U+msa on input line 102.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 104.
+LaTeX Font Info:    Try loading font information for U+msb on input line 102.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 \c__siunitx_mathtt_int=\count324
 
-Underfull \hbox (badness 5847) in paragraph at lines 134--136
-[]\OT1/ptm/b/it/9 Abstract\OT1/ptm/b/n/9 ---Combatant []|   []   []Un-manned Ae
-rial Ve-hi-cles
- []
-
-
-Underfull \hbox (badness 6592) in paragraph at lines 160--161
-|   []   |   []   |   []   |   []   |   []   |   []   |   []
- []
-
-
-LaTeX Warning: Citation `teuliere_chasing_2011' on page 1 undefined on input li
-ne 180.
-
-
-LaTeX Warning: Citation `oliveira_moving_2016' on page 1 undefined on input lin
-e 180.
-
-
-LaTeX Warning: Citation `ariyur_autonomous_2008' on page 1 undefined on input l
-ine 181.
-
-
-LaTeX Warning: Citation `lee_strategies_2003' on page 1 undefined on input line
- 181.
-
-
-LaTeX Warning: Citation `baek_optimal_2013' on page 1 undefined on input line 1
-81.
-
-
-LaTeX Warning: Citation `yamasaki_advanced_2009' on page 1 undefined on input l
-ine 181.
-
-
-LaTeX Warning: Citation `yamasaki_advanced_2009' on page 1 undefined on input l
-ine 181.
-
-
-LaTeX Warning: Citation `zarchan' on page 1 undefined on input line 183.
-
-
-LaTeX Warning: Citation `shneydor1998missile' on page 1 undefined on input line
- 183.
-
-
-LaTeX Warning: Citation `yanushevsky2007modern' on page 1 undefined on input li
-ne 183.
-
-
-LaTeX Warning: Citation `isaac' on page 1 undefined on input line 183.
-
-
-LaTeX Warning: Citation `ratnoo2009satisfying' on page 1 undefined on input lin
-e 183.
-
-
-LaTeX Warning: Citation `oza2012impact' on page 1 undefined on input line 183.
-
-
-LaTeX Warning: Citation `park2013optimal' on page 1 undefined on input line 183
-.
-
-
-LaTeX Warning: Citation `kumar2014three' on page 1 undefined on input line 183.
-
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 183--187
-[]|   []   |   []   |   []   |   []   |   []
- []
-
-
-Underfull \hbox (badness 2990) in paragraph at lines 183--187
-[][]|   []   []\OT1/ptm/m/n/10 nav-i-ga-tion (PN) []|   []   []has been in use 
-since
+Underfull \hbox (badness 5847) in paragraph at lines 122--124
+[]\OT1/ptm/b/it/9 Abstract\OT1/ptm/b/n/9 ---Combatant small Un-manned Aerial Ve
+-hi-cles
  []
 
 [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
 ]
-
-LaTeX Warning: Citation `zarchan' on page 2 undefined on input line 208.
-
-
-Underfull \hbox (badness 6859) in paragraph at lines 208--209
-[]|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []
- []
-
-
-Underfull \hbox (badness 4024) in paragraph at lines 208--209
-|   []   |   []   |   []   |   []   |   []   |   []   |   []
- []
-
-
-LaTeX Warning: Reference `eq:targetkintwo' on page 2 undefined on input line 21
-3.
-
-
-LaTeX Warning: Reference `eq:intkintwo' on page 2 undefined on input line 213.
-
-
-Package amsmath Warning: Cannot use `split' here;
-(amsmath)                trying to recover with `aligned' on input line 231.
-
 <Engagement_Model.PNG, id=10, 499.8675pt x 471.26062pt>
 File: Engagement_Model.PNG Graphic file (type png)
 
 <use Engagement_Model.PNG>
-Package pdftex.def Info: Engagement_Model.PNG used on input line 273.
+Package pdftex.def Info: Engagement_Model.PNG used on input line 249.
 (pdftex.def)             Requested size: 170.71652pt x 160.94557pt.
 
-
-LaTeX Warning: Citation `zarchan' on page 2 undefined on input line 289.
-
-
-LaTeX Warning: Reference `eq:losrate' on page 2 undefined on input line 290.
-
-
-LaTeX Warning: Reference `eq:pos' on page 2 undefined on input line 290.
-
-
-LaTeX Warning: Reference `eq:vel' on page 2 undefined on input line 290.
-
-
-LaTeX Warning: Reference `eq:LOS' on page 2 undefined on input line 290.
-
-
-LaTeX Warning: Reference `eq:losrate' on page 2 undefined on input line 290.
+<failedHeadOn.png, id=12, 696.35156pt x 455.45157pt>
+File: failedHeadOn.png Graphic file (type png)
+ <use failedHeadOn.png>
+Package pdftex.def Info: failedHeadOn.png used on input line 381.
+(pdftex.def)             Requested size: 199.16928pt x 130.26372pt.
 
 [2 <./Engagement_Model.PNG>]
-! Misplaced alignment tab character &.
-\split@ ->\hbox to\wd \thr@@ {}&
-                                \vcenter {\vbox {\moveleft \wd \thr@@ \boxz@ }}
-l.324 }\end{align*}
-                   
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
+<x50_range_LOSrate.png, id=26, 421.575pt x 316.18124pt>
+File: x50_range_LOSrate.png Graphic file (type png)
+
+<use x50_range_LOSrate.png>
+Package pdftex.def Info: x50_range_LOSrate.png used on input line 390.
+(pdftex.def)             Requested size: 199.16928pt x 149.37712pt.
 
-! Misplaced alignment tab character &.
-\split@ ->\hbox to\wd \thr@@ {}&
-                                \vcenter {\vbox {\moveleft \wd \thr@@ \boxz@ }}
-l.324 }\end{align*}
-                   
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
+<tailChaseWithLedgend.png, id=27, 709.90219pt x 441.90094pt>
+File: tailChaseWithLedgend.png Graphic file (type png)
 
+<use tailChaseWithLedgend.png>
+Package pdftex.def Info: tailChaseWithLedgend.png used on input line 401.
+(pdftex.def)             Requested size: 199.16928pt x 123.97415pt.
 
-LaTeX Warning: Reference `eq:range' on page 3 undefined on input line 351.
+<x15_range_LOSrate.png, id=28, 421.575pt x 316.18124pt>
+File: x15_range_LOSrate.png Graphic file (type png)
 
+<use x15_range_LOSrate.png>
+Package pdftex.def Info: x15_range_LOSrate.png used on input line 409.
+(pdftex.def)             Requested size: 199.16928pt x 149.37712pt.
 
-LaTeX Warning: Reference `eq:LOS' on page 3 undefined on input line 353.
+Underfull \vbox (badness 4981) has occurred while \output is active []
 
 
-LaTeX Warning: Reference `fig:failedIntercept' on page 3 undefined on input lin
-e 386.
+<45deguncert.PNG, id=29, 464.4853pt x 468.24937pt>
+File: 45deguncert.PNG Graphic file (type png)
+ <use 45deguncert.PNG>
+Package pdftex.def Info: 45deguncert.PNG used on input line 456.
+(pdftex.def)             Requested size: 113.81102pt x 114.7328pt.
 
+[3 <./failedHeadOn.png> <./x50_range_LOSrate.png (PNG copy)> <./tailChaseWithLe
+dgend.png> <./x15_range_LOSrate.png (PNG copy)> <./45deguncert.PNG>]
+<wait.png, id=36, 505.13719pt x 389.20406pt>
+File: wait.png Graphic file (type png)
+ <use wait.png>
+Package pdftex.def Info: wait.png used on input line 520.
+(pdftex.def)             Requested size: 199.16928pt x 153.45776pt.
 
-LaTeX Warning: Reference `fig:failedInterceptLOS' on page 3 undefined on input 
-line 386.
+<intercept.png, id=37, 497.60907pt x 396.7322pt>
+File: intercept.png Graphic file (type png)
+ <use intercept.png>
+Package pdftex.def Info: intercept.png used on input line 527.
+(pdftex.def)             Requested size: 199.16928pt x 158.79297pt.
 
+<follow.png, id=38, 562.35094pt x 432.86719pt>
+File: follow.png Graphic file (type png)
+ <use follow.png>
+Package pdftex.def Info: follow.png used on input line 534.
+(pdftex.def)             Requested size: 199.16928pt x 153.30894pt.
 
-LaTeX Warning: Citation `singularitySolution' on page 3 undefined on input line
- 386.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-LaTeX Warning: Reference `fig:failedIntercept' on page 3 undefined on input lin
-e 386.
+<Rinit07new.png, id=39, 779.91376pt x 590.205pt>
+File: Rinit07new.png Graphic file (type png)
+ <use Rinit07new.png>
+Package pdftex.def Info: Rinit07new.png used on input line 602.
+(pdftex.def)             Requested size: 199.16928pt x 150.72092pt.
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Warning: Reference `fig:failedInterceptLOS' on page 3 undefined on input 
-line 386.
+ [4 <./wait.png> <./intercept.png> <./follow.png>]
+<rinit08new.png, id=49, 800.23969pt x 588.69937pt>
+File: rinit08new.png Graphic file (type png)
+ <use rinit08new.png>
+Package pdftex.def Info: rinit08new.png used on input line 609.
+(pdftex.def)             Requested size: 199.16928pt x 146.51872pt.
 
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+<fixedSingularity.png, id=50, 696.35156pt x 450.18187pt>
+File: fixedSingularity.png Graphic file (type png)
 
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+<use fixedSingularity.png>
+Package pdftex.def Info: fixedSingularity.png used on input line 635.
+(pdftex.def)             Requested size: 199.16928pt x 128.75653pt.
 
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+<ptx50_range_LOSrate.png, id=51, 421.575pt x 316.18124pt>
+File: ptx50_range_LOSrate.png Graphic file (type png)
 
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+<use ptx50_range_LOSrate.png>
+Package pdftex.def Info: ptx50_range_LOSrate.png used on input line 643.
+(pdftex.def)             Requested size: 199.16928pt x 149.37712pt.
+ [5 <./Rinit07new.png> <./rinit08new.png> <./fixedSingularity.png> <./ptx50_ran
+ge_LOSrate.png (PNG copy)>]
+<FDIR_Rays.png, id=59, 421.575pt x 316.18124pt>
+File: FDIR_Rays.png Graphic file (type png)
+ <use FDIR_Rays.png>
+Package pdftex.def Info: FDIR_Rays.png used on input line 737.
+(pdftex.def)             Requested size: 227.62204pt x 170.72084pt.
 
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+<correctpolar.png, id=60, 624.08156pt x 393.72093pt>
+File: correctpolar.png Graphic file (type png)
+ <use correctpolar.png>
+Package pdftex.def Info: correctpolar.png used on input line 746.
+(pdftex.def)             Requested size: 227.62204pt x 143.6018pt.
 
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+ (diff.bbl
+[6 <./FDIR_Rays.png (PNG copy)> <./correctpolar.png>])
 
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+** Conference Paper **
+Before submitting the final camera ready copy, remember to:
 
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+ 1. Manually equalize the lengths of two columns on the last page
+ of your paper;
 
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+ 2. Ensure that any PostScript and/or PDF output post-processing
+ uses only Type 1 fonts and that every step in the generation
+ process uses the appropriate paper size.
 
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+[7
 
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\filename@simple ...#2\\}\fi \edef \filename@base 
-                                                  {#1}
-l.395 ...nFL \DIFaddFL{failedHeadOn}\DIFaddendFL }
-                                                  
-(That makes 100 errors; please try again.) 
+] (diff.aux) ) 
 Here is how much of TeX's memory you used:
- 17359 strings out of 493320
- 336183 string characters out of 3138948
- 445696 words of memory out of 3000000
- 20706 multiletter control sequences out of 15000+200000
- 564273 words of font info for 87 fonts, out of 3000000 for 9000
+ 17488 strings out of 493320
+ 338269 string characters out of 3138948
+ 419948 words of memory out of 3000000
+ 20806 multiletter control sequences out of 15000+200000
+ 571140 words of font info for 106 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 404i,18n,505p,10368b,484s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,16n,38p,10368b,490s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/latxfont/lasy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+amsfonts/symbols/msbm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/
+utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on diff.pdf (7 pages, 966002 bytes).
+PDF statistics:
+ 129 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 76 words of extra memory for PDF output out of 10000 (max. 10000000)
 
-!  ==> Fatal error occurred, no output PDF file produced!

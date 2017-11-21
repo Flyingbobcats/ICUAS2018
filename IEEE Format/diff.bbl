@@ -55,6 +55,12 @@ S.~S. Baek, {Hyukseong Kwon}, J.~A. Yoder, and D.~Pack, ``Optimal path planning
   \url{http://ieeexplore.ieee.org/document/6696775/}
 \BIBentrySTDinterwordspacing
 
+\bibitem{yamasaki_advanced_2009}
+T.~Yamasaki, K.~Enomoto, H.~Takano, Y.~Baba, and S.~N. Balakrishnan, ``Advanced
+  pure pursuit guidance via sliding mode approach for chase {UAV},'' in
+  \emph{Proceedings of {AIAA} {Guidance}, {Navigation} and {Control}
+  {Conference}, {AIAA}}, vol. 6298, 2009, p. 2009.
+
 \bibitem{zarchan}
 P.~Zarchan and A.~Seebass, \emph{Fundamentals of Tactical Missile
   Guidance}.\hskip 1em plus 0.5em minus 0.4em\relax AIAA Reston, VA, 1994, vol.
@@ -67,12 +73,6 @@ N.~A. Shneydor, \emph{Missile guidance and pursuit: kinematics, dynamics and
 \bibitem{yanushevsky2007modern}
 R.~Yanushevsky, \emph{Modern missile guidance}.\hskip 1em plus 0.5em minus
   0.4em\relax CRC Press, 2007.
-
-\bibitem{yamasaki_advanced_2009}
-T.~Yamasaki, K.~Enomoto, H.~Takano, Y.~Baba, and S.~N. Balakrishnan, ``Advanced
-  pure pursuit guidance via sliding mode approach for chase {UAV},'' in
-  \emph{Proceedings of {AIAA} {Guidance}, {Navigation} and {Control}
-  {Conference}, {AIAA}}, vol. 6298, 2009, p. 2009.
 
 \bibitem{isaac}
 I.~E. Weintraub, E.~Garcia, D.~Casbeer, and M.~Pachter, ``An optimal aircraft

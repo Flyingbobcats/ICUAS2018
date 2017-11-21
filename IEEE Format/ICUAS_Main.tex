@@ -64,13 +64,16 @@ Email: david.casbeer@us.af.mil, grymin, isaacweintraub.1@us.af.mil}
 \section{Introduction}
 %==========Motivation ============
 
+Tracking and following small unmanned systems (sUAS) have applications in autonomous flight formation, swarming, and standoff target tracking. Multi-rotor sUAS may also be guided to passively track and follow another target sUAS flying in restricted airspace. Path planning, heading control laws, and line-of-sight (LOS) guidance algorithms have been proposed for intercepting and following moving targets. Path planning is typically performed at a ground station requiring constant communication to adapt for a moving target. Control laws for target tracking rely on low uncertainty target position estimates. Line-of-sight methods such as proportional navigation (PN) guidance have been used in missile systems to track targets but may fail to follow a target under head-on intercept scenarios. Direction and range to the target can be measured with on-board sensors but provide highly uncertain estimates due to limitations in the sensing technology. \\
 
-Multi-rotor sUAS may be guided to passively track and follow another small Unmanned Aerial Systems (sUAS). On-board direction and ranging sensor technology for sUAS currently only provides a highly uncertain position estimation. Proportional navigation guidance has been used by missiles to track targets. PN guidance may be useful for guiding a mutli-rotor sUAS to intercept and follow other sUAS. Interception and following has applications in autonomous flight formation and swarming scenarios as well. The objective was to use a modified PN guidance to track other sUAS with uncertain position information.
+A pseudotarget PN guidance algorithm that directs a sUAS to intercept and follow a target sUAS using uncertain position information was investigated. First the interceptor and target kinematics are presented along with the unmodified PN guidance algorithm. Next an on-board sensor that measures the target's position, which has some uncertainty, is modeled. A state machine pseudotarget is than introduced that intercepts and follows a target with high position uncertainty for head-on and tail-chase scenarios. Simulations were performed to validate the model and to show that the following distance can be predicted from the initial LOS angle, range, and sensor characteristic.
+
+%Multi-rotor sUAS may be guided to passively track and follow another small Unmanned Aerial Systems (sUAS). On-board direction and ranging sensor technology for sUAS currently only provides a highly uncertain position estimation. Proportional navigation guidance has been used by missiles to track targets. PN guidance may be useful for guiding a mutli-rotor sUAS to intercept and follow other sUAS. Interception and following has applications in autonomous flight formation and swarming scenarios as well. The objective was to use a modified PN guidance to track other sUAS with uncertain position information.
 
 
 \subsection{Literature}
 % ======= Literature =========
-Tracking a target has been achieved by implementing closed-loop feedback systems, path following guidance, and line-of-sight (LOS) guidance algorithms. Closed-loop position and velocity control of a multi-rotor for following a ground target with intermittent and noisy vision data was achieved in \cite{teuliere_chasing_2011}. Vision systems suffer from field of view limitations and are sensitive to differential lighting conditions. Following time varying paths and intercepting multiple ground targets was demonstrated in \cite{oliveira_moving_2016} by introducing a heading control law. Distance to the target at interception varied an order of magnitude and required certain knowledge of targets position 
+Tracking a target has been achieved by implementing closed-loop feedback systems, path following guidance, and line-of-sight (LOS) guidance algorithms. Closed-loop position and velocity control of a multi-rotor for following a ground target with intermittent and noisy vision data was achieved in \cite{teuliere_chasing_2011}. Vision systems suffer from field of view distance limitations and are sensitive to differential lighting conditions. Following time varying paths and intercepting multiple ground targets was demonstrated in \cite{oliveira_moving_2016} by introducing a heading control law. Distance to the target at interception varied an order of magnitude and required knowledge of targets position. 
 
 Target tracking without modification of a UAVs control system has been accomplished by framing target tracking as a path planning problem. A waypoint generation technique was developed in \cite{ariyur_autonomous_2008} that satisfied fixed wing forward velocity constraints while maintaining the target in the field-of-view. Sub-optimal placement of waypoints resulted in exaggerated trajectories for fixed wings when tracking an accelerating target. Multi-rotors tracked the target with less error when navigating waypoints for the same scenario due to the multi-rotors ability to hover. Less exaggerated trajectories for tracking a maneuvering target was accomplished for a fixed wing UAV in \cite{lee_strategies_2003}.  An optimal path planning strategy consisting of a Markov Decision Process and cost based state reduction showed less tracking error in comparison to lookup tables and heuristic methods, but took considerably longer to provide a solution \cite{baek_optimal_2013}. Target tracking with path planning techniques may require the UAV to be in constant contact with the ground station where planning typically occurs.  
 
@@ -78,8 +81,8 @@ Target tracking with a guidance system has the advantage of running on-board the
 
 
 
-\subsection{Methods}
-Interceptor and target kinematics are first presented, followed by the traditional PN guidance law. Next an on-board sensor that measures the target's position, which has some uncertainty, is modeled. A state machine pseudotarget is introduced that prevents the intercepting UAV from entering the uncertain area while accomplishing the main goal of intercepting and following the target. Simulations were performed to validate the model and to show that the following distance can be predicted from the initial LOS angle, range, and sensor characteristic.
+%\subsection{Methods}
+%Interceptor and target kinematics are first presented, followed by the traditional PN guidance law. Next an on-board sensor that measures the target's position, which has some uncertainty, is modeled. A state machine pseudotarget is introduced that prevents the intercepting UAV from entering the uncertain area while accomplishing the main goal of intercepting and following the target. Simulations were performed to validate the model and to show that the following distance can be predicted from the initial LOS angle, range, and sensor characteristic.
 
 \section{Model}
 
@@ -118,8 +121,9 @@ Guidance gains of $N < 3$ are generally referred to as conservative, while $N > 
  
  \begin{table}
  \centering
+ \caption{Equation relations}
  \begin{tabular}{cc}
- 	
+
  	$Variable$ & $Relation$ \\
  	\hline 
  	$x_I$  & Interceptor x position \\ 
@@ -136,8 +140,8 @@ Guidance gains of $N < 3$ are generally referred to as conservative, while $N > 
  	
  	$V_{Tx}$ & Target x velocity \\ 
  	
- 	$v_{Ty}$ & Target y velocity \\ 
- 	
+ 	$V_{Ty}$ & Target y velocity \\ 
+
  \end{tabular}
  \end{table}
 
@@ -376,7 +380,7 @@ Representation of the models performance for a range of sensor $dr$'s is shown i
 
 
 
-A pseudotarget based proportional navigation (PN) guidance algorithm that directs a UAV to intercept and follow a target UAV using highly uncertain sensor position information was investigated. Simulations were performed to determine the following distance for a finite space. Near zero following distance was achievable for a finite range of initial headings and sensor $dr$'s. Following distance to initial range ratios indicate that the modified guidance performs optimally when the initial LOS angle is less than $45^\circ$ and larger initial sight angles may benefit from other intercept methods. The state machine pseudotarget PN guidance algorithm was specifically designed to intercept and follow an inbound non-maneuvering target for the edge case of $1:1$ speed ratio. Initial results suggest that the proposed guidance is tracks the target with less error compared to traditional PN for head-on intercepts but slightly underperformed in the tail-chase scenario 
+A pseudotarget based proportional navigation (PN) guidance algorithm that directs a UAV to intercept and follow a target UAV using highly uncertain sensor position information was investigated. Simulations were performed to determine the following distance for a finite space. Near zero following distance was achievable for a finite range of initial headings and sensor $dr$'s. Following distance to initial range ratios indicate that the modified guidance performs optimally when the initial LOS angle is less than $45^\circ$ and larger initial sight angles may benefit from other intercept methods. The state machine pseudotarget PN guidance algorithm was specifically designed to intercept and follow an inbound non-maneuvering target for the edge case of $1:1$ speed ratio. Initial results suggest that the proposed guidance is tracks the target with less error compared to traditional PN for head-on intercepts but slightly underperformed in the tail-chase scenario.
 
 
 
